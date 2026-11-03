@@ -5,7 +5,7 @@ A guided human-in-the-loop review tool for culturally grounded mental-health exp
 
 It extends [The Minority Report](https://github.com/codata/the-minority-report) by Slava Tykhonov (CODATA). When models disagree, the less-supported reading, the *minority report*, stays visible for the reviewer instead of being discarded.
 
-![FarajaMH Minority Report workflow](docs/figures/Minority_Report_FarajaMH_workflow_v9_1.png)
+![FarajaMH Minority Report workflow](docs/figures/farajamh-workflow-v10.png)
 
 ## How it works
 
