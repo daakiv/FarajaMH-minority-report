@@ -1,0 +1,922 @@
+{
+  "adjudication": {
+    "comparison_hash": "1680c8a1364183ce2a118b947986896644b7aff0a4f839ac05fa7066b6d55156",
+    "decision": {
+      "action": "approve",
+      "evidence_refs": [
+        "E1"
+      ],
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "dread",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "dread"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "risk_signal": "not_flagged"
+    },
+    "decision_hash": "a8504989b35af275af3f89842a14e970a84257e49e6053c3824bbefb2c4312f1",
+    "identity": {
+      "expertise": [
+        "SIMULATED contextual adjudicator"
+      ],
+      "id": "demo_arbitrator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "arbitrator"
+      ],
+      "simulated": true
+    },
+    "models_hash": "4ecda9d5fbc187426ca7994a0ab220d45d626e39cc908a33626f6530ba5579aa",
+    "reviewed_version": 3,
+    "reviews_hash": "fd26b34df0c085796b053f3a6ecb41a8db59d51bd625feb1e8f4abb4f2aaf4a8",
+    "timestamp": "2026-10-05T16:16:01.172639+00:00"
+  },
+  "comparison": {
+    "assignments": [
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-llama",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "medium-gemma",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "comparison-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      }
+    ],
+    "automatic_flags_reviewable": true,
+    "counts": {
+      "abstaining": 0,
+      "completed": 4,
+      "failed": 0,
+      "selected": 4,
+      "voting": 4
+    },
+    "escalation": true,
+    "groups": [
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "dread",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "dread"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "dread"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-qwen"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "dread",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "dread"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "dread"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-llama"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "dread",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "dread"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "dread"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "medium-gemma"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "dread",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "dread"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "dread"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "comparison-qwen"
+          }
+        ],
+        "id": "G1",
+        "models": [
+          "small-qwen",
+          "small-llama",
+          "medium-gemma",
+          "comparison-qwen"
+        ],
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "majority"
+      }
+    ],
+    "majority_group": "G1",
+    "notice": "Agreement measures this grouping proposal, not truth or clinical certainty.",
+    "procedure": "semantic-frame-conservative-v1",
+    "state": "UNANIMOUS",
+    "strict_majority_threshold": 3,
+    "substantive_dissent": false
+  },
+  "created_at": "2026-10-05T16:16:01.167935+00:00",
+  "external_evidence": [],
+  "mapping_reviews": [],
+  "mode": "fixture",
+  "models": [
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"dread\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"dread\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"dread\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"dread\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Sitaki kuamka kesho [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"uncertain\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:16:01.166437+00:00"
+        }
+      ],
+      "configuration_id": "small-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "dread",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "dread",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "dread"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "dread"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Sitaki kuamka kesho [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "uncertain"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-qwen",
+        "cache_key": "e9945650ce281a73a1a8a0bd014a4600fca4b6dd8144f24e7560349bc0fee083",
+        "cache_used": false,
+        "config_hash": "c13120bc24d0fd3d8b6e1ad47e049953e495ba1e39e0ad509500e2b7a3f87c4f",
+        "digest": "c74672a0ea02de711a1ef6fe8283323676e137fd25093e42f9fc5f51f22fef5d",
+        "finished_at": "2026-10-05T16:16:01.166561+00:00",
+        "input_hash": "e3a087be8b88a0c6e386cbc4f3bc42274d35ff1a973d3e07b7c2b0c12ad89f61",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:3b",
+        "settings": {
+          "seed": 11,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:16:01.166151+00:00"
+      },
+      "runtime_seconds": 0.00045112502994015813,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"dread\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"dread\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"dread\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"dread\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Sitaki kuamka kesho [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"uncertain\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:16:01.166891+00:00"
+        }
+      ],
+      "configuration_id": "small-llama",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "dread",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "dread",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "dread"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "dread"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Sitaki kuamka kesho [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "uncertain"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-llama",
+        "cache_key": "f918c4fa21bd74659df9809840ffd22fc7d91f5c37c924abbc1eb1ef0fd389e9",
+        "cache_used": false,
+        "config_hash": "c13120bc24d0fd3d8b6e1ad47e049953e495ba1e39e0ad509500e2b7a3f87c4f",
+        "digest": "c74672a0ea02de711a1ef6fe8283323676e137fd25093e42f9fc5f51f22fef5d",
+        "finished_at": "2026-10-05T16:16:01.167009+00:00",
+        "input_hash": "e3a087be8b88a0c6e386cbc4f3bc42274d35ff1a973d3e07b7c2b0c12ad89f61",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "llama3.2:3b",
+        "settings": {
+          "seed": 12,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:16:01.166604+00:00"
+      },
+      "runtime_seconds": 0.0004475000314414501,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"dread\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"dread\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"dread\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"dread\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Sitaki kuamka kesho [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"uncertain\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:16:01.167348+00:00"
+        }
+      ],
+      "configuration_id": "medium-gemma",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "dread",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "dread",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "dread"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "dread"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Sitaki kuamka kesho [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "uncertain"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:medium-gemma",
+        "cache_key": "ad2a3656f6399ba6f3ecf3a4342141acfea80bbb1e9989ea3cadc61811ff2fd5",
+        "cache_used": false,
+        "config_hash": "c13120bc24d0fd3d8b6e1ad47e049953e495ba1e39e0ad509500e2b7a3f87c4f",
+        "digest": "c74672a0ea02de711a1ef6fe8283323676e137fd25093e42f9fc5f51f22fef5d",
+        "finished_at": "2026-10-05T16:16:01.167465+00:00",
+        "input_hash": "e3a087be8b88a0c6e386cbc4f3bc42274d35ff1a973d3e07b7c2b0c12ad89f61",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "gemma3:4b",
+        "settings": {
+          "seed": 13,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:16:01.167053+00:00"
+      },
+      "runtime_seconds": 0.00045433302875608206,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"dread\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"dread\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"dread\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"dread\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Sitaki kuamka kesho [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"uncertain\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:16:01.167802+00:00"
+        }
+      ],
+      "configuration_id": "comparison-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "dread",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "dread",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "dread"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "dread"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Sitaki kuamka kesho [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "uncertain"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:comparison-qwen",
+        "cache_key": "29591b80f1cdd520b26b64b8764a6794cfd2bf8a1fedb64ce2a76ee0dab1369e",
+        "cache_used": false,
+        "config_hash": "c13120bc24d0fd3d8b6e1ad47e049953e495ba1e39e0ad509500e2b7a3f87c4f",
+        "digest": "c74672a0ea02de711a1ef6fe8283323676e137fd25093e42f9fc5f51f22fef5d",
+        "finished_at": "2026-10-05T16:16:01.167930+00:00",
+        "input_hash": "e3a087be8b88a0c6e386cbc4f3bc42274d35ff1a973d3e07b7c2b0c12ad89f61",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:14b",
+        "settings": {
+          "seed": 14,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:16:01.167509+00:00"
+      },
+      "runtime_seconds": 0.00046379194827750325,
+      "status": "COMPLETED"
+    }
+  ],
+  "normalization": {
+    "changes": [],
+    "text": "Sitaki kuamka kesho",
+    "uncertainty": "No automatic normalization; original preserved"
+  },
+  "priority": {
+    "evidence": [
+      {
+        "origin": "small-qwen",
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "uncertain"
+        }
+      },
+      {
+        "origin": "small-llama",
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "uncertain"
+        }
+      },
+      {
+        "origin": "medium-gemma",
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "uncertain"
+        }
+      },
+      {
+        "origin": "comparison-qwen",
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "uncertain"
+        }
+      }
+    ],
+    "notice": "Research review priority only; no patient contact, diagnosis or treatment",
+    "queue": "PRIORITY"
+  },
+  "provenance": {
+    "code_hash": "62b1c078a93f5724351e88b42dcd3eef98f89f34a1577b26acaea4e3756b4f33",
+    "config_hash": "c13120bc24d0fd3d8b6e1ad47e049953e495ba1e39e0ad509500e2b7a3f87c4f",
+    "synthetic": true,
+    "upstream_commit": "a7cb9cbf90cffb186c69699b5a188f970d22e5b9"
+  },
+  "reviewer_disagreement": false,
+  "reviews": [
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "dread",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "dread"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "dread"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED language and cultural reviewer"
+        ],
+        "id": "demo_ke",
+        "locality_familiarity": "SIMULATED Kenyan Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 1,
+      "timestamp": "2026-10-05T16:16:01.169396+00:00"
+    },
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "dread",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "dread"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "dread"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED clinical and lived-experience reviewer"
+        ],
+        "id": "demo_tz",
+        "locality_familiarity": "SIMULATED Tanzanian Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 2,
+      "timestamp": "2026-10-05T16:16:01.171606+00:00"
+    }
+  ],
+  "schema_version": "1.0",
+  "sense_links": [],
+  "source": {
+    "conversation": "A synthetic speaker mentions dread about tomorrow; urgency is uncertain.",
+    "evidence": [
+      {
+        "id": "E1",
+        "reference": "synthetic-fixture:SYN08",
+        "text": "A synthetic speaker mentions dread about tomorrow; urgency is uncertain."
+      }
+    ],
+    "language": "sw",
+    "language_spans": [],
+    "original_text": "Sitaki kuamka kesho",
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "region_variety": null,
+    "schema_version": "1.0",
+    "source_type": "constructed-text",
+    "speaker_ref": "SYN-person",
+    "speaker_role": "synthetic narrator",
+    "synthetic": true,
+    "utterance_id": "SYN08"
+  },
+  "stale_artifacts": [],
+  "state": "ADJUDICATED",
+  "terminology": {
+    "MFOEM": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOEM"
+      },
+      "queries": [
+        "dread"
+      ],
+      "resource": "MFOEM",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:16:01.172719+00:00"
+    },
+    "MFOMD": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOMD"
+      },
+      "queries": [
+        "dread"
+      ],
+      "resource": "MFOMD",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:16:01.172722+00:00"
+    },
+    "SNOMED_CT": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "SNOMED_CT"
+      },
+      "queries": [
+        "dread"
+      ],
+      "resource": "SNOMED_CT",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:16:01.172723+00:00"
+    }
+  },
+  "triage": {
+    "candidate": null,
+    "human_applicability_required": true,
+    "references": [],
+    "route": "NEW"
+  },
+  "version": 4
+}

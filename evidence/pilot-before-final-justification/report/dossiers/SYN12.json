@@ -1,0 +1,881 @@
+{
+  "adjudication": {
+    "comparison_hash": "7085c42280787956d451c8b3c6b22098a746a164dc12384edfd8904b18366483",
+    "decision": {
+      "action": "approve",
+      "evidence_refs": [
+        "E1"
+      ],
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "work fatigue",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "work fatigue"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "risk_signal": "not_flagged"
+    },
+    "decision_hash": "7c5b3e64a5f143bae0cc11e77c95a66d57c499c41436fcca8a069cc3f8f16592",
+    "identity": {
+      "expertise": [
+        "SIMULATED contextual adjudicator"
+      ],
+      "id": "demo_arbitrator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "arbitrator"
+      ],
+      "simulated": true
+    },
+    "models_hash": "fb222317493521a11199e6b5908d08ba12e89ba43aa28e85de4fb6ce3b15aa7f",
+    "reviewed_version": 3,
+    "reviews_hash": "82a7b4375b5808c578a24b49176d3085a3375325c077893eb3813fa06ca2bde4",
+    "timestamp": "2026-10-05T19:57:51.808444+00:00"
+  },
+  "comparison": {
+    "assignments": [
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-llama",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "medium-gemma",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "comparison-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      }
+    ],
+    "automatic_flags_reviewable": true,
+    "counts": {
+      "abstaining": 0,
+      "completed": 4,
+      "failed": 0,
+      "selected": 4,
+      "voting": 4
+    },
+    "escalation": false,
+    "groups": [
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "work fatigue",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "work fatigue"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "work fatigue"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-qwen"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "work fatigue",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "work fatigue"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "work fatigue"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-llama"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "work fatigue",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "work fatigue"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "work fatigue"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "medium-gemma"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "work fatigue",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "work fatigue"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "work fatigue"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "comparison-qwen"
+          }
+        ],
+        "id": "G1",
+        "models": [
+          "small-qwen",
+          "small-llama",
+          "medium-gemma",
+          "comparison-qwen"
+        ],
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "majority"
+      }
+    ],
+    "majority_group": "G1",
+    "notice": "Agreement measures this grouping proposal, not truth or clinical certainty.",
+    "procedure": "semantic-frame-conservative-v1",
+    "state": "UNANIMOUS",
+    "strict_majority_threshold": 3,
+    "substantive_dissent": false
+  },
+  "created_at": "2026-10-05T19:57:51.804553+00:00",
+  "external_evidence": [],
+  "mapping_reviews": [],
+  "mode": "fixture",
+  "models": [
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"work fatigue\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"work fatigue\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"work fatigue\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"work fatigue\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"I am tired, work has been a lot\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T19:57:51.803143+00:00"
+        }
+      ],
+      "configuration_id": "small-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "work fatigue",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "work fatigue",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "work fatigue"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "work fatigue"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "I am tired, work has been a lot",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-qwen",
+        "cache_key": "2427edfce444fe7dd00fdfa0ddb7f15f0ba81cabbb4e099cb5515beec7d0c242",
+        "cache_used": false,
+        "config_hash": "f15129c252c271817f47cdb0b005c98582c19ae6a92c13eadb7a7cc6e919a7ff",
+        "digest": "73e918876e3abfc1460e89d3fa44068159b6450444de861f42d9f77456386578",
+        "finished_at": "2026-10-05T19:57:51.803274+00:00",
+        "input_hash": "88515a9864fdeca6d573bbc56eadc91ae997a5632aed687147ab856afab3d5fe",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:3b",
+        "settings": {
+          "seed": 11,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T19:57:51.802847+00:00"
+      },
+      "runtime_seconds": 0.0004711670335382223,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"work fatigue\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"work fatigue\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"work fatigue\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"work fatigue\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"I am tired, work has been a lot\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T19:57:51.803599+00:00"
+        }
+      ],
+      "configuration_id": "small-llama",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "work fatigue",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "work fatigue",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "work fatigue"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "work fatigue"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "I am tired, work has been a lot",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-llama",
+        "cache_key": "c074fceb25c96e8e57d60a72f2c99c461752bd26a5decac0f3206968daf12ac2",
+        "cache_used": false,
+        "config_hash": "f15129c252c271817f47cdb0b005c98582c19ae6a92c13eadb7a7cc6e919a7ff",
+        "digest": "73e918876e3abfc1460e89d3fa44068159b6450444de861f42d9f77456386578",
+        "finished_at": "2026-10-05T19:57:51.803710+00:00",
+        "input_hash": "88515a9864fdeca6d573bbc56eadc91ae997a5632aed687147ab856afab3d5fe",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "llama3.2:3b",
+        "settings": {
+          "seed": 12,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T19:57:51.803319+00:00"
+      },
+      "runtime_seconds": 0.000435416994150728,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"work fatigue\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"work fatigue\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"work fatigue\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"work fatigue\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"I am tired, work has been a lot\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T19:57:51.804024+00:00"
+        }
+      ],
+      "configuration_id": "medium-gemma",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "work fatigue",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "work fatigue",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "work fatigue"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "work fatigue"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "I am tired, work has been a lot",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:medium-gemma",
+        "cache_key": "08c4da2b180b5e7cb8338d6417ddda37fea463bc82abbf33514a81691454afb3",
+        "cache_used": false,
+        "config_hash": "f15129c252c271817f47cdb0b005c98582c19ae6a92c13eadb7a7cc6e919a7ff",
+        "digest": "73e918876e3abfc1460e89d3fa44068159b6450444de861f42d9f77456386578",
+        "finished_at": "2026-10-05T19:57:51.804132+00:00",
+        "input_hash": "88515a9864fdeca6d573bbc56eadc91ae997a5632aed687147ab856afab3d5fe",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "gemma3:4b",
+        "settings": {
+          "seed": 13,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T19:57:51.803753+00:00"
+      },
+      "runtime_seconds": 0.0004199999966658652,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"work fatigue\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"work fatigue\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"work fatigue\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"work fatigue\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"I am tired, work has been a lot\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T19:57:51.804444+00:00"
+        }
+      ],
+      "configuration_id": "comparison-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "work fatigue",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "work fatigue",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "work fatigue"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "work fatigue"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "I am tired, work has been a lot",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:comparison-qwen",
+        "cache_key": "440691edb3123648505d5067d279520470d740303b963c312f9f2f79fcd2e16f",
+        "cache_used": false,
+        "config_hash": "f15129c252c271817f47cdb0b005c98582c19ae6a92c13eadb7a7cc6e919a7ff",
+        "digest": "73e918876e3abfc1460e89d3fa44068159b6450444de861f42d9f77456386578",
+        "finished_at": "2026-10-05T19:57:51.804549+00:00",
+        "input_hash": "88515a9864fdeca6d573bbc56eadc91ae997a5632aed687147ab856afab3d5fe",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:14b",
+        "settings": {
+          "seed": 14,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T19:57:51.804174+00:00"
+      },
+      "runtime_seconds": 0.00041625002631917596,
+      "status": "COMPLETED"
+    }
+  ],
+  "normalization": {
+    "changes": [],
+    "text": "Nimechoka, kazi imekuwa nyingi",
+    "uncertainty": "No automatic normalization; original preserved"
+  },
+  "priority": {
+    "evidence": [],
+    "notice": "Research review priority only; no patient contact, diagnosis or treatment",
+    "queue": "STANDARD"
+  },
+  "provenance": {
+    "code_hash": "5cb9542e98000ad14b305d152c0243d534b21ad4108e5b92888a6ac216fddcae",
+    "config_hash": "f15129c252c271817f47cdb0b005c98582c19ae6a92c13eadb7a7cc6e919a7ff",
+    "synthetic": true,
+    "upstream_commit": "a7cb9cbf90cffb186c69699b5a188f970d22e5b9"
+  },
+  "reviewer_disagreement": false,
+  "reviews": [
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "work fatigue",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "work fatigue"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "work fatigue"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED language and cultural reviewer"
+        ],
+        "id": "demo_ke",
+        "locality_familiarity": "SIMULATED Kenyan Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 1,
+      "timestamp": "2026-10-05T19:57:51.805881+00:00"
+    },
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "work fatigue",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "work fatigue"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "work fatigue"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED clinical and lived-experience reviewer"
+        ],
+        "id": "demo_tz",
+        "locality_familiarity": "SIMULATED Tanzanian Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 2,
+      "timestamp": "2026-10-05T19:57:51.807202+00:00"
+    }
+  ],
+  "schema_version": "1.0",
+  "sense_links": [],
+  "source": {
+    "conversation": "A synthetic speaker describes tiredness following a long workday.",
+    "evidence": [
+      {
+        "id": "E1",
+        "reference": "synthetic-fixture:SYN12",
+        "text": "A synthetic speaker describes tiredness following a long workday."
+      }
+    ],
+    "language": "sw",
+    "language_spans": [],
+    "original_text": "Nimechoka, kazi imekuwa nyingi",
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "region_variety": null,
+    "schema_version": "1.0",
+    "source_type": "constructed-text",
+    "speaker_ref": "SYN-person",
+    "speaker_role": "synthetic narrator",
+    "synthetic": true,
+    "utterance_id": "SYN12"
+  },
+  "stale_artifacts": [],
+  "state": "ADJUDICATED",
+  "terminology": {
+    "MFOEM": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOEM"
+      },
+      "queries": [
+        "work fatigue"
+      ],
+      "resource": "MFOEM",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T19:57:51.808528+00:00"
+    },
+    "MFOMD": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOMD"
+      },
+      "queries": [
+        "work fatigue"
+      ],
+      "resource": "MFOMD",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T19:57:51.808531+00:00"
+    },
+    "SNOMED_CT": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "SNOMED_CT"
+      },
+      "queries": [
+        "work fatigue"
+      ],
+      "resource": "SNOMED_CT",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T19:57:51.808532+00:00"
+    }
+  },
+  "triage": {
+    "candidate": null,
+    "human_applicability_required": true,
+    "references": [],
+    "route": "NEW"
+  },
+  "version": 4
+}

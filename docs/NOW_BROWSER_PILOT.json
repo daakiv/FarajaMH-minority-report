@@ -1,0 +1,191 @@
+[
+  {
+    "id": "KISWA-LIVE-05",
+    "span": {
+      "end": 66,
+      "start": 34,
+      "text": "moyo inadunda, roho inaenda mbio"
+    },
+    "language": "sw",
+    "models": [
+      {
+        "model": "gemma3:12b",
+        "outcome": "FAILED",
+        "seconds": 52.71329191699624,
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "failure": "Reply did not match the output schema: Evidence reference not in authorized source evidence"
+      },
+      {
+        "model": "qwen2.5:7b",
+        "outcome": "COMPLETED",
+        "seconds": 11.209229375002906,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "failure": null
+      },
+      {
+        "model": "llama3.1:8b",
+        "outcome": "COMPLETED",
+        "seconds": 10.444681666995166,
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "failure": null
+      }
+    ],
+    "dictionary": [
+      "DUMMY_DICT_09"
+    ],
+    "comparison": "INSUFFICIENT_PARTICIPATION",
+    "terminology": [
+      {
+        "source": "MFOEM",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      },
+      {
+        "source": "MFOMD",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      },
+      {
+        "source": "SNOMED_CT",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      }
+    ],
+    "export": {
+      "blockers": [
+        "Meaning has not been approved",
+        "MFOEM: required terminology review incomplete",
+        "MFOMD: required terminology review incomplete",
+        "SNOMED_CT: required terminology review incomplete"
+      ],
+      "notice": "Recorded-state check only. Final export checks every eligible case, current resource releases and active targets. No mapping is required to retain an approved local meaning.",
+      "status": "BLOCKED"
+    }
+  },
+  {
+    "id": "KISWA-LIVE-06",
+    "span": {
+      "end": 65,
+      "start": 33,
+      "text": "my heart was pounding and racing"
+    },
+    "language": "en",
+    "models": [
+      {
+        "model": "gemma3:12b",
+        "outcome": "COMPLETED",
+        "seconds": 31.61083616600081,
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "failure": null
+      },
+      {
+        "model": "qwen2.5:7b",
+        "outcome": "COMPLETED",
+        "seconds": 10.734201750005013,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "failure": null
+      },
+      {
+        "model": "llama3.1:8b",
+        "outcome": "COMPLETED",
+        "seconds": 9.211437249992741,
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "failure": null
+      }
+    ],
+    "dictionary": [
+      "DUMMY_DICT_15"
+    ],
+    "comparison": "TIED",
+    "terminology": [
+      {
+        "source": "MFOEM",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      },
+      {
+        "source": "MFOMD",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      },
+      {
+        "source": "SNOMED_CT",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      }
+    ],
+    "export": {
+      "blockers": [
+        "Meaning has not been approved",
+        "MFOEM: required terminology review incomplete",
+        "MFOMD: required terminology review incomplete",
+        "SNOMED_CT: required terminology review incomplete"
+      ],
+      "notice": "Recorded-state check only. Final export checks every eligible case, current resource releases and active targets. No mapping is required to retain an approved local meaning.",
+      "status": "BLOCKED"
+    }
+  },
+  {
+    "id": "KISWA-LIVE-07",
+    "span": {
+      "end": 67,
+      "start": 34,
+      "text": "heart inadunda, roho inaenda mbio"
+    },
+    "language": "mul",
+    "models": [
+      {
+        "model": "gemma3:12b",
+        "outcome": "COMPLETED",
+        "seconds": 25.43937316699885,
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "failure": null
+      },
+      {
+        "model": "qwen2.5:7b",
+        "outcome": "COMPLETED",
+        "seconds": 11.442709749986534,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "failure": null
+      },
+      {
+        "model": "llama3.1:8b",
+        "outcome": "COMPLETED",
+        "seconds": 10.305315707999398,
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "failure": null
+      }
+    ],
+    "dictionary": [
+      "DUMMY_DICT_09"
+    ],
+    "comparison": "TIED",
+    "terminology": [
+      {
+        "source": "MFOEM",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      },
+      {
+        "source": "MFOMD",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      },
+      {
+        "source": "SNOMED_CT",
+        "state": "NOT_SEARCHED",
+        "ranking": "not run"
+      }
+    ],
+    "export": {
+      "blockers": [
+        "Meaning has not been approved",
+        "MFOEM: required terminology review incomplete",
+        "MFOMD: required terminology review incomplete",
+        "SNOMED_CT: required terminology review incomplete"
+      ],
+      "notice": "Recorded-state check only. Final export checks every eligible case, current resource releases and active targets. No mapping is required to retain an approved local meaning.",
+      "status": "BLOCKED"
+    }
+  }
+]

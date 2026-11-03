@@ -1,0 +1,59 @@
+{
+  "case": "KISWA-LIVE-01",
+  "votes": 3,
+  "comparison": "TIED",
+  "queue": "PRIORITY",
+  "models": [
+    {
+      "id": "gemma3:12b",
+      "status": "COMPLETED",
+      "seconds": 39.31602145900251,
+      "literal": "My heart is bothering me a lot, I feel like I am going crazy.",
+      "risk": {
+        "evidence_refs": [
+          "E1"
+        ],
+        "rationale": "The speaker is expressing significant emotional distress. While the specific cause and severity are unknown, the level of distress warrants further exploration and support. The phrase 'ninachizi' requires careful cultural interpretation.",
+        "signal": "uncertain"
+      },
+      "notes": [
+        {
+          "id": "CN1",
+          "reference": "E1"
+        },
+        {
+          "id": "CN2",
+          "reference": "E1"
+        }
+      ]
+    },
+    {
+      "id": "qwen2.5:7b",
+      "status": "COMPLETED",
+      "seconds": 10.33432312500372,
+      "literal": "My heart is beating very fast because of the news.",
+      "risk": {
+        "evidence_refs": [
+          "E1"
+        ],
+        "rationale": "There is no indication of any immediate or severe risk based on the provided context.",
+        "signal": "not_flagged"
+      },
+      "notes": []
+    },
+    {
+      "id": "llama3.1:8b",
+      "status": "COMPLETED",
+      "seconds": 14.58021854099934,
+      "literal": "My heart is pounding with a strong feeling that I am experiencing something.",
+      "risk": {
+        "evidence_refs": [
+          "E1"
+        ],
+        "rationale": "The speaker's physical sensation in their chest is not a cause for concern.",
+        "signal": "not_flagged"
+      },
+      "notes": []
+    }
+  ]
+}

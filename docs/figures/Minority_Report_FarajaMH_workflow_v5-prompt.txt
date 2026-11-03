@@ -1,0 +1,105 @@
+Mode: built-in image_gen. Reference-image edit; rebuilt as eight cards.
+
+Final correction:
+Make only TWO small corrections to this image, preserve every other pixel/layout/text as closely as possible:
+1. In the footer row starting "Recorded:", replace the text with exactly "Recorded: expression span · model and version · prompt and version · dictionary version · evidence · reviewer decisions". The missing "dictionary version" must be included. Keep legible font size; there is adequate row width.
+2. Add a short dashed teal horizontal connector from the RIGHT EDGE OF CARD8 ("Record and outputs") into the vertical feedback line in the right margin, at the card8 HEADER height. Remove any teal line below that height. It must visibly originate at card8 then go upward and point into card4 Dictionary. Keep its existing feedback label and single arrowhead into dictionary.
+DO NOT CHANGE: eight equal cards, no subtitle, title font, SSSOM spelling, mock example, arrow directions, comparison questions, categories or principle pills. No new words beyond the restored dictionary version. Highest supported native resolution.
+
+Use case: infographic-diagram. Rebuild the reference into a completely NEW v5 infographic. The old layout must be discarded. Exactly EIGHT EQUAL-SIZE cards in TWO ROWS of FOUR, numbered left-to-right 1,2,3,4 across top and 5,6,7,8 across bottom. Highest supported resolution; landscape approximately2000x1700. This is a readable overview and worked illustration. One sans-serif font family throughout, including identical NORMAL WIDTH type for both parts of title. No condensed/squashed lettering. Whitebodycards, offwhitecanvas, flat two-toneicons, coloredheaderbars. No illustratedscenes, photos, books, ethnic stereotypes, modelbrands, or diagnosticcodes.
+
+TITLE ONLY "The Minority Report · FarajaMH".
+NO SUBTITLE. No subtitle mentioning any people or "Cultural interpretation…". No Why sidebox. Leave comfortable blankspacebelowtitle.
+
+GRID AND ARROWS:
+All8cards equalwidthheight with consistent margins and typography; use enough heightforcard6text, no cramped tinytext. Grey horizontal arrows1→2→3→4 between topcards, and5→6→7→8 between bottomcards. Label5→6 "Selected for review";6→7 "Approved decision".
+ONE grey wraparound connector from bottom ofcard4 down into clear inter-row gutter, left along gutter, then down into TOP ofcard5. Label it "For each expression, steps 3–7 repeat". This is the reading-order continuation4→5, not a sidebranch. No competingloops or boundaries. A SINGLE dashedtealfeedbackarrow from rightedgeofcard8 up along right outside margin into rightedgeofcard4. Label besideit "Correction proposal → curator approval → new dictionary version". Arrow points INTO4only.
+No additionalsolidarrows, votinggraphic, model→dictionary exposure, or noteconnectors. Within card8 the inline text SSSOM → OMOP is fine.
+
+Exact concise CARD TEXT follows. Place a distinct pale example-strip at the bottom of EVERY card, labelled "Illustrative example", to connect one workedexample throughwholeworkflow. Every example and result is invented; footer prominently saysso.
+
+1 NAVY#1E3A8A "Utterance and context", speechbubbletexticon
+"Original wording · language/dialect · conversation and setting"
+"Keep the source-language record"
+Example:
+"“Moyo wangu unaniuma”"
+"Synthetic context: discussing a recent loss"
+
+2 NAVY#1E3A8A "Identify expressions", highlightedspansicon
+"Extract each expression as a span"
+"Link full context; reviewers may correct boundaries"
+Example:
+"Span: “Moyo wangu unaniuma”"
+"Retain the surrounding conversation"
+
+3 PURPLE#6D28D9 "Multiple model interpretations"
+Three small robotHEADS differentcolors labeled "Model A", "Model B", "Model C", dashed "+ more"chip.
+"Separate calls before dictionary exposure"
+"Literal translation · meanings · category · evidence explanation"
+Example:
+"Mock A: emotional distress"
+"Mock B: physical discomfort"
+"Mock C: more context needed"
+No percentages, votingratiosorrealmodelresults.
+
+4 TEAL#0F766E "Dictionary evidence"
+ComputerMONITOR withlistmagnifiericon, NO BOOKS.
+"Digital, versioned idiom library"
+"Proposed seed: FarajaMH workshop library"
+"Meaning · category · context limits · source"
+tag "Evidence source, not a vote"
+Example:
+"Mock entry: emotional pain"
+"Applicability in this context needs checking"
+
+5 BLUE#0369A1 "Compare and route", scalesicon
+"Model–model: Do the models agree?"
+"Model–dictionary: Do they match the library?"
+"Check category and applicability"
+"Review: every disagreement, every safety flag, plus a random sample of agreed cases"
+"Other agreed cases: model-agreed, unreviewed; no approved mapping or export"
+Example:
+"Disagreement found: emotional or physical reading"
+Small redwarningtriangleline "Safety assessed separately"
+
+6 BURNTORANGE#C2410C "HITL Review", flatgroupof3peopleicon
+"R1 · Meaning and category"
+"R2 · Concept relationships"
+"R3 · Check and submit"
+"Qualified reviewers · no JSON editing"
+"Second opinion when needed; result returns to R3"
+"Unresolved meaning: concept approval pending"
+Example:
+"Illustrative review favors distress in the stated context; physical reading remains documented"
+No standalonearbitratorstep; no extraarrows insidecard.
+
+7 GREEN#15803D "Approved meaning and concepts", documentcheckicon
+"Keep alternatives and semantic gaps"
+"A local concept can remain without an external match"
+"Qualified terminology sign-off"
+Example:
+"Illustrative local sense: emotional distress in this context"
+"Emotional state; external mapping pending"
+
+8 GREEN#15803D "Record and outputs", connectednodesanddatabaseicons
+Spell SSSOM EXACTLY S-S-S-O-M (THREE S letters followed by O M), NEVER SISSOM.
+"SSSOM mapping records: relation · justification · provenance"
+"Suitable validated mappings → OMOP"
+"Custom, non-standard local IDs > 2,000,000,000"
+"Optional data export when required"
+"Mapping records are not patient outcomes"
+Example:
+"Retain reviewed local sense; no external mapping or export while pending"
+
+FOOTER AREA must be genuinely readable at presentation size, NOT miniaturefineprint. Reserveabout18%height belowgrid, addingcanvasheightifneeded ratherthan shrinkingtype. No squeezed one-linepills. Three short fullwidthtextrows plusseparatethreepillrow:
+Row1 "Illustrative example only: utterance context, dictionary entry, model outputs and review are invented. Swahili readings and mappings require verification."
+Row2 "Categories (codebook pending): Cognitive process · Emotional state · Somatic experience · Spiritual/supernatural · Clinical symptom · Context-specific · Other / cannot determine"
+Row3 "Recorded: expression span · model and version · prompt and version · dictionary version · evidence · reviewer decisions"
+You may splitthese rows into twolines each for readability.
+Belowrow3 smallbutreadable "Terminology review: MFOEM · MFOMD · SNOMED CT · PHQ-9 / GAD-7 items (LOINC). Related content ≠ answer or score."
+Bottom three equal darknavypills on ownrow:
+"Dictionary evidence ≠ model vote"
+"Model agreement ≠ correctness"
+"Concept mapping ≠ diagnosis"
+Final modestlabel "Proposed design · not yet adopted or implemented".
+Do not put any actualLOINC/clinicalcodeinimage. No claims Swahiliinterpretationsverified. No subtitle. NoWhybox. Preserve blindmodelpass; sequentialcardlayoutisreadingorderanddoesnotexposemodels to dictionary. Prioritize correcttext, largelegiblefont, arrowclarityanduniformeightcards.

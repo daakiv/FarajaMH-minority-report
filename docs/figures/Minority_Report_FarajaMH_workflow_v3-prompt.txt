@@ -1,0 +1,66 @@
+Mode: built-in image_gen, referenced-image edit.
+
+Final connector refinements:
+Preserve this entire infographic exactly. Repair TWO missing connectors only: (1) the solid teal 'Approved decision' horizontal line above Outputs is disconnected from R3. ADD a solid teal line starting from bottom-right corner of the R3 Check and submit card, running down in a clear margin to join the RIGHT END of that existing Approved decision line. This must form one continuous R3→Approved contextual meaning arrow. Do not connect to unresolved status. (2) Add a thin NAVY dashed rounded rectangle boundary enclosing all step3,4,5,6 cards and second opinion; top aligned with existing 'Repeat steps 3–6 for each expression occurrence' label, bottom just below HITL, left just left of HITL, right beyond unreviewed card. This boundary is a visual enclosure ONLY, NO ARROWHEADS and NO connection with any flow. Keep the separate teal dictionaryfeedback arrow and all existing other connectors unmodified. Do not delete or change text, icons, colors, panels or layout.
+
+Correct TWO precise lines, everything else unchanged. The NAVY dashed enclosure currently cuts through the HITL band at x~520; DELETE that entire navy enclosure and redraw it with its LEFT edge at x~330 (just left of full HITL band) all the way from top y~85 to bottom y~838. Its RIGHT edge remains x~1520. It must enclose ALL of steps3-6, including the full R1 and peopleicon, no line through panels. Second, the teal dashed dictionary correction connector is missing a visible start at humanreview. ADD a continuous dashed TEAL line from the RIGHT edge of HITL orange band at y~610 to x~1505, upward along x~1505 to y~170, then LEFT into the dictionary panel's rightedge arrowhead. It must be visually separate from navy boundary and unreviewed proposal panel. If it passes along unreviewed panel ensure it runs OUTSIDE its rightedge with whitespace. Preserve every other arrow especially approveddecision and all text. Highestresolution.
+
+Connector refinement prompt:
+Edit only connector lines in this infographic. Preserve every panel, all text, illustrations, title and layout. 
+A. Remove the extra solid teal arrow from step2 directly down into step4. Step2 should enter step3 only. In step3 its input must split with clear arrowheads to both model interpretations and dictionary evidence, using the clear top margin above their panels. Keep model→Compare and dictionary→Compare downward arrows.
+B. Dictionary feedback: DELETE entire existing dashed teal line on far-right, from unreviewed proposal region upward to dictionary; it appears to originate in unreviewed proposal. Redraw a dashed teal connector explicitly starting at RIGHT EDGE of step6 HITL band near its upper-right corner, route outside all panels on far right (behind nothing), go upward and enter dictionary evidence rightedge with arrowhead. It may pass to the RIGHT of the unreviewed proposal with visible whitespace separation. Keep correctionproposal→curatorapproval→newdictionaryversion text near this line. The unreviewed panel must have exactly one incomingarrowfromstep5 and no outgoingconnector.
+C. Outputs: DELETE the small ambiguous blue dashed 'Additional mappings' connector that currently includes a down arrow onto the OMOP export line. Instead draw a short upwards arrow from the TOP of 'OMOP vocabulary mapping, where suitable' directly to the BOTTOM of 'SSSOM mapping records', labelled 'Additional mappings', using the gap between these panels. The optional OMOP data export has ONLY its arrow from OMOP vocabulary mapping.
+D. Do not change anything else. Preserve approveddecisionR3→localconcept→forkSSSOMandOMOP; secondopinionreturnsR1/R2; title and disclaimer. Highest supportedresolution.
+
+Use case: infographic-diagram. Edit target: supplied FarajaMH workflow. Rebuild substantially with improved illustrated icons and exceptionally clear arrows, ample whitespace and readable typography. Highest supported resolution, landscape 3:2 or wide page. Navy teal amber plus different colored robots, white background. Professional editorial infographic, colorful step header bands, stylized flat illustrated robot/book/people/scales/database icons. Do not show stereotyped ethnic people scenes or photoreal people. Title EXACT "The Minority Report · FarajaMH". No Lucy/Slava subtitle.
+
+Near title a short box "Why Minority Report?" and "Dissent is evidence to preserve. People assess meanings; model votes do not decide."
+
+Precise six numbered steps, with repeat boundary:
+Top entry row: "1  Utterance and context" / "Original wording • Language/dialect • Conversation"
+→ "2  Identify expression occurrences" / "Preserve context and spans • Reviewer can correct boundaries".
+Arrow from 2 splits into BOTH halves of step3.
+Dashed boundary clearly labelled "Repeat steps 3–6 for each expression occurrence", encloses steps3–6 and dictionary feedback, not entry or outputs.
+
+"3  Gather interpretations and evidence" is one wide band with TWO parallel panels:
+Left "Independent model interpretations" with THREE distinct colorful illustrated robot icons each labeled "Model A", "Model B", "Model C", and "+ more" chip. "Separate calls • Original expression + context • Before dictionary exposure" and "Literal translation • Proposed meanings • Category • Evidence explanation". A model call is not necessarily statistically independent; use separate calls wording.
+Right "Dictionary evidence" with illustrated book/library icon. "Proposed seed: FarajaMH workshop library" / "Curator-approved sources and versions" / "Meaning • Category • Context limits • Source" / "Evidence source, not a vote".
+Both panels separately arrow DOWN into step4, no arrow between panels.
+
+"4  Compare interpretations and evidence" with scalesicon and 4 labels:
+"Model–model", "Model–dictionary", "Category", "Applicability".
+Small supporting line "Distress or ordinary use? • Negation • Experiencer • Time".
+↓
+"5  Route cases" with branching icon:
+"Review every disagreement, every safety flag, and a random sample of agreed cases."
+"Sampling rule to be agreed in the research protocol."
+Branch down labelled "Selected for review" into step6.
+Branch right labelled "Other agreed cases" to TERMINAL compact panel "Model-agreed, unreviewed" / "Retain proposals • No approved mapping export". NO outgoing lines from this panel, NO connection to outputs.
+
+"6  Human-in-the-loop review (HITL)" is a full-width people-icon band with 3 cards connected left to right:
+"R1  Meaning and category" / "Clinical/cultural/linguistic expertise" / "Select, edit, keep alternatives or request context"
+→ "R2  Concept relationships" / "Qualified terminologist signs off" / "MFOEM • MFOMD • SNOMED CT" / "PHQ-9 / GAD-7 item links (LOINC)" / "Related content ≠ answer or score"
+→ "R3  Check and submit" / "Evidence • Uncertainty • Safety assessment" / "Versioned decision and approved relationships".
+Inside HITL small note "One reviewer may cover R1 and R2 if qualified for both."
+Below these 3cards OPTIONAL amber secondopinion box:
+"Human second opinion / arbitration, when needed"
+"Resolve challenged or unclear decisions • Preserve dissent"
+Arrow FROM R1/R2 TO box and clear return arrow FROM box BACK TO R1/R2, labelled "Recheck → R3". It must not bypass review by going straight into R3. If routing arrows clutter, use a tiny explicit text label "Returns to R1/R2, then R3" plus clear connection.
+Near box status "Unresolved meaning → concept approval pending".
+
+Dashed teal dictionaryfeedback arrow FROM HITL/approved reviewer correction BACK TO step3 dictionary panel, labelled "Correction proposal → curator approval → new dictionary version". No automaticoverwrite.
+
+Only R3 approved path exits loop down to separate OUTPUTS band:
+"Approved contextual meaning and local concept" / "Retain alternatives and semantic gaps".
+Arrow forks to TWO output panels:
+"SSSOM mapping records" / "Source • Relation • Target • Justification • Provenance"
+and "OMOP vocabulary mapping, where suitable".
+OMOP panel connects to "Optional OMOP data export" and optionally SSSOMrecords via thin arrow labelled "Additional mappings". NO unreviewed branch feedsoutputs. "A valid local concept need not have an external match." SSSOM is a mappingrecordformat not diagnosis or codegeneration.
+
+Footer readable two narrow bands:
+"Primary categories (codebook pending): Cognitive process • Emotional state • Somatic experience • Spiritual/supernatural • Clinical symptom • Context-specific • Other / cannot determine"
+"Risk/safety is assessed separately."
+"Record: expression spans • model/version • prompt/version • dictionary/version • evidence • reviewer decisions"
+"Proposed design — not yet adopted or implemented" and "Agreement ≠ correctness • Mapping ≠ diagnosis • No JSON editing for reviewers".
+
+Do not invent codes, scores, diagnoses or Swahili example. No 2-vs-2 voting imagery. Preserve distinct step3 models/dictionary →4compare →5route →6HITL →approvedoutputs. Every connector must have arrowhead; no line crosses text; terminal unreviewed proposal must be disconnected from approvedoutputs. Iconsillustrated colorful and recognizable, lettering legible not excessive microscopic copy. Prioritize topology.

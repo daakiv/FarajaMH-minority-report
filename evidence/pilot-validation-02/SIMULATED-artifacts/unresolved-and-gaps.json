@@ -1,0 +1,429 @@
+[
+  {
+    "utterance_id": "SYN01",
+    "state": "ADJUDICATED",
+    "mapping_reviews": [
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "MFOEM",
+          "sense_id": "FARAJA:demo-fbf2add9da52"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "c77c42951f703d44e0a6848bc1e8bfcbf0dcad76705c8a07b80a251583a510cb",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "MFOEM"
+        },
+        "reviewed_version": 9,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.118839+00:00"
+      },
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "MFOMD",
+          "sense_id": "FARAJA:demo-fbf2add9da52"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "c77c42951f703d44e0a6848bc1e8bfcbf0dcad76705c8a07b80a251583a510cb",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "MFOMD"
+        },
+        "reviewed_version": 10,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.119387+00:00"
+      },
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "SNOMED_CT",
+          "sense_id": "FARAJA:demo-fbf2add9da52"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "c77c42951f703d44e0a6848bc1e8bfcbf0dcad76705c8a07b80a251583a510cb",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "SNOMED_CT"
+        },
+        "reviewed_version": 11,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.119875+00:00"
+      }
+    ]
+  },
+  {
+    "utterance_id": "SYN02",
+    "state": "ADJUDICATED",
+    "mapping_reviews": [
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "MFOEM",
+          "sense_id": "FARAJA:demo-051261cb5cef"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "2fedb98683784caeea4859303e38a4b2628063338464cd8d5899c6dfceaa1441",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "MFOEM"
+        },
+        "reviewed_version": 5,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.131521+00:00"
+      },
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "MFOMD",
+          "sense_id": "FARAJA:demo-051261cb5cef"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "2fedb98683784caeea4859303e38a4b2628063338464cd8d5899c6dfceaa1441",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "MFOMD"
+        },
+        "reviewed_version": 6,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.132090+00:00"
+      },
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "SNOMED_CT",
+          "sense_id": "FARAJA:demo-051261cb5cef"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "2fedb98683784caeea4859303e38a4b2628063338464cd8d5899c6dfceaa1441",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "SNOMED_CT"
+        },
+        "reviewed_version": 7,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.132623+00:00"
+      }
+    ]
+  },
+  {
+    "utterance_id": "SYN03",
+    "state": "UNRESOLVED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN04",
+    "state": "ADJUDICATED",
+    "mapping_reviews": [
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "MFOEM",
+          "sense_id": "FARAJA:demo-ecd1174f30b2"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "9295c4f591acf4e3941ba8c351368edc2dd368634716b8f0b4829bdd5cdb03b6",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "MFOEM"
+        },
+        "reviewed_version": 5,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.145010+00:00"
+      },
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "MFOMD",
+          "sense_id": "FARAJA:demo-ecd1174f30b2"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "9295c4f591acf4e3941ba8c351368edc2dd368634716b8f0b4829bdd5cdb03b6",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "MFOMD"
+        },
+        "reviewed_version": 6,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.145592+00:00"
+      },
+      {
+        "candidate": null,
+        "decision": {
+          "action": "gap",
+          "candidate_id": null,
+          "evidence_refs": [
+            "E1"
+          ],
+          "predicate": null,
+          "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+          "resource": "SNOMED_CT",
+          "sense_id": "FARAJA:demo-ecd1174f30b2"
+        },
+        "identity": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "meaning_decision_hash": "9295c4f591acf4e3941ba8c351368edc2dd368634716b8f0b4829bdd5cdb03b6",
+        "resource_metadata": {
+          "fixture": true,
+          "release": "FICTIONAL-1",
+          "resource": "SNOMED_CT"
+        },
+        "reviewed_version": 7,
+        "sense_version": 1,
+        "stale": false,
+        "timestamp": "2026-10-05T16:16:01.146182+00:00"
+      }
+    ]
+  },
+  {
+    "utterance_id": "SYN05",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN06",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN07",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN08",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN09",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN10",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN11",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN12",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN13",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN14",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN15",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN16",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN17",
+    "state": "NEEDS_CONTEXT",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN18",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN19",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  },
+  {
+    "utterance_id": "SYN20",
+    "state": "ADJUDICATED",
+    "mapping_reviews": []
+  }
+]

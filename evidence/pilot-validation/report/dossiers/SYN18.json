@@ -1,0 +1,822 @@
+{
+  "adjudication": {
+    "comparison_hash": "eccb165dab9e367b1f9bf65dec2a30aea37b4094c7f888534d1f3e9b351e739e",
+    "decision": {
+      "action": "approve",
+      "evidence_refs": [
+        "E1"
+      ],
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "low mood",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "low mood"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "low mood"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "risk_signal": "not_flagged"
+    },
+    "decision_hash": "f3e6dc95a6c60e096b250b9d8278274cad0ae5ed13a4017f2008cb7f889fbfe0",
+    "identity": {
+      "expertise": [
+        "SIMULATED contextual adjudicator"
+      ],
+      "id": "demo_arbitrator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "arbitrator"
+      ],
+      "simulated": true
+    },
+    "models_hash": "27f22e37b744e8a1af6baa5f39bf60ec6cb80700336e66c3499a2d05841a671d",
+    "reviewed_version": 3,
+    "reviews_hash": "c8b9760220505dce66bbfaeb79345516d0fa992ce0d46c95084fb027610ac30b",
+    "timestamp": "2026-10-05T16:15:20.373030+00:00"
+  },
+  "comparison": {
+    "assignments": [
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "low mood"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-llama",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "low mood"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "medium-gemma",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "low mood"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      }
+    ],
+    "automatic_flags_reviewable": true,
+    "counts": {
+      "abstaining": 1,
+      "completed": 4,
+      "failed": 0,
+      "selected": 4,
+      "voting": 3
+    },
+    "escalation": false,
+    "groups": [
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "low mood",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "low mood"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "low mood"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-qwen"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "low mood",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "low mood"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "low mood"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-llama"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "low mood",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "low mood"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "low mood"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "medium-gemma"
+          }
+        ],
+        "id": "G1",
+        "models": [
+          "small-qwen",
+          "small-llama",
+          "medium-gemma"
+        ],
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "low mood"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "majority"
+      }
+    ],
+    "majority_group": "G1",
+    "notice": "Agreement measures this grouping proposal, not truth or clinical certainty.",
+    "procedure": "semantic-frame-conservative-v1",
+    "state": "UNANIMOUS",
+    "strict_majority_threshold": 2,
+    "substantive_dissent": false
+  },
+  "created_at": "2026-10-05T16:15:20.368933+00:00",
+  "external_evidence": [],
+  "mapping_reviews": [],
+  "mode": "fixture",
+  "models": [
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"low mood\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"low mood\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"low mood\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"low mood\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"I feel low, lakini nitaongea baadaye [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:15:20.367612+00:00"
+        }
+      ],
+      "configuration_id": "small-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "low mood",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "low mood",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "low mood"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "low mood"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "I feel low, lakini nitaongea baadaye [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-qwen",
+        "cache_key": "bd0e113caeb893c774ed8ed2425869a05c6cb0c74b32adfec71da407b367935b",
+        "cache_used": false,
+        "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+        "digest": "ffb9e64b4ac1df5d94da47fd63f9c0cbec262f192fccb47c2ffd29e6d6bef1c9",
+        "finished_at": "2026-10-05T16:15:20.367722+00:00",
+        "input_hash": "c2c5116a28758b5e0713f2cfe232c9e50beeba2e9373e2af2dba08a24b4ad11d",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:3b",
+        "settings": {
+          "seed": 11,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:15:20.367316+00:00"
+      },
+      "runtime_seconds": 0.00044754199916496873,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"low mood\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"low mood\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"low mood\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"low mood\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"I feel low, lakini nitaongea baadaye [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:15:20.368022+00:00"
+        }
+      ],
+      "configuration_id": "small-llama",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "low mood",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "low mood",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "low mood"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "low mood"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "I feel low, lakini nitaongea baadaye [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-llama",
+        "cache_key": "246dae7cfdc23fa491660f0e9757f2fabdff44865fdf466da18f4c2e8950f8ac",
+        "cache_used": false,
+        "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+        "digest": "ffb9e64b4ac1df5d94da47fd63f9c0cbec262f192fccb47c2ffd29e6d6bef1c9",
+        "finished_at": "2026-10-05T16:15:20.368125+00:00",
+        "input_hash": "c2c5116a28758b5e0713f2cfe232c9e50beeba2e9373e2af2dba08a24b4ad11d",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "llama3.2:3b",
+        "settings": {
+          "seed": 12,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:15:20.367764+00:00"
+      },
+      "runtime_seconds": 0.0004021669737994671,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"low mood\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"low mood\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"low mood\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"low mood\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"I feel low, lakini nitaongea baadaye [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:15:20.368423+00:00"
+        }
+      ],
+      "configuration_id": "medium-gemma",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "low mood",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "low mood",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "low mood"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "low mood"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "I feel low, lakini nitaongea baadaye [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:medium-gemma",
+        "cache_key": "b7b1c20d45de94ca291a271882c86b0801c474450514f0c532518d047921bab2",
+        "cache_used": false,
+        "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+        "digest": "ffb9e64b4ac1df5d94da47fd63f9c0cbec262f192fccb47c2ffd29e6d6bef1c9",
+        "finished_at": "2026-10-05T16:15:20.368528+00:00",
+        "input_hash": "c2c5116a28758b5e0713f2cfe232c9e50beeba2e9373e2af2dba08a24b4ad11d",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "gemma3:4b",
+        "settings": {
+          "seed": 13,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:15:20.368166+00:00"
+      },
+      "runtime_seconds": 0.00040204200195148587,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"low mood\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"low mood\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"low mood\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"low mood\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"I feel low, lakini nitaongea baadaye [illustrative literal fixture]\",\"primary_hypothesis\":null,\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:15:20.368823+00:00"
+        }
+      ],
+      "configuration_id": "comparison-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "low mood",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "low mood",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "low mood"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "low mood"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "I feel low, lakini nitaongea baadaye [illustrative literal fixture]",
+        "primary_hypothesis": null,
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:comparison-qwen",
+        "cache_key": "4c82e762b7106ee1bda1c6cd41733d1cb7dc63118494593a4b5bfd94dc81dd60",
+        "cache_used": false,
+        "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+        "digest": "34b1dd418bd7c79939d2a488e2db05f8294a211967bf64c9a8530fb99bb55606",
+        "finished_at": "2026-10-05T16:15:20.368929+00:00",
+        "input_hash": "c2c5116a28758b5e0713f2cfe232c9e50beeba2e9373e2af2dba08a24b4ad11d",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:14b",
+        "settings": {
+          "seed": 14,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:15:20.368568+00:00"
+      },
+      "runtime_seconds": 0.00039950001519173384,
+      "status": "ABSTAINED"
+    }
+  ],
+  "normalization": {
+    "changes": [],
+    "text": "I feel low, lakini nitaongea baadaye",
+    "uncertainty": "No automatic normalization; original preserved"
+  },
+  "priority": {
+    "evidence": [],
+    "notice": "Research review priority only; no patient contact, diagnosis or treatment",
+    "queue": "STANDARD"
+  },
+  "provenance": {
+    "code_hash": "be3fd88107a19fce28ecda35175f1d6dca66385ad554e54a3c2eb5b9cf31e5a2",
+    "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+    "synthetic": true,
+    "upstream_commit": "a7cb9cbf90cffb186c69699b5a188f970d22e5b9"
+  },
+  "reviewer_disagreement": false,
+  "reviews": [
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "low mood",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "low mood"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "low mood"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED language and cultural reviewer"
+        ],
+        "id": "demo_ke",
+        "locality_familiarity": "SIMULATED Kenyan Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 1,
+      "timestamp": "2026-10-05T16:15:20.370174+00:00"
+    },
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "low mood",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "low mood"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "low mood"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED clinical and lived-experience reviewer"
+        ],
+        "id": "demo_tz",
+        "locality_familiarity": "SIMULATED Tanzanian Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 2,
+      "timestamp": "2026-10-05T16:15:20.371632+00:00"
+    }
+  ],
+  "schema_version": "1.0",
+  "sense_links": [],
+  "source": {
+    "conversation": "A synthetic speaker postpones discussion of feeling low.",
+    "evidence": [
+      {
+        "id": "E1",
+        "reference": "synthetic-fixture:SYN18",
+        "text": "A synthetic speaker postpones discussion of feeling low."
+      }
+    ],
+    "language": "en-sw",
+    "language_spans": [],
+    "original_text": "I feel low, lakini nitaongea baadaye",
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "region_variety": null,
+    "schema_version": "1.0",
+    "source_type": "constructed-text",
+    "speaker_ref": "SYN-person",
+    "speaker_role": "synthetic narrator",
+    "synthetic": true,
+    "utterance_id": "SYN18"
+  },
+  "stale_artifacts": [],
+  "state": "ADJUDICATED",
+  "terminology": {
+    "MFOEM": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOEM"
+      },
+      "queries": [
+        "low mood"
+      ],
+      "resource": "MFOEM",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:15:20.373106+00:00"
+    },
+    "MFOMD": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOMD"
+      },
+      "queries": [
+        "low mood"
+      ],
+      "resource": "MFOMD",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:15:20.373108+00:00"
+    },
+    "SNOMED_CT": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "SNOMED_CT"
+      },
+      "queries": [
+        "low mood"
+      ],
+      "resource": "SNOMED_CT",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:15:20.373109+00:00"
+    }
+  },
+  "triage": {
+    "candidate": null,
+    "human_applicability_required": true,
+    "references": [],
+    "route": "NEW"
+  },
+  "version": 4
+}

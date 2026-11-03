@@ -1,0 +1,906 @@
+{
+  "adjudication": {
+    "comparison_hash": "da2e9bde9576567ad922aa6b2bf20d521dfb51eea91ad7869c137fb2930a33bf",
+    "decision": {
+      "action": "approve",
+      "evidence_refs": [
+        "E1"
+      ],
+      "meanings": [
+        {
+          "category": "spiritual",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "spiritual unease",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "spiritual unease"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "spiritual unease"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "risk_signal": "not_flagged"
+    },
+    "decision_hash": "d20d64304ef7889c229a192ce091995caa09e34a1b7e3188e5f4c5bd6f8a7453",
+    "identity": {
+      "expertise": [
+        "SIMULATED contextual adjudicator"
+      ],
+      "id": "demo_arbitrator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "arbitrator"
+      ],
+      "simulated": true
+    },
+    "models_hash": "c5290215104dfd6d63d6b0ac7d8c3d83ddeceba7721e2ec986a3667e8b77d718",
+    "reviewed_version": 3,
+    "reviews_hash": "16dec601a5e04fb2140d667bb13bf35ba756da5330ab4f690cbd132c85ad7d17",
+    "timestamp": "2026-10-05T16:15:20.340790+00:00"
+  },
+  "comparison": {
+    "assignments": [
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "spiritual",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "spiritual unease"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-llama",
+        "reviewable": true,
+        "signature": {
+          "category": "spiritual",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "spiritual unease"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G2",
+        "model": "medium-gemma",
+        "reviewable": true,
+        "signature": {
+          "category": "spiritual",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different contextual reading"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G2",
+        "model": "comparison-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "spiritual",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different contextual reading"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      }
+    ],
+    "automatic_flags_reviewable": true,
+    "counts": {
+      "abstaining": 0,
+      "completed": 4,
+      "failed": 0,
+      "selected": 4,
+      "voting": 4
+    },
+    "escalation": true,
+    "groups": [
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "spiritual",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "spiritual unease",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "spiritual unease"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "spiritual unease"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-qwen"
+          },
+          {
+            "hypothesis": {
+              "category": "spiritual",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "spiritual unease",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "spiritual unease"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "spiritual unease"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-llama"
+          }
+        ],
+        "id": "G1",
+        "models": [
+          "small-qwen",
+          "small-llama"
+        ],
+        "signature": {
+          "category": "spiritual",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "spiritual unease"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "competing"
+      },
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "spiritual",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "different contextual reading",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "different contextual reading"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "different contextual reading"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "medium-gemma"
+          },
+          {
+            "hypothesis": {
+              "category": "spiritual",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "different contextual reading",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "present",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "different contextual reading"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "different contextual reading"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "comparison-qwen"
+          }
+        ],
+        "id": "G2",
+        "models": [
+          "medium-gemma",
+          "comparison-qwen"
+        ],
+        "signature": {
+          "category": "spiritual",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different contextual reading"
+          },
+          "meaning_negation_markers": [],
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "competing"
+      }
+    ],
+    "majority_group": null,
+    "notice": "Agreement measures this grouping proposal, not truth or clinical certainty.",
+    "procedure": "semantic-frame-conservative-v1",
+    "state": "TIED",
+    "strict_majority_threshold": 3,
+    "substantive_dissent": true
+  },
+  "created_at": "2026-10-05T16:15:20.336727+00:00",
+  "external_evidence": [],
+  "mapping_reviews": [],
+  "mode": "fixture",
+  "models": [
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"spiritual unease\",\"hypotheses\":[{\"category\":\"spiritual\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"spiritual unease\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"spiritual unease\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"spiritual unease\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Roho yangu haina amani [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:15:20.335407+00:00"
+        }
+      ],
+      "configuration_id": "small-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "spiritual unease",
+        "hypotheses": [
+          {
+            "category": "spiritual",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "spiritual unease",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "spiritual unease"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "spiritual unease"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Roho yangu haina amani [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-qwen",
+        "cache_key": "55bfe3033a98748b954c42e81ccf40a3877b9bc86bd59d222fd1e183daa7ae2d",
+        "cache_used": false,
+        "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+        "digest": "9bd7555cd0025fa7fdfda07f82261e6fe946b3be665cabc9cc6abfacbe45d610",
+        "finished_at": "2026-10-05T16:15:20.335521+00:00",
+        "input_hash": "95dccd03065036f6e533478b573aa1d89982d10729f2a5ab7e2537c70e232856",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:3b",
+        "settings": {
+          "seed": 11,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:15:20.335140+00:00"
+      },
+      "runtime_seconds": 0.00042162497993558645,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"spiritual unease\",\"hypotheses\":[{\"category\":\"spiritual\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"spiritual unease\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"spiritual unease\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"spiritual unease\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Roho yangu haina amani [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:15:20.335821+00:00"
+        }
+      ],
+      "configuration_id": "small-llama",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "spiritual unease",
+        "hypotheses": [
+          {
+            "category": "spiritual",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "spiritual unease",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "spiritual unease"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "spiritual unease"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Roho yangu haina amani [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-llama",
+        "cache_key": "3d44ad4a6ce9843bd9b0fa4dc33021cd169a1eeaaa08c081a44619a504563b1a",
+        "cache_used": false,
+        "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+        "digest": "9bd7555cd0025fa7fdfda07f82261e6fe946b3be665cabc9cc6abfacbe45d610",
+        "finished_at": "2026-10-05T16:15:20.335924+00:00",
+        "input_hash": "95dccd03065036f6e533478b573aa1d89982d10729f2a5ab7e2537c70e232856",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "llama3.2:3b",
+        "settings": {
+          "seed": 12,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:15:20.335564+00:00"
+      },
+      "runtime_seconds": 0.0004021250060759485,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"different contextual reading\",\"hypotheses\":[{\"category\":\"spiritual\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"different contextual reading\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"different contextual reading\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"different contextual reading\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Roho yangu haina amani [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:15:20.336222+00:00"
+        }
+      ],
+      "configuration_id": "medium-gemma",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "different contextual reading",
+        "hypotheses": [
+          {
+            "category": "spiritual",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different contextual reading",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different contextual reading"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different contextual reading"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Roho yangu haina amani [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:medium-gemma",
+        "cache_key": "6db1d0e8ee4f82e6ee1957886e04d1e0c2c3578a516c4ccd901223b4fc61dbbc",
+        "cache_used": false,
+        "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+        "digest": "a04b800408232d0e9d61a0c8fd088e6013934846b194e8a92d7ab81f29edf07c",
+        "finished_at": "2026-10-05T16:15:20.336328+00:00",
+        "input_hash": "95dccd03065036f6e533478b573aa1d89982d10729f2a5ab7e2537c70e232856",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "gemma3:4b",
+        "settings": {
+          "seed": 13,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:15:20.335964+00:00"
+      },
+      "runtime_seconds": 0.0004036249592900276,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"different contextual reading\",\"hypotheses\":[{\"category\":\"spiritual\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"different contextual reading\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"present\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"different contextual reading\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"different contextual reading\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Roho yangu haina amani [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:15:20.336619+00:00"
+        }
+      ],
+      "configuration_id": "comparison-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "different contextual reading",
+        "hypotheses": [
+          {
+            "category": "spiritual",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different contextual reading",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different contextual reading"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different contextual reading"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Roho yangu haina amani [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:comparison-qwen",
+        "cache_key": "22aab0837dd517c3290ff5ea64bb1e07ca2525d5a2a156822210f827dfb542d0",
+        "cache_used": false,
+        "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+        "digest": "a04b800408232d0e9d61a0c8fd088e6013934846b194e8a92d7ab81f29edf07c",
+        "finished_at": "2026-10-05T16:15:20.336723+00:00",
+        "input_hash": "95dccd03065036f6e533478b573aa1d89982d10729f2a5ab7e2537c70e232856",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:14b",
+        "settings": {
+          "seed": 14,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:15:20.336368+00:00"
+      },
+      "runtime_seconds": 0.0003940419992431998,
+      "status": "COMPLETED"
+    }
+  ],
+  "normalization": {
+    "changes": [],
+    "text": "Roho yangu haina amani",
+    "uncertainty": "No automatic normalization; original preserved"
+  },
+  "priority": {
+    "evidence": [],
+    "notice": "Research review priority only; no patient contact, diagnosis or treatment",
+    "queue": "STANDARD"
+  },
+  "provenance": {
+    "code_hash": "be3fd88107a19fce28ecda35175f1d6dca66385ad554e54a3c2eb5b9cf31e5a2",
+    "config_hash": "b760b75d6c68ef5071bfc6a560e05532a262913b2a4a5937974e10a40d9496d9",
+    "synthetic": true,
+    "upstream_commit": "a7cb9cbf90cffb186c69699b5a188f970d22e5b9"
+  },
+  "reviewer_disagreement": true,
+  "reviews": [
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "spiritual",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "spiritual unease",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "spiritual unease"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "spiritual unease"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED language and cultural reviewer"
+        ],
+        "id": "demo_ke",
+        "locality_familiarity": "SIMULATED Kenyan Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 1,
+      "timestamp": "2026-10-05T16:15:20.338019+00:00"
+    },
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "spiritual",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different contextual reading",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different contextual reading"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different contextual reading"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED clinical and lived-experience reviewer"
+        ],
+        "id": "demo_tz",
+        "locality_familiarity": "SIMULATED Tanzanian Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 2,
+      "timestamp": "2026-10-05T16:15:20.339281+00:00"
+    }
+  ],
+  "schema_version": "1.0",
+  "sense_links": [],
+  "source": {
+    "conversation": "A synthetic speaker uses a spiritual expression without further explanation.",
+    "evidence": [
+      {
+        "id": "E1",
+        "reference": "synthetic-fixture:SYN14",
+        "text": "A synthetic speaker uses a spiritual expression without further explanation."
+      }
+    ],
+    "language": "sw",
+    "language_spans": [],
+    "original_text": "Roho yangu haina amani",
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "region_variety": null,
+    "schema_version": "1.0",
+    "source_type": "constructed-text",
+    "speaker_ref": "SYN-person",
+    "speaker_role": "synthetic narrator",
+    "synthetic": true,
+    "utterance_id": "SYN14"
+  },
+  "stale_artifacts": [],
+  "state": "ADJUDICATED",
+  "terminology": {
+    "MFOEM": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOEM"
+      },
+      "queries": [
+        "spiritual unease"
+      ],
+      "resource": "MFOEM",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:15:20.340876+00:00"
+    },
+    "MFOMD": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOMD"
+      },
+      "queries": [
+        "spiritual unease"
+      ],
+      "resource": "MFOMD",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:15:20.340878+00:00"
+    },
+    "SNOMED_CT": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "SNOMED_CT"
+      },
+      "queries": [
+        "spiritual unease"
+      ],
+      "resource": "SNOMED_CT",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:15:20.340879+00:00"
+    }
+  },
+  "triage": {
+    "candidate": null,
+    "human_applicability_required": true,
+    "references": [],
+    "route": "NEW"
+  },
+  "version": 4
+}

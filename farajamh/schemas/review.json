@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:farajamh:schema:review:1",
+  "type": "object",
+  "properties": {
+    "action": {
+      "enum": [
+        "accept",
+        "minority",
+        "alternative",
+        "multiple",
+        "request_context",
+        "reject",
+        "unresolved",
+        "confirm_ckb"
+      ]
+    },
+    "preferred": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "meaning": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "enum": [
+              "cognitive",
+              "emotional",
+              "somatic",
+              "spiritual",
+              "clinical",
+              "context_specific",
+              "uncertain",
+              "social",
+              "non_distress",
+              "other"
+            ]
+          },
+          "semantic_frame": {
+            "type": "object",
+            "properties": {
+              "experience": {
+                "type": "string",
+                "minLength": 1
+              },
+              "cause": {
+                "type": "string",
+                "minLength": 1
+              },
+              "cultural_reading": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "experience",
+              "cause",
+              "cultural_reading"
+            ],
+            "additionalProperties": false
+          },
+          "qualifiers": {
+            "type": "object",
+            "properties": {
+              "experiencer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "assertion": {
+                "enum": [
+                  "affirmed",
+                  "negated",
+                  "uncertain",
+                  "unknown"
+                ]
+              },
+              "attribution": {
+                "type": "string",
+                "minLength": 1
+              },
+              "event_time": {
+                "type": "string",
+                "minLength": 1
+              },
+              "utterance_time": {
+                "type": "string",
+                "minLength": 1
+              },
+              "setting": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "experiencer",
+              "assertion",
+              "attribution",
+              "event_time",
+              "utterance_time",
+              "setting"
+            ],
+            "additionalProperties": false
+          },
+          "search_terms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "counterevidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "uncertainty": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cultural_notes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "reference": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "text",
+                "reference"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "id",
+          "meaning",
+          "category",
+          "semantic_frame",
+          "qualifiers",
+          "search_terms",
+          "evidence_refs",
+          "rationale",
+          "counterevidence",
+          "uncertainty",
+          "cultural_notes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "comment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "risk_signal": {
+      "enum": [
+        "flagged",
+        "not_flagged",
+        "uncertain"
+      ]
+    },
+    "applicability_confirmed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "action",
+    "preferred",
+    "comment",
+    "evidence_refs",
+    "uncertainties",
+    "risk_signal",
+    "applicability_confirmed"
+  ],
+  "additionalProperties": false
+}

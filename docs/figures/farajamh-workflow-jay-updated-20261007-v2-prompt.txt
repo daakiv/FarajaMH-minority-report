@@ -1,0 +1,75 @@
+Generation mode: built-in image_gen, referenced-image edit.
+
+Revision prompt:
+Edit the supplied FarajaMH infographic into a substantially clearer final landscape infographic. Retain professional navy/teal/amber palette, white background, crisp readable type and simple flat icons. Redesign layout as needed to make the arrows unambiguous, prioritising accurate topology over preserving the original layout. Highest supported native resolution, preferably 3840x2160. NO subtitle. The ONLY title is "FarajaMH Cultural Interpretation Workflow". Absolutely remove "Proposed workflow for discussion with Lucy and Slava"; do not replace it with anyone's names.
+
+Use this exact content and topology, with large readable text. Do not invent examples, codes, confidence percentages or clinical claims.
+
+TOP small two-step entry ribbon:
+"1  Utterance and context" / "Original wording • Language or dialect • Conversation"
+arrow to
+"2  Identify expression occurrences" / "Preserve full context • Reviewer can correct spans"
+Arrow into a dashed large rectangle labelled "For each expression occurrence". Inside the dashed rectangle include ALL interpretation, comparison and R1–R3 reviewer steps. Show a loop return labelled "Next expression" from completion back to the rectangle entry; this should mean repeating for every expression, not rerunning the same case endlessly.
+
+Within the loop, first row TWO PARALLEL cards, not chained:
+"Dictionary evidence" with "Matched entry • Meaning • Category • Source/version • Applicability"; and "Evidence source, not a vote".
+"Independent model pass" with "Original expression + context → literal translation, proposed meanings and categories"; and "Before dictionary exposure".
+Both cards have separate arrows that terminate ONLY in the next card "3  Compare evidence and interpretations". Do not point dictionary evidence into independent model pass.
+Comparison card contains FOUR compact labels: "Model–model" / "Model–dictionary" / "Category disagreement" / "Applicability disagreement".
+Applicability small text: "Distress or ordinary use? • Negated? • About whom? • When?"
+Below compare a clear routing decision:
+"Human review: all disagreements + a random sample of agreed cases"
+Two branches:
+"Selected for review" arrow to reviewer steps.
+"Agreed, not sampled" arrow to "Unreviewed model proposal" with "No approved mapping export"; this branch MUST NOT feed approved outputs.
+Say "Sampling rule requires research-protocol approval" in small text near routing.
+
+Reviewer row inside loop with distinct labels R1 R2 R3, not 1 2 3 again:
+"R1  Confirm meaning and category"
+"Clinical/cultural reviewer"
+"Select, edit, retain alternatives or request context"
+"Use workshop category definitions"
+arrow to
+"R2  Confirm or flag concept relationships"
+"Qualified terminology reviewer signs off"
+"MFOEM • MFOMD • SNOMED CT"
+"PHQ-9 / GAD-7 item links via LOINC"
+"Related item content ≠ an answer or score"
+arrow to
+"R3  Check and submit"
+"Evidence • Uncertainty • Separate safety assessment"
+"Versioned decision and mapping approval"
+Note adjoining R2: "Same person only if qualified for both roles."
+Optional amber branch from R1/R2 labelled "Request a second opinion" with "Unresolved meaning • Cultural or terminology expertise • Challenged decision".
+Unresolved branch labelled "Meaning unresolved → concept approval pending".
+
+Below dashed loop outside, OUTPUTS, only entered from completed APPROVED R3 path:
+"Approved local sense and concept relationships"
+forks to
+"SSSOM mapping records" / "Meaning-to-concept links • Relation • Reviewer • Evidence"
+and
+"OMOP vocabulary mapping, where suitable".
+OMOP mapping may contribute additional records to SSSOM, and separately has optional outgoing arrow to "OMOP data export, if required".
+Approved local sense remains valid without ontology/OMOP match. NO backwards arrows from mappings to approved local sense.
+
+Bottom FEEDBACK connector from approved reviewer corrections back to dictionary evidence, labelled:
+"Propose dictionary correction → curator approval → new dictionary version".
+Do not automatically overwrite dictionary based on one review.
+Narrow provenance strip:
+"Record: expression spans • model/version • prompt/version • dictionary/version • evidence • reviewer decisions"
+Narrow category strip if space:
+"Cognitive process • Emotional state • Somatic experience • Spiritual/supernatural • Clinical symptom • Context-specific • Other / cannot determine"
+Small label "Category scheme to be confirmed against the workshop library".
+Footer:
+"Dictionary evidence ≠ vote • Agreement ≠ correctness • Mapping ≠ diagnosis"
+"Safety assessed separately • No JSON editing for reviewers"
+
+Ensure readable spacing, coherent left-to-right/down arrows, no crossing through text. Use short text as supplied, not extra paragraphs. No Swahili worked example, no made-up ontology IDs, no automatic questionnaire scoring or diagnostic assessment. This is a workflow design, not a claim that the current app already implements it.
+
+Connector correction prompt:
+Edit this infographic, preserving all wording, title, colors, typography and panels. Correct only the connector topology carefully.
+1. REMOVE the entire giant teal 'Next expression' connector along the far right and lower dashed border, including its arrow into SSSOM. It falsely connects an unreviewed proposal to approved outputs. Replace it with a tiny standalone circular repeat icon beside 'For each expression occurrence', caption 'Repeat for each expression'. This repeat icon must not connect to any output or proposal.
+2. The 'Unreviewed model proposal / No approved mapping export' panel must have ONLY its incoming arrow from the routing panel. It is a terminal branch. No outgoing arrow.
+3. ADD an explicit teal connector from the bottom of R3 'Check and submit', labelled 'Approved decision', downwards out of the dashed review rectangle and then left along a clear narrow gap ABOVE the Outputs band, ending with a downwards arrow into the TOP of 'Approved local sense and concept relationships'. Route without touching any other panel or crossing text. ONLY approved R3 decisions feed this output. If necessary make a little extra vertical space between dashed loop and outputs so this elbow connector is clearly readable.
+4. Preserve the existing fork FROM approved local sense TO SSSOM and OMOP vocabulary mapping. Preserve OMOP optional export and small arrow OMOP vocabulary TO SSSOM.
+5. Preserve all other content including R1 R2 R3, second opinion, unresolved status, dictionary correction, categories, provenance and footer. No subtitle. No invented claims. Highest supported resolution.

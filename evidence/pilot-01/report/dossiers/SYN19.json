@@ -1,0 +1,900 @@
+{
+  "adjudication": {
+    "comparison_hash": "12e38b3797c48e9d001e7f1fbc76ac7a1a2ec74e12f8891ceffdb5c97325410c",
+    "decision": {
+      "action": "approve",
+      "evidence_refs": [
+        "E1"
+      ],
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "past worry",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "past year",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "past worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "past worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "risk_signal": "not_flagged"
+    },
+    "decision_hash": "5888e849995c6c12c5da509c299f67bd0f8d292c2726e2d941ecb7abb5bdba51",
+    "identity": {
+      "expertise": [
+        "SIMULATED contextual adjudicator"
+      ],
+      "id": "demo_arbitrator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "arbitrator"
+      ],
+      "simulated": true
+    },
+    "models_hash": "1d9a036399ee6f1a971182fd81e52b157c8988fa98938fac10f571f68108acdd",
+    "reviewed_version": 3,
+    "reviews_hash": "b8d666cc4e1cf0b9d96c145051439bf015ef7448eb6f26fbc4a59604753959d6",
+    "timestamp": "2026-10-05T16:01:07.213236+00:00"
+  },
+  "comparison": {
+    "assignments": [
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "past worry"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "past year",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-llama",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "past worry"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "past year",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G2",
+        "model": "medium-gemma",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different contextual reading"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "unknown",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G2",
+        "model": "comparison-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different contextual reading"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "unknown",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      }
+    ],
+    "automatic_flags_reviewable": true,
+    "counts": {
+      "abstaining": 0,
+      "completed": 4,
+      "failed": 0,
+      "selected": 4,
+      "voting": 4
+    },
+    "escalation": true,
+    "groups": [
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "past worry",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "past year",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "past worry"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "past worry"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-qwen"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "past worry",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "past year",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "past worry"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "past worry"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-llama"
+          }
+        ],
+        "id": "G1",
+        "models": [
+          "small-qwen",
+          "small-llama"
+        ],
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "past worry"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "past year",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "competing"
+      },
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "different contextual reading",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "unknown",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "different contextual reading"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "different contextual reading"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "medium-gemma"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "different contextual reading",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "self",
+                "event_time": "unknown",
+                "experiencer": "SYN-person",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "different contextual reading"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "different contextual reading"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "comparison-qwen"
+          }
+        ],
+        "id": "G2",
+        "models": [
+          "medium-gemma",
+          "comparison-qwen"
+        ],
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different contextual reading"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "unknown",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "competing"
+      }
+    ],
+    "majority_group": null,
+    "notice": "Agreement measures this grouping proposal, not truth or clinical certainty.",
+    "procedure": "semantic-frame-conservative-v1",
+    "state": "TIED",
+    "strict_majority_threshold": 3,
+    "substantive_dissent": true
+  },
+  "created_at": "2026-10-05T16:01:07.211224+00:00",
+  "external_evidence": [],
+  "mapping_reviews": [],
+  "mode": "fixture",
+  "models": [
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"past worry\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"past worry\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"past year\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"past worry\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"past worry\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Nilikuwa na mawazo mengi mwaka jana [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:01:07.209804+00:00"
+        }
+      ],
+      "configuration_id": "small-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "past worry",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "past worry",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "past year",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "past worry"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "past worry"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Nilikuwa na mawazo mengi mwaka jana [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-qwen",
+        "cache_key": "cd25acb664f286fb5883abc14addfb564819f10d88541abee3f77660071dad65",
+        "cache_used": false,
+        "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+        "digest": "7fcb80f78696e2e509efa191c327493f2311dbbbcc7d13ed5fd23f1a93a793f1",
+        "finished_at": "2026-10-05T16:01:07.209938+00:00",
+        "input_hash": "377f6174a61cd3613676526325681d3139de99380226b165bbb2add67fc7413a",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:3b",
+        "settings": {
+          "seed": 11,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:01:07.209500+00:00"
+      },
+      "runtime_seconds": 0.00048212503315880895,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"past worry\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"past worry\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"past year\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"past worry\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"past worry\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Nilikuwa na mawazo mengi mwaka jana [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:01:07.210282+00:00"
+        }
+      ],
+      "configuration_id": "small-llama",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "past worry",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "past worry",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "past year",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "past worry"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "past worry"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Nilikuwa na mawazo mengi mwaka jana [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-llama",
+        "cache_key": "34f96478580830caf98aff0f66f8103daacbf886396376376a97474a07b2f363",
+        "cache_used": false,
+        "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+        "digest": "7fcb80f78696e2e509efa191c327493f2311dbbbcc7d13ed5fd23f1a93a793f1",
+        "finished_at": "2026-10-05T16:01:07.210387+00:00",
+        "input_hash": "377f6174a61cd3613676526325681d3139de99380226b165bbb2add67fc7413a",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "llama3.2:3b",
+        "settings": {
+          "seed": 12,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:01:07.209985+00:00"
+      },
+      "runtime_seconds": 0.00044695904944092035,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"different contextual reading\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"different contextual reading\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"unknown\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"different contextual reading\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"different contextual reading\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Nilikuwa na mawazo mengi mwaka jana [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:01:07.210702+00:00"
+        }
+      ],
+      "configuration_id": "medium-gemma",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "different contextual reading",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different contextual reading",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "unknown",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different contextual reading"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different contextual reading"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Nilikuwa na mawazo mengi mwaka jana [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:medium-gemma",
+        "cache_key": "823967af91fc21df8f48780d00395b0d6747e37a7724ccc8d0902de11f072bcb",
+        "cache_used": false,
+        "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+        "digest": "361771baaff69aa3e5f1f14ff1b7f48d381efb50c09f4759abc240baa5289943",
+        "finished_at": "2026-10-05T16:01:07.210807+00:00",
+        "input_hash": "377f6174a61cd3613676526325681d3139de99380226b165bbb2add67fc7413a",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "gemma3:4b",
+        "settings": {
+          "seed": 13,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:01:07.210428+00:00"
+      },
+      "runtime_seconds": 0.00041858304757624865,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"different contextual reading\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"different contextual reading\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"self\",\"event_time\":\"unknown\",\"experiencer\":\"SYN-person\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"different contextual reading\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"different contextual reading\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Nilikuwa na mawazo mengi mwaka jana [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:01:07.211116+00:00"
+        }
+      ],
+      "configuration_id": "comparison-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "different contextual reading",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different contextual reading",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "unknown",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different contextual reading"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different contextual reading"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Nilikuwa na mawazo mengi mwaka jana [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:comparison-qwen",
+        "cache_key": "96f74e45006d362ce434762ab71336798129bebfb94a74437a672c160745d610",
+        "cache_used": false,
+        "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+        "digest": "361771baaff69aa3e5f1f14ff1b7f48d381efb50c09f4759abc240baa5289943",
+        "finished_at": "2026-10-05T16:01:07.211220+00:00",
+        "input_hash": "377f6174a61cd3613676526325681d3139de99380226b165bbb2add67fc7413a",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [],
+        "requested_model": "qwen2.5:14b",
+        "settings": {
+          "seed": 14,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:01:07.210847+00:00"
+      },
+      "runtime_seconds": 0.00041283300379291177,
+      "status": "COMPLETED"
+    }
+  ],
+  "normalization": {
+    "changes": [],
+    "text": "Nilikuwa na mawazo mengi mwaka jana",
+    "uncertainty": "No automatic normalization; original preserved"
+  },
+  "priority": {
+    "evidence": [],
+    "notice": "Research review priority only; no patient contact, diagnosis or treatment",
+    "queue": "STANDARD"
+  },
+  "provenance": {
+    "code_hash": "a989cfe1936243d7d1d8c281bb2a6f912340de32cae697b4a5212158a7841bca",
+    "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+    "synthetic": true,
+    "upstream_commit": "a7cb9cbf90cffb186c69699b5a188f970d22e5b9"
+  },
+  "reviewer_disagreement": true,
+  "reviews": [
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "past worry",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "past year",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "past worry"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "past worry"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED language and cultural reviewer"
+        ],
+        "id": "demo_ke",
+        "locality_familiarity": "SIMULATED Kenyan Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 1,
+      "timestamp": "2026-10-05T16:01:07.212485+00:00"
+    },
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different contextual reading",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "unknown",
+              "experiencer": "SYN-person",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different contextual reading"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different contextual reading"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED clinical and lived-experience reviewer"
+        ],
+        "id": "demo_tz",
+        "locality_familiarity": "SIMULATED Tanzanian Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 2,
+      "timestamp": "2026-10-05T16:01:07.212852+00:00"
+    }
+  ],
+  "schema_version": "1.0",
+  "sense_links": [],
+  "source": {
+    "conversation": "A synthetic speaker refers to worry last year; current experience is not stated.",
+    "evidence": [
+      {
+        "id": "E1",
+        "reference": "synthetic-fixture:SYN19",
+        "text": "A synthetic speaker refers to worry last year; current experience is not stated."
+      }
+    ],
+    "language": "sw",
+    "language_spans": [],
+    "original_text": "Nilikuwa na mawazo mengi mwaka jana",
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "past year",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "region_variety": null,
+    "schema_version": "1.0",
+    "source_type": "constructed-text",
+    "speaker_ref": "SYN-person",
+    "speaker_role": "synthetic narrator",
+    "synthetic": true,
+    "utterance_id": "SYN19"
+  },
+  "stale_artifacts": [],
+  "state": "ADJUDICATED",
+  "terminology": {
+    "MFOEM": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOEM"
+      },
+      "queries": [
+        "past worry"
+      ],
+      "resource": "MFOEM",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:01:07.213327+00:00"
+    },
+    "MFOMD": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOMD"
+      },
+      "queries": [
+        "past worry"
+      ],
+      "resource": "MFOMD",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:01:07.213329+00:00"
+    },
+    "SNOMED_CT": {
+      "candidates": [],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "SNOMED_CT"
+      },
+      "queries": [
+        "past worry"
+      ],
+      "resource": "SNOMED_CT",
+      "state": "NO_RESULTS",
+      "timestamp": "2026-10-05T16:01:07.213331+00:00"
+    }
+  },
+  "triage": {
+    "candidate": null,
+    "human_applicability_required": true,
+    "references": [],
+    "route": "NEW"
+  },
+  "version": 4
+}

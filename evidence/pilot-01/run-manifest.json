@@ -1,0 +1,186 @@
+{
+  "synthetic": true,
+  "simulated": true,
+  "network_blocked": true,
+  "fixture_manifest": {
+    "schema_version": "1.0",
+    "synthetic": true,
+    "dataset": "utterances.jsonl",
+    "count": 20,
+    "description": "Constructed, unvalidated Kiswahili/code-switching examples and deterministic model fixtures. No Sheng authenticity claim.",
+    "community_validated": false
+  },
+  "configuration": {
+    "mode": "fixture",
+    "storage": "/Users/davidamadi/Documents/Projects/farajamh-cultural-interpretation-pipeline/evidence/pilot-01/pilot.sqlite",
+    "output": "work/outputs",
+    "fixtures": "pilot/model_responses.json",
+    "prompt": "farajamh/prompts/interpret-v1.md",
+    "voting": {
+      "minimum_primary_votes": 3,
+      "grouping_version": "semantic-frame-conservative-v1",
+      "aliases": {}
+    },
+    "review": {
+      "minimum_reviewers": 2,
+      "ckb_requires_arbitration": true
+    },
+    "risk": {
+      "priority_signals": [
+        "flagged",
+        "uncertain"
+      ],
+      "terms": [
+        "suicide",
+        "self-harm",
+        "kill myself",
+        "kujidhuru",
+        "kujiua"
+      ]
+    },
+    "network": {
+      "allowed_origins": [
+        "http://127.0.0.1:11434",
+        "https://www.ebi.ac.uk"
+      ],
+      "timeout_seconds": 120
+    },
+    "models": [
+      {
+        "id": "small-qwen",
+        "provider": "fixture",
+        "model": "qwen2.5:3b",
+        "endpoint": "http://127.0.0.1:11434",
+        "settings": {
+          "temperature": 0,
+          "seed": 11
+        }
+      },
+      {
+        "id": "small-llama",
+        "provider": "fixture",
+        "model": "llama3.2:3b",
+        "endpoint": "http://127.0.0.1:11434",
+        "settings": {
+          "temperature": 0,
+          "seed": 12
+        }
+      },
+      {
+        "id": "medium-gemma",
+        "provider": "fixture",
+        "model": "gemma3:4b",
+        "endpoint": "http://127.0.0.1:11434",
+        "settings": {
+          "temperature": 0,
+          "seed": 13
+        }
+      },
+      {
+        "id": "comparison-qwen",
+        "provider": "fixture",
+        "model": "qwen2.5:14b",
+        "endpoint": "http://127.0.0.1:11434",
+        "settings": {
+          "temperature": 0,
+          "seed": 14
+        }
+      }
+    ],
+    "terminology": {
+      "MFOEM": {
+        "enabled": true,
+        "adapter": "owl",
+        "index": "work/mfoem.sqlite",
+        "endpoint": "https://www.ebi.ac.uk/ols4/api",
+        "ontology": "mfoem",
+        "release": "REQUIRED_FROM_AUTHORIZED_RESOURCE"
+      },
+      "MFOMD": {
+        "enabled": true,
+        "adapter": "owl",
+        "index": "work/mfomd.sqlite",
+        "endpoint": "https://www.ebi.ac.uk/ols4/api",
+        "ontology": "mfomd",
+        "release": "REQUIRED_FROM_AUTHORIZED_RESOURCE"
+      },
+      "SNOMED_CT": {
+        "enabled": true,
+        "adapter": "rf2",
+        "index": "work/snomed.sqlite",
+        "edition": "REQUIRED_EDITION_URI",
+        "release": "REQUIRED_YYYYMMDD",
+        "language_refset": "900000000000509007"
+      }
+    },
+    "identities": {
+      "demo_ke": {
+        "roles": [
+          "reviewer"
+        ],
+        "token_env": "FARAJA_DEMO_KE_TOKEN",
+        "simulated": true,
+        "expertise": [
+          "SIMULATED language and cultural reviewer"
+        ],
+        "locality_familiarity": "SIMULATED Kenyan Kiswahili familiarity"
+      },
+      "demo_tz": {
+        "roles": [
+          "reviewer"
+        ],
+        "token_env": "FARAJA_DEMO_TZ_TOKEN",
+        "simulated": true,
+        "expertise": [
+          "SIMULATED clinical and lived-experience reviewer"
+        ],
+        "locality_familiarity": "SIMULATED Tanzanian Kiswahili familiarity"
+      },
+      "demo_arbitrator": {
+        "roles": [
+          "arbitrator"
+        ],
+        "token_env": "FARAJA_DEMO_ARBITRATOR_TOKEN",
+        "simulated": true,
+        "expertise": [
+          "SIMULATED contextual adjudicator"
+        ],
+        "locality_familiarity": "SIMULATED Kenya/Tanzania review panel"
+      },
+      "demo_curator": {
+        "roles": [
+          "curator",
+          "terminology"
+        ],
+        "token_env": "FARAJA_DEMO_CURATOR_TOKEN",
+        "simulated": true,
+        "expertise": [
+          "SIMULATED terminology curator"
+        ],
+        "locality_familiarity": "SIMULATED Kenya/Tanzania review panel"
+      }
+    },
+    "exports": {
+      "mapping_set_id": "https://example.org/farajamh/research/mappings",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "sssom_schema_version": "1.0",
+      "curie_map": {
+        "FARAJA": "https://example.org/farajamh/sense/",
+        "reviewer": "https://example.org/farajamh/reviewer/",
+        "MFOEM": "http://purl.obolibrary.org/obo/MFOEM_",
+        "MFOMD": "http://purl.obolibrary.org/obo/MFOMD_",
+        "SNOMEDCT": "http://snomed.info/id/",
+        "FIXTURE": "https://example.org/farajamh/fictional-term/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "semapv": "https://w3id.org/semapv/vocab/"
+      }
+    },
+    "_base": "/Users/davidamadi/Documents/Projects/farajamh-cultural-interpretation-pipeline"
+  },
+  "export": {
+    "path": "/Users/davidamadi/Documents/Projects/farajamh-cultural-interpretation-pipeline/evidence/pilot-01/SIMULATED-artifacts/SIMULATED.mappings.sssom.tsv",
+    "rows": 3,
+    "demonstration": true,
+    "validation": "SSSOM 1.0 profile and local Croissant profile passed"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "terminology": {
+    "MFOEM": {
+      "resource": "MFOEM",
+      "queries": [
+        "emotional pain"
+      ],
+      "timestamp": "2026-10-05T20:00:29.705116+00:00",
+      "candidates": [
+        {
+          "id": "FIXTURE:MFOEM-emotional-pain",
+          "iri": "https://example.org/farajamh/fictional-term/MFOEM-emotional-pain",
+          "label": "Fictional emotional pain concept",
+          "definition": "Synthetic test concept; not an ontology entity",
+          "active": true,
+          "release": "FICTIONAL-1",
+          "fixture": true,
+          "lexical_score": 0.5,
+          "query": "emotional pain",
+          "mismatch_notes": [
+            "Lexical retrieval only; contextual fit and predicate require human review"
+          ]
+        }
+      ],
+      "state": "HITS",
+      "metadata": {
+        "resource": "MFOEM",
+        "release": "FICTIONAL-1",
+        "fixture": true
+      }
+    },
+    "MFOMD": {
+      "resource": "MFOMD",
+      "queries": [
+        "emotional pain"
+      ],
+      "timestamp": "2026-10-05T20:00:29.705274+00:00",
+      "candidates": [
+        {
+          "id": "FIXTURE:MFOMD-emotional-pain",
+          "iri": "https://example.org/farajamh/fictional-term/MFOMD-emotional-pain",
+          "label": "Fictional emotional pain concept",
+          "definition": "Synthetic test concept; not an ontology entity",
+          "active": true,
+          "release": "FICTIONAL-1",
+          "fixture": true,
+          "lexical_score": 0.5,
+          "query": "emotional pain",
+          "mismatch_notes": [
+            "Lexical retrieval only; contextual fit and predicate require human review"
+          ]
+        }
+      ],
+      "state": "HITS",
+      "metadata": {
+        "resource": "MFOMD",
+        "release": "FICTIONAL-1",
+        "fixture": true
+      }
+    },
+    "SNOMED_CT": {
+      "resource": "SNOMED_CT",
+      "queries": [
+        "emotional pain"
+      ],
+      "timestamp": "2026-10-05T20:00:29.705282+00:00",
+      "candidates": [
+        {
+          "id": "FIXTURE:SNOMED_CT-emotional-pain",
+          "iri": "https://example.org/farajamh/fictional-term/SNOMED_CT-emotional-pain",
+          "label": "Fictional emotional pain concept",
+          "definition": "Synthetic test concept; not an ontology entity",
+          "active": true,
+          "release": "FICTIONAL-1",
+          "fixture": true,
+          "lexical_score": 0.5,
+          "query": "emotional pain",
+          "mismatch_notes": [
+            "Lexical retrieval only; contextual fit and predicate require human review"
+          ]
+        }
+      ],
+      "state": "HITS",
+      "metadata": {
+        "resource": "SNOMED_CT",
+        "release": "FICTIONAL-1",
+        "fixture": true
+      }
+    }
+  },
+  "ready": true,
+  "model_calls": "NOT EXECUTED; model availability checked during run"
+}

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "farajamh-cultural-interpretation-pipeline"
+version = "1.0.0"
+description = "Synthetic-only research interpretation, adjudication and terminology prototype"
+requires-python = ">=3.11"
+dependencies = ["PyYAML==6.0.3", "jsonschema==4.25.1", "rdflib==7.2.1", "openpyxl==3.1.5"]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+validation = ["mlcroissant==1.0.22", "sssom-schema==1.0.0"]
+
+[project.scripts]
+farajamh = "farajamh.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["farajamh*"]
+
+[tool.setuptools.package-data]
+farajamh = ["schemas/*.json", "prompts/*.md", "templates/*.html", "resources/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

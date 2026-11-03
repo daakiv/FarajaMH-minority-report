@@ -1,0 +1,170 @@
+[
+  {
+    "row": 1,
+    "utterance_id": "SYN01",
+    "dossier_version": 12,
+    "decision": {
+      "candidate": {
+        "active": true,
+        "definition": "Synthetic test concept; not an ontology entity",
+        "fixture": true,
+        "id": "FIXTURE:MFOEM-emotional-pain",
+        "iri": "https://example.org/farajamh/fictional-term/MFOEM-emotional-pain",
+        "label": "Fictional emotional pain concept",
+        "lexical_score": 0.5,
+        "mismatch_notes": [
+          "Lexical retrieval only; contextual fit and predicate require human review"
+        ],
+        "query": "emotional pain",
+        "release": "FICTIONAL-1"
+      },
+      "decision": {
+        "action": "approve",
+        "candidate_id": "FIXTURE:MFOEM-emotional-pain",
+        "evidence_refs": [
+          "E1"
+        ],
+        "predicate": "skos:relatedMatch",
+        "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+        "resource": "MFOEM",
+        "sense_id": "FARAJA:demo-a3c624b70b9c"
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED terminology curator"
+        ],
+        "id": "demo_curator",
+        "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+        "roles": [
+          "curator",
+          "terminology"
+        ],
+        "simulated": true
+      },
+      "meaning_decision_hash": "9c79576bfa5d5a53f7ba6359933c2fcfcadd2b5f6cba7e06faab1323f1dec0c5",
+      "resource_metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOEM"
+      },
+      "reviewed_version": 5,
+      "sense_version": 1,
+      "stale": false,
+      "timestamp": "2026-10-05T16:01:07.114165+00:00"
+    },
+    "demonstration": true,
+    "curation_notice": "SIMULATED manual-curation workflow, not human-reviewed"
+  },
+  {
+    "row": 2,
+    "utterance_id": "SYN01",
+    "dossier_version": 12,
+    "decision": {
+      "candidate": {
+        "active": true,
+        "definition": "Synthetic test concept; not an ontology entity",
+        "fixture": true,
+        "id": "FIXTURE:MFOMD-emotional-pain",
+        "iri": "https://example.org/farajamh/fictional-term/MFOMD-emotional-pain",
+        "label": "Fictional emotional pain concept",
+        "lexical_score": 0.5,
+        "mismatch_notes": [
+          "Lexical retrieval only; contextual fit and predicate require human review"
+        ],
+        "query": "emotional pain",
+        "release": "FICTIONAL-1"
+      },
+      "decision": {
+        "action": "approve",
+        "candidate_id": "FIXTURE:MFOMD-emotional-pain",
+        "evidence_refs": [
+          "E1"
+        ],
+        "predicate": "skos:relatedMatch",
+        "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+        "resource": "MFOMD",
+        "sense_id": "FARAJA:demo-a3c624b70b9c"
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED terminology curator"
+        ],
+        "id": "demo_curator",
+        "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+        "roles": [
+          "curator",
+          "terminology"
+        ],
+        "simulated": true
+      },
+      "meaning_decision_hash": "9c79576bfa5d5a53f7ba6359933c2fcfcadd2b5f6cba7e06faab1323f1dec0c5",
+      "resource_metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOMD"
+      },
+      "reviewed_version": 6,
+      "sense_version": 1,
+      "stale": false,
+      "timestamp": "2026-10-05T16:01:07.114617+00:00"
+    },
+    "demonstration": true,
+    "curation_notice": "SIMULATED manual-curation workflow, not human-reviewed"
+  },
+  {
+    "row": 3,
+    "utterance_id": "SYN01",
+    "dossier_version": 12,
+    "decision": {
+      "candidate": {
+        "active": true,
+        "definition": "Synthetic test concept; not an ontology entity",
+        "fixture": true,
+        "id": "FIXTURE:SNOMED_CT-emotional-pain",
+        "iri": "https://example.org/farajamh/fictional-term/SNOMED_CT-emotional-pain",
+        "label": "Fictional emotional pain concept",
+        "lexical_score": 0.5,
+        "mismatch_notes": [
+          "Lexical retrieval only; contextual fit and predicate require human review"
+        ],
+        "query": "emotional pain",
+        "release": "FICTIONAL-1"
+      },
+      "decision": {
+        "action": "approve",
+        "candidate_id": "FIXTURE:SNOMED_CT-emotional-pain",
+        "evidence_refs": [
+          "E1"
+        ],
+        "predicate": "skos:relatedMatch",
+        "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+        "resource": "SNOMED_CT",
+        "sense_id": "FARAJA:demo-a3c624b70b9c"
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED terminology curator"
+        ],
+        "id": "demo_curator",
+        "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+        "roles": [
+          "curator",
+          "terminology"
+        ],
+        "simulated": true
+      },
+      "meaning_decision_hash": "9c79576bfa5d5a53f7ba6359933c2fcfcadd2b5f6cba7e06faab1323f1dec0c5",
+      "resource_metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "SNOMED_CT"
+      },
+      "reviewed_version": 7,
+      "sense_version": 1,
+      "stale": false,
+      "timestamp": "2026-10-05T16:01:07.115279+00:00"
+    },
+    "demonstration": true,
+    "curation_notice": "SIMULATED manual-curation workflow, not human-reviewed"
+  }
+]

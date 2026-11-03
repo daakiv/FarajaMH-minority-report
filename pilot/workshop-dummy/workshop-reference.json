@@ -1,0 +1,737 @@
+{
+  "provenance": {
+    "workbook": {
+      "filename": "_Room C_  Idioms_FarajaMH Workshop KE 1-2nd Oct 2026.xlsx",
+      "sha256": "064df1c690d7bfea89040cf6c4088686f9c6cb52744df9e070a70cc79dd87859"
+    },
+    "slides": {
+      "filename": "Idiom_family_definitions_slide (1) (1).pptx",
+      "sha256": "fb25f14e15ede9f856f69d7711a00d5c39919d084e3a70b76ebbc293cca380d7"
+    },
+    "review_status": "WORKSHOP_REFERENCE_NOT_VALIDATED_DICTIONARY",
+    "code_convention": "Workbook Cs and Ob retained by user instruction; R kept separately",
+    "diagnostic_labels": "Workshop DAP/comorbidity annotations are not verified patient diagnoses or gold labels"
+  },
+  "rows": [
+    {
+      "source_row": 2,
+      "cells": {
+        "A": "1.0",
+        "B": "nasikia hivi hivi/ Naskia ish ish/ sijui niseme aje",
+        "C": "non-standard swahili",
+        "D": "Am not okay but I can't explain what I feel",
+        "E": "need further investigation to conclude",
+        "F": "Adults in urban & rural areas",
+        "G": "all DAP",
+        "H": "context specific",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 3,
+      "cells": {
+        "A": "2",
+        "B": "naskia tafash",
+        "C": "sheng ( esp Coast)",
+        "D": "Siko poa/ my mind is crowded/ stress",
+        "E": "a feeling of distress",
+        "F": "Young ppl; urban esp Coast, Nakuru, some areas in Nairobi",
+        "G": "Anxiety",
+        "H": "sadness, grief, hopelessness",
+        "I": "ASD/PTSD",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 4,
+      "cells": {
+        "A": "3",
+        "B": "kichwa imejaa ngori",
+        "C": "sheng",
+        "D": "",
+        "E": "too much thoughts",
+        "F": "",
+        "G": "Depression",
+        "H": "Cognitive: thinking too much",
+        "I": "Anxiety",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 5,
+      "cells": {
+        "A": "4",
+        "B": "naskia nimejam",
+        "C": "sheng",
+        "D": "Am angry",
+        "E": "one is angry",
+        "F": "young",
+        "G": "Depression, Anxiety",
+        "H": "context specific\nemotional ",
+        "I": "Bipolar, Psychosis",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 6,
+      "cells": {
+        "A": "5",
+        "B": "nimechanganyikiwa",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Psychosis",
+        "H": "Madness, severe disturbance\n\nCognitive: thinking too much",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 7,
+      "cells": {
+        "A": "6",
+        "B": "niko na brain freeze/ brain fog",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "Cognitive: thinking too much",
+        "I": "Anxiety; Psychosis",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 8,
+      "cells": {
+        "A": "7",
+        "B": "Guchaya (kulilia ndani)",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "heart-centered",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 9,
+      "cells": {
+        "A": "8",
+        "B": "Niko delulu",
+        "C": "",
+        "D": "seeing things that are not there like. Short form of delusions.",
+        "E": "one is lost in their own world, they are lost from reality - observed mention from another person.",
+        "F": "",
+        "G": "Psychosis",
+        "H": "Cognitive: thinking too much\n\nMadness, severe disturbance\n\nContext  specific",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 10,
+      "cells": {
+        "A": "9",
+        "B": "Gutangika (Kusumbuka)/ Naskia nikiwa na mahangaiko",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Anxiety",
+        "H": "Fear, worry, shock, trauma",
+        "I": "Depression",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 11,
+      "cells": {
+        "A": "10",
+        "B": "Nasikia uzito kwa kifua",
+        "C": "",
+        "D": "sadness",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "Head, brain, somatic heat\n\nheart centered",
+        "I": "Anxiety",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 12,
+      "cells": {
+        "A": "11",
+        "B": "Naskia mzigo kwa mabega",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "heart-centered",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 13,
+      "cells": {
+        "A": "12",
+        "B": "Naskia butterflies kwa tumbo/ Naskia Tumbo joto",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Anxiety",
+        "H": "Head, brain, somatic heat\n\nOther bodily",
+        "I": "Depression; Acute stress; Psychosomatic Disorders",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 14,
+      "cells": {
+        "A": "13",
+        "B": "siwezi tulia / nilikuwa nasikia tu niende",
+        "C": "swahili",
+        "D": "they have a feeling on just being on the move",
+        "E": "",
+        "F": "",
+        "G": "Anxiety",
+        "H": "Cognive: thinking too much\n\nMadness, severe disturbance\n\nRisk or safety\n\nOther bodily",
+        "I": "Psychosis; ADHD; Bipolar",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 15,
+      "cells": {
+        "A": "14",
+        "B": "Nimetupa mbao/ Nimechizi/ Nimepoteza form",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Psychosis",
+        "H": "Madness, severe disturbance",
+        "I": "Bipolar, Psychosis",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 16,
+      "cells": {
+        "A": "15",
+        "B": "Nasikia Moyo inadunda/ roho inaenda mbio",
+        "C": "",
+        "D": "",
+        "E": "one having a panic attack",
+        "F": "",
+        "G": "Anxiety",
+        "H": "Head, brain, somatic heat",
+        "I": "Cardiovascular conditions, PTSD, MSD",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 17,
+      "cells": {
+        "A": "16",
+        "B": "Nikolow charge",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 18,
+      "cells": {
+        "A": "17",
+        "B": "niko down",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "sadness, grief, hoplessness",
+        "I": "Grief, bipolar",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 19,
+      "cells": {
+        "A": "18",
+        "B": "ninasuffocate",
+        "C": "",
+        "D": "short of breath",
+        "E": "panic attack",
+        "F": "",
+        "G": "Anxiety",
+        "H": "somatic\ncontext specific",
+        "I": "Phobias, Panic Attacks",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 20,
+      "cells": {
+        "A": "19",
+        "B": "bubble in my brain/ hole in the brain",
+        "C": "",
+        "D": "not able to think clearly",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "context specific",
+        "I": "Psychosis",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 21,
+      "cells": {
+        "A": "20",
+        "B": "niko na stress",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Anxiety",
+        "H": "cognitive: thinking too much",
+        "I": "Depression, PTSD",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 22,
+      "cells": {
+        "A": "21",
+        "B": "Nimeenda haywire",
+        "C": "",
+        "D": "feeling like things are going out of control",
+        "E": "",
+        "F": "",
+        "G": "Psychosis",
+        "H": "madness, severe disturbance",
+        "I": "Anxiety, ADHD, Depression",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 23,
+      "cells": {
+        "A": "22",
+        "B": "I'm tripping/ nachizi",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Psychosis",
+        "H": "madness, severe disturbance",
+        "I": "Substance-induced psychosis",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 24,
+      "cells": {
+        "A": "",
+        "B": "I'm too sleepy",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "sadness, grief, hoplessness",
+        "I": "Bipolar, Hypersomnia",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 25,
+      "cells": {
+        "A": "23",
+        "B": "miguu haitaki kutulia",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 26,
+      "cells": {
+        "A": "24",
+        "B": "im tired",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "sadness, grief, hoplessness",
+        "I": "Bipolar",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 27,
+      "cells": {
+        "A": "25",
+        "B": "internal vibration",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 28,
+      "cells": {
+        "A": "26",
+        "B": "sina nguvu",
+        "C": "",
+        "D": "low libido",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "fear, worry, shock, trauma\n\nOther bodily\n\nContext specific",
+        "I": "Hypertension, Diabetes, Trauma, PTSD",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 29,
+      "cells": {
+        "A": "27",
+        "B": "im too sleepy",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 30,
+      "cells": {
+        "A": "28",
+        "B": "internal vibration",
+        "C": "",
+        "D": "feeling body is shaking internally",
+        "E": "feeling anxious",
+        "F": "",
+        "G": "Anxiety",
+        "H": "Head, brain, somatic heat\n\nFear, worry, shock, trauma",
+        "I": "Depression, Psychosis",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 31,
+      "cells": {
+        "A": "29",
+        "B": "Nasikia kichwa iko sensitive",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression, Anxiety",
+        "H": "Head, brain, somatic heat",
+        "I": "Migraine, Insomnia",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 32,
+      "cells": {
+        "A": "30",
+        "B": "silali",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "Head, brain, somatic heat",
+        "I": "Anxiety, Depression, Bipolar, Psychosis",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 33,
+      "cells": {
+        "A": "31",
+        "B": "Naona giza",
+        "C": "",
+        "D": "am in a very low mood",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "Sadness, grief, hopelessness",
+        "I": "Epilepsy",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 34,
+      "cells": {
+        "A": "32",
+        "B": "My brain can't switch off",
+        "C": "",
+        "D": "overthinking",
+        "E": "",
+        "F": "",
+        "G": "Anxiety",
+        "H": "Cognitive\n\nFear, wory, shock , trauma",
+        "I": "ADHD, Bipolar",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 35,
+      "cells": {
+        "A": "33",
+        "B": "Rohani wangu hataki",
+        "C": "",
+        "D": "something in the spirit is telling me no",
+        "E": "",
+        "F": "",
+        "G": "Psychosis",
+        "H": "Spirit, ancestral withcrraft",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 36,
+      "cells": {
+        "A": "34",
+        "B": "thought braodcasting ",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 37,
+      "cells": {
+        "A": "35",
+        "B": "kichwa imejaa",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 38,
+      "cells": {
+        "A": "36",
+        "B": "sitaki kelele ",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 39,
+      "cells": {
+        "A": "37",
+        "B": "sitaki kukaa na watu",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 40,
+      "cells": {
+        "A": "38",
+        "B": "kuona vitu zangu",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 41,
+      "cells": {
+        "A": "39",
+        "B": "watu wananiongelelea",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 42,
+      "cells": {
+        "A": "40",
+        "B": "I don't think  I like others",
+        "C": "",
+        "D": "delusions",
+        "E": "",
+        "F": "",
+        "G": "Psychosis",
+        "H": "Cognitive",
+        "I": "Bipolar",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 43,
+      "cells": {
+        "A": "41",
+        "B": "sina maana",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 44,
+      "cells": {
+        "A": "42",
+        "B": "my head is about to expload",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 45,
+      "cells": {
+        "A": "43",
+        "B": "naskia niende mbali sana",
+        "C": "",
+        "D": "restlessness/ suicide",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "Risk or safety\n\nContext-specifi",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 46,
+      "cells": {
+        "A": "44",
+        "B": "nimechoka na maisha",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Depression",
+        "H": "Risk or safety",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 47,
+      "cells": {
+        "A": "45",
+        "B": "naongea sana",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Psychosis",
+        "H": "",
+        "I": "Bipolar",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 48,
+      "cells": {
+        "A": "46",
+        "B": "nacheka ovyo ovyo",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": ""
+      }
+    },
+    {
+      "source_row": 49,
+      "cells": {
+        "A": "47",
+        "B": "Mapepo na mashetani",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "Psychosis",
+        "H": "Spirit, ancestral withcrraft",
+        "I": "",
+        "J": ""
+      }
+    }
+  ]
+}

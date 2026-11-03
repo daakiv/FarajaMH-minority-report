@@ -1,0 +1,1045 @@
+{
+  "adjudication": {
+    "comparison_hash": "df87078e5d2709e5834669f32c692033c107bc2c67177107084834cb011a4628",
+    "decision": {
+      "action": "approve",
+      "evidence_refs": [
+        "E1"
+      ],
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "reported emotional pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "SYN-other",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "reported emotional pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "reported emotional pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "risk_signal": "not_flagged"
+    },
+    "decision_hash": "56f7e33164ca47a6ee8c773e6fe006ed997e4737868cac4ff9ec4d1a40d00183",
+    "identity": {
+      "expertise": [
+        "SIMULATED contextual adjudicator"
+      ],
+      "id": "demo_arbitrator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "arbitrator"
+      ],
+      "simulated": true
+    },
+    "models_hash": "a04bba2b0aed69eeaa374ed33500cf753536f73fe22e432715d3ff3944c96c04",
+    "reviewed_version": 3,
+    "reviews_hash": "bc8c6e435fa2deb659cc40a2a91ef9db4d312b97e27e612dadf07b3a1c9eeb7e",
+    "timestamp": "2026-10-05T16:01:07.149816+00:00"
+  },
+  "comparison": {
+    "assignments": [
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "reported emotional pain"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "SYN-other",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G1",
+        "model": "small-llama",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "reported emotional pain"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "SYN-other",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G2",
+        "model": "medium-gemma",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different attributed experiencer"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "unknown",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      },
+      {
+        "evidence_refs": [
+          "E1"
+        ],
+        "group": "G2",
+        "model": "comparison-qwen",
+        "reviewable": true,
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different attributed experiencer"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "unknown",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        }
+      }
+    ],
+    "automatic_flags_reviewable": true,
+    "counts": {
+      "abstaining": 0,
+      "completed": 4,
+      "failed": 0,
+      "selected": 4,
+      "voting": 4
+    },
+    "escalation": true,
+    "groups": [
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "reported emotional pain",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "reported",
+                "event_time": "present",
+                "experiencer": "SYN-other",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "reported emotional pain"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "reported emotional pain"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-qwen"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "reported emotional pain",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "reported",
+                "event_time": "present",
+                "experiencer": "SYN-other",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "reported emotional pain"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "reported emotional pain"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "small-llama"
+          }
+        ],
+        "id": "G1",
+        "models": [
+          "small-qwen",
+          "small-llama"
+        ],
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "reported emotional pain"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "SYN-other",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "competing"
+      },
+      {
+        "hypotheses": [
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "different attributed experiencer",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "reported",
+                "event_time": "present",
+                "experiencer": "unknown",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "different attributed experiencer"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "different attributed experiencer"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "medium-gemma"
+          },
+          {
+            "hypothesis": {
+              "category": "emotional",
+              "counterevidence": [
+                "Alternative readings may remain plausible"
+              ],
+              "cultural_notes": [],
+              "evidence_refs": [
+                "E1"
+              ],
+              "id": "h1",
+              "meaning": "different attributed experiencer",
+              "qualifiers": {
+                "assertion": "affirmed",
+                "attribution": "reported",
+                "event_time": "present",
+                "experiencer": "unknown",
+                "setting": "synthetic interview",
+                "utterance_time": "2026-01-01T12:00:00Z"
+              },
+              "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+              "search_terms": [
+                "different attributed experiencer"
+              ],
+              "semantic_frame": {
+                "cause": "contextual possibility",
+                "cultural_reading": "not established",
+                "experience": "different attributed experiencer"
+              },
+              "uncertainty": "Constructed unvalidated interpretation"
+            },
+            "model": "comparison-qwen"
+          }
+        ],
+        "id": "G2",
+        "models": [
+          "medium-gemma",
+          "comparison-qwen"
+        ],
+        "signature": {
+          "category": "emotional",
+          "frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different attributed experiencer"
+          },
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "unknown",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          }
+        },
+        "standing": "competing"
+      }
+    ],
+    "majority_group": null,
+    "notice": "Agreement measures this grouping proposal, not truth or clinical certainty.",
+    "procedure": "semantic-frame-conservative-v1",
+    "state": "TIED",
+    "strict_majority_threshold": 3,
+    "substantive_dissent": true
+  },
+  "created_at": "2026-10-05T16:01:07.147780+00:00",
+  "external_evidence": [],
+  "mapping_reviews": [],
+  "mode": "fixture",
+  "models": [
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"reported emotional pain\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"reported emotional pain\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"reported\",\"event_time\":\"present\",\"experiencer\":\"SYN-other\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"reported emotional pain\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"reported emotional pain\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Anasema moyo unauma [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:01:07.146364+00:00"
+        }
+      ],
+      "configuration_id": "small-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "reported emotional pain",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "reported emotional pain",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "reported",
+              "event_time": "present",
+              "experiencer": "SYN-other",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "reported emotional pain"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "reported emotional pain"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Anasema moyo unauma [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-qwen",
+        "cache_key": "b4e1f438435588657d3030108be92835b5b7cac56ea0e37dd23ebc167ef0830a",
+        "cache_used": false,
+        "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+        "digest": "03a51e19b87e939d95b79e9ecd959da863aaf2dbcab960cfe6255ae75ceb3557",
+        "finished_at": "2026-10-05T16:01:07.146476+00:00",
+        "input_hash": "89bfe05fc217fe372234c61baf82dcf3b8e8c2a79001a078f26a3a0517f14ecc",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [
+          [
+            "FARAJA:demo-051261cb5cef",
+            1
+          ]
+        ],
+        "requested_model": "qwen2.5:3b",
+        "settings": {
+          "seed": 11,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:01:07.146079+00:00"
+      },
+      "runtime_seconds": 0.0004438330070115626,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"reported emotional pain\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"reported emotional pain\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"reported\",\"event_time\":\"present\",\"experiencer\":\"SYN-other\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"reported emotional pain\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"reported emotional pain\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Anasema moyo unauma [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:01:07.146810+00:00"
+        }
+      ],
+      "configuration_id": "small-llama",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "reported emotional pain",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "reported emotional pain",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "reported",
+              "event_time": "present",
+              "experiencer": "SYN-other",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "reported emotional pain"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "reported emotional pain"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Anasema moyo unauma [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:small-llama",
+        "cache_key": "8f2015effd7b72c043ba95709cae64cb85e29eb896ff550434ba886cacbaf858",
+        "cache_used": false,
+        "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+        "digest": "03a51e19b87e939d95b79e9ecd959da863aaf2dbcab960cfe6255ae75ceb3557",
+        "finished_at": "2026-10-05T16:01:07.146917+00:00",
+        "input_hash": "89bfe05fc217fe372234c61baf82dcf3b8e8c2a79001a078f26a3a0517f14ecc",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [
+          [
+            "FARAJA:demo-051261cb5cef",
+            1
+          ]
+        ],
+        "requested_model": "llama3.2:3b",
+        "settings": {
+          "seed": 12,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:01:07.146526+00:00"
+      },
+      "runtime_seconds": 0.0004392499686218798,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"different attributed experiencer\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"different attributed experiencer\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"reported\",\"event_time\":\"present\",\"experiencer\":\"unknown\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"different attributed experiencer\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"different attributed experiencer\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Anasema moyo unauma [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:01:07.147244+00:00"
+        }
+      ],
+      "configuration_id": "medium-gemma",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "different attributed experiencer",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different attributed experiencer",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "reported",
+              "event_time": "present",
+              "experiencer": "unknown",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different attributed experiencer"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different attributed experiencer"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Anasema moyo unauma [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:medium-gemma",
+        "cache_key": "3b79df6779f4069fc7477d77fbbca8c3f678c1e4331dd42141cfa18ca2c750b8",
+        "cache_used": false,
+        "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+        "digest": "ef184c14261e123f5c7c266d6cfbeddcc57fa79dde03459c877016c0f906c695",
+        "finished_at": "2026-10-05T16:01:07.147347+00:00",
+        "input_hash": "89bfe05fc217fe372234c61baf82dcf3b8e8c2a79001a078f26a3a0517f14ecc",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [
+          [
+            "FARAJA:demo-051261cb5cef",
+            1
+          ]
+        ],
+        "requested_model": "gemma3:4b",
+        "settings": {
+          "seed": 13,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:01:07.146964+00:00"
+      },
+      "runtime_seconds": 0.000428917002864182,
+      "status": "COMPLETED"
+    },
+    {
+      "attempts": [
+        {
+          "raw": "{\"confidence_uncalibrated\":null,\"contextual_rendering\":\"different attributed experiencer\",\"hypotheses\":[{\"category\":\"emotional\",\"counterevidence\":[\"Alternative readings may remain plausible\"],\"cultural_notes\":[],\"evidence_refs\":[\"E1\"],\"id\":\"h1\",\"meaning\":\"different attributed experiencer\",\"qualifiers\":{\"assertion\":\"affirmed\",\"attribution\":\"reported\",\"event_time\":\"present\",\"experiencer\":\"unknown\",\"setting\":\"synthetic interview\",\"utterance_time\":\"2026-01-01T12:00:00Z\"},\"rationale\":\"Illustrative fixture reading of E1; not a verified cultural fact.\",\"search_terms\":[\"different attributed experiencer\"],\"semantic_frame\":{\"cause\":\"contextual possibility\",\"cultural_reading\":\"not established\",\"experience\":\"different attributed experiencer\"},\"uncertainty\":\"Constructed unvalidated interpretation\"}],\"literal_gloss\":\"Anasema moyo unauma [illustrative literal fixture]\",\"primary_hypothesis\":\"h1\",\"questions\":[\"What additional context would clarify this reading?\"],\"risk\":{\"evidence_refs\":[\"E1\"],\"rationale\":\"Synthetic risk routing example\",\"signal\":\"not_flagged\"},\"schema_version\":\"1.0\"}",
+          "timestamp": "2026-10-05T16:01:07.147674+00:00"
+        }
+      ],
+      "configuration_id": "comparison-qwen",
+      "output": {
+        "confidence_uncalibrated": null,
+        "contextual_rendering": "different attributed experiencer",
+        "hypotheses": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different attributed experiencer",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "reported",
+              "event_time": "present",
+              "experiencer": "unknown",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different attributed experiencer"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different attributed experiencer"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "literal_gloss": "Anasema moyo unauma [illustrative literal fixture]",
+        "primary_hypothesis": "h1",
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "risk": {
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example",
+          "signal": "not_flagged"
+        },
+        "schema_version": "1.0"
+      },
+      "provenance": {
+        "actual_model": "SIMULATED:comparison-qwen",
+        "cache_key": "e96a0427cbf5cdeafb516079de2225dd6c16992731e46410dc00530b4d7e8ea9",
+        "cache_used": false,
+        "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+        "digest": "ef184c14261e123f5c7c266d6cfbeddcc57fa79dde03459c877016c0f906c695",
+        "finished_at": "2026-10-05T16:01:07.147776+00:00",
+        "input_hash": "89bfe05fc217fe372234c61baf82dcf3b8e8c2a79001a078f26a3a0517f14ecc",
+        "prompt_hash": "ee59fe50b07b0afed9ec9c3c82cc02e17cd14ed034a28412b804779113a43973",
+        "provider": "fixture",
+        "reference_versions": [
+          [
+            "FARAJA:demo-051261cb5cef",
+            1
+          ]
+        ],
+        "requested_model": "qwen2.5:14b",
+        "settings": {
+          "seed": 14,
+          "temperature": 0
+        },
+        "started_at": "2026-10-05T16:01:07.147395+00:00"
+      },
+      "runtime_seconds": 0.00042741699144244194,
+      "status": "COMPLETED"
+    }
+  ],
+  "normalization": {
+    "changes": [],
+    "text": "Anasema moyo unauma",
+    "uncertainty": "No automatic normalization; original preserved"
+  },
+  "priority": {
+    "evidence": [],
+    "notice": "Research review priority only; no patient contact, diagnosis or treatment",
+    "queue": "STANDARD"
+  },
+  "provenance": {
+    "code_hash": "a989cfe1936243d7d1d8c281bb2a6f912340de32cae697b4a5212158a7841bca",
+    "config_hash": "7a2a3acbd1032213aa0604bcdf532e7c4a06823c0285a2842d1436352e494b08",
+    "synthetic": true,
+    "upstream_commit": "a7cb9cbf90cffb186c69699b5a188f970d22e5b9"
+  },
+  "reviewer_disagreement": true,
+  "reviews": [
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "reported emotional pain",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "reported",
+              "event_time": "present",
+              "experiencer": "SYN-other",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "reported emotional pain"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "reported emotional pain"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED language and cultural reviewer"
+        ],
+        "id": "demo_ke",
+        "locality_familiarity": "SIMULATED Kenyan Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 1,
+      "timestamp": "2026-10-05T16:01:07.149026+00:00"
+    },
+    {
+      "decision": {
+        "action": "accept",
+        "applicability_confirmed": false,
+        "comment": "SIMULATED independent submission for software testing only",
+        "evidence_refs": [
+          "E1"
+        ],
+        "preferred": [
+          {
+            "category": "emotional",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "cultural_notes": [],
+            "evidence_refs": [
+              "E1"
+            ],
+            "id": "h1",
+            "meaning": "different attributed experiencer",
+            "qualifiers": {
+              "assertion": "affirmed",
+              "attribution": "reported",
+              "event_time": "present",
+              "experiencer": "unknown",
+              "setting": "synthetic interview",
+              "utterance_time": "2026-01-01T12:00:00Z"
+            },
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "search_terms": [
+              "different attributed experiencer"
+            ],
+            "semantic_frame": {
+              "cause": "contextual possibility",
+              "cultural_reading": "not established",
+              "experience": "different attributed experiencer"
+            },
+            "uncertainty": "Constructed unvalidated interpretation"
+          }
+        ],
+        "risk_signal": "not_flagged",
+        "uncertainties": [
+          "Cultural validity NOT MEASURED"
+        ]
+      },
+      "identity": {
+        "expertise": [
+          "SIMULATED clinical and lived-experience reviewer"
+        ],
+        "id": "demo_tz",
+        "locality_familiarity": "SIMULATED Tanzanian Kiswahili familiarity",
+        "roles": [
+          "reviewer"
+        ],
+        "simulated": true
+      },
+      "reviewed_version": 2,
+      "timestamp": "2026-10-05T16:01:07.149418+00:00"
+    }
+  ],
+  "schema_version": "1.0",
+  "sense_links": [],
+  "source": {
+    "conversation": "A speaker reports another synthetic person's words; referent remains uncertain.",
+    "evidence": [
+      {
+        "id": "E1",
+        "reference": "synthetic-fixture:SYN06",
+        "text": "A speaker reports another synthetic person's words; referent remains uncertain."
+      }
+    ],
+    "language": "sw",
+    "language_spans": [],
+    "original_text": "Anasema moyo unauma",
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "reported",
+      "event_time": "present",
+      "experiencer": "SYN-other",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "region_variety": null,
+    "schema_version": "1.0",
+    "source_type": "constructed-text",
+    "speaker_ref": "SYN-person",
+    "speaker_role": "synthetic narrator",
+    "synthetic": true,
+    "utterance_id": "SYN06"
+  },
+  "stale_artifacts": [],
+  "state": "ADJUDICATED",
+  "terminology": {
+    "MFOEM": {
+      "candidates": [
+        {
+          "active": true,
+          "definition": "Synthetic test concept; not an ontology entity",
+          "fixture": true,
+          "id": "FIXTURE:MFOEM-emotional-pain",
+          "iri": "https://example.org/farajamh/fictional-term/MFOEM-emotional-pain",
+          "label": "Fictional emotional pain concept",
+          "lexical_score": 0.4,
+          "mismatch_notes": [
+            "Lexical retrieval only; contextual fit and predicate require human review"
+          ],
+          "query": "reported emotional pain",
+          "release": "FICTIONAL-1"
+        }
+      ],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOEM"
+      },
+      "queries": [
+        "reported emotional pain"
+      ],
+      "resource": "MFOEM",
+      "state": "HITS",
+      "timestamp": "2026-10-05T16:01:07.149899+00:00"
+    },
+    "MFOMD": {
+      "candidates": [
+        {
+          "active": true,
+          "definition": "Synthetic test concept; not an ontology entity",
+          "fixture": true,
+          "id": "FIXTURE:MFOMD-emotional-pain",
+          "iri": "https://example.org/farajamh/fictional-term/MFOMD-emotional-pain",
+          "label": "Fictional emotional pain concept",
+          "lexical_score": 0.4,
+          "mismatch_notes": [
+            "Lexical retrieval only; contextual fit and predicate require human review"
+          ],
+          "query": "reported emotional pain",
+          "release": "FICTIONAL-1"
+        }
+      ],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "MFOMD"
+      },
+      "queries": [
+        "reported emotional pain"
+      ],
+      "resource": "MFOMD",
+      "state": "HITS",
+      "timestamp": "2026-10-05T16:01:07.149906+00:00"
+    },
+    "SNOMED_CT": {
+      "candidates": [
+        {
+          "active": true,
+          "definition": "Synthetic test concept; not an ontology entity",
+          "fixture": true,
+          "id": "FIXTURE:SNOMED_CT-emotional-pain",
+          "iri": "https://example.org/farajamh/fictional-term/SNOMED_CT-emotional-pain",
+          "label": "Fictional emotional pain concept",
+          "lexical_score": 0.4,
+          "mismatch_notes": [
+            "Lexical retrieval only; contextual fit and predicate require human review"
+          ],
+          "query": "reported emotional pain",
+          "release": "FICTIONAL-1"
+        }
+      ],
+      "metadata": {
+        "fixture": true,
+        "release": "FICTIONAL-1",
+        "resource": "SNOMED_CT"
+      },
+      "queries": [
+        "reported emotional pain"
+      ],
+      "resource": "SNOMED_CT",
+      "state": "HITS",
+      "timestamp": "2026-10-05T16:01:07.149909+00:00"
+    }
+  },
+  "triage": {
+    "candidate": null,
+    "human_applicability_required": true,
+    "references": [
+      {
+        "applicability": {
+          "conversation": "The synthetic speaker mentions missing a friend; physical discomfort has not been excluded.",
+          "language": "sw",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "region_variety": null
+        },
+        "created_at": "2026-10-05T16:01:07.128399+00:00",
+        "cultural_applicability": "Constructed context only; not validated community usage",
+        "curator": {
+          "expertise": [
+            "SIMULATED terminology curator"
+          ],
+          "id": "demo_curator",
+          "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+          "roles": [
+            "curator",
+            "terminology"
+          ],
+          "simulated": true
+        },
+        "definition": "SIMULATED contextual sense: physical pain",
+        "english_gloss": "physical pain",
+        "evidence_refs": [
+          "E1"
+        ],
+        "example_refs": [
+          "SYN02"
+        ],
+        "id": "FARAJA:demo-051261cb5cef",
+        "meaning": {
+          "category": "somatic",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "physical pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "physical pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "physical pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        },
+        "meaning_decision_hash": "49a4d4ba818d2e00f7f24a8ba76de20e52e0f909fc7a7df1e7ed4e2a91f8850a",
+        "meaning_id": "h1",
+        "origin_utterance": "SYN02",
+        "owner": "SIMULATED research curator",
+        "reuse_approved": true,
+        "sense_id": "FARAJA:demo-051261cb5cef",
+        "simulated": true,
+        "source_label": "Moyo unauma",
+        "status": "APPROVED",
+        "synonyms": [],
+        "version": 1
+      }
+    ],
+    "route": "NEAR_MATCH"
+  },
+  "version": 4
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "card": 1,
+    "text_bottom": 490,
+    "example_top": 665,
+    "clearance": 175
+  },
+  {
+    "card": 2,
+    "text_bottom": 490,
+    "example_top": 665,
+    "clearance": 175
+  },
+  {
+    "card": 3,
+    "clearance": 17
+  },
+  {
+    "card": 5,
+    "clearance": 29
+  },
+  {
+    "card": 6,
+    "clearance": 81
+  },
+  {
+    "card": 7,
+    "clearance": 13
+  },
+  {
+    "card": 8,
+    "text_bottom": 1473,
+    "example_top": 1495,
+    "clearance": 22
+  }
+]

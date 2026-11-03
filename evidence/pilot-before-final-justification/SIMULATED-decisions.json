@@ -1,0 +1,3146 @@
+[
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "emotional",
+          "meaning": "emotional pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "emotional pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "emotional pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "somatic",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "somatic",
+          "meaning": "physical burning sensation",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "physical burning sensation"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "physical burning sensation"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "multiple",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "emotional",
+          "meaning": "emotional pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "emotional pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "emotional pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        },
+        {
+          "category": "somatic",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "somatic",
+          "meaning": "physical burning sensation",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "physical burning sensation"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "physical burning sensation"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "sense_id": "FARAJA:demo-a3c624b70b9c",
+      "meaning_id": "emotional",
+      "source_label": "My heart is burning",
+      "english_gloss": "emotional pain",
+      "definition": "SIMULATED contextual sense: emotional pain",
+      "synonyms": [],
+      "cultural_applicability": "Constructed context only; not validated community usage",
+      "example_refs": [
+        "SYN01"
+      ],
+      "evidence_refs": [
+        "E1"
+      ],
+      "owner": "SIMULATED research curator",
+      "reuse_approved": true,
+      "applicability": {
+        "language": "en",
+        "region_variety": null,
+        "conversation": "A synthetic speaker discusses a loss and also mentions discomfort after a meal.",
+        "assertion": "affirmed",
+        "attribution": "self",
+        "temporal_scope": "present",
+        "setting": "synthetic interview"
+      }
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "MFOEM",
+      "action": "approve",
+      "sense_id": "FARAJA:demo-a3c624b70b9c",
+      "candidate_id": "FIXTURE:MFOEM-emotional-pain",
+      "predicate": "skos:relatedMatch",
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "MFOMD",
+      "action": "approve",
+      "sense_id": "FARAJA:demo-a3c624b70b9c",
+      "candidate_id": "FIXTURE:MFOMD-emotional-pain",
+      "predicate": "skos:relatedMatch",
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "SNOMED_CT",
+      "action": "approve",
+      "sense_id": "FARAJA:demo-a3c624b70b9c",
+      "candidate_id": "FIXTURE:SNOMED_CT-emotional-pain",
+      "predicate": "skos:relatedMatch",
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "sense_id": "FARAJA:demo-fbf2add9da52",
+      "meaning_id": "somatic",
+      "source_label": "My heart is burning",
+      "english_gloss": "physical burning sensation",
+      "definition": "SIMULATED contextual sense: physical burning sensation",
+      "synonyms": [],
+      "cultural_applicability": "Constructed context only; not validated community usage",
+      "example_refs": [
+        "SYN01"
+      ],
+      "evidence_refs": [
+        "E1"
+      ],
+      "owner": "SIMULATED research curator",
+      "reuse_approved": true,
+      "applicability": {
+        "language": "en",
+        "region_variety": null,
+        "conversation": "A synthetic speaker discusses a loss and also mentions discomfort after a meal.",
+        "assertion": "affirmed",
+        "attribution": "self",
+        "temporal_scope": "present",
+        "setting": "synthetic interview"
+      }
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "MFOEM",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-fbf2add9da52",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "MFOMD",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-fbf2add9da52",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN01",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "SNOMED_CT",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-fbf2add9da52",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN02",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "emotional pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "emotional pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "emotional pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN02",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "minority",
+      "preferred": [
+        {
+          "category": "somatic",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "physical pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "physical pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "physical pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN02",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "somatic",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "physical pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "physical pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "physical pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN02",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "sense_id": "FARAJA:demo-051261cb5cef",
+      "meaning_id": "h1",
+      "source_label": "Moyo unauma",
+      "english_gloss": "physical pain",
+      "definition": "SIMULATED contextual sense: physical pain",
+      "synonyms": [],
+      "cultural_applicability": "Constructed context only; not validated community usage",
+      "example_refs": [
+        "SYN02"
+      ],
+      "evidence_refs": [
+        "E1"
+      ],
+      "owner": "SIMULATED research curator",
+      "reuse_approved": true,
+      "applicability": {
+        "language": "sw",
+        "region_variety": null,
+        "conversation": "The synthetic speaker mentions missing a friend; physical discomfort has not been excluded.",
+        "assertion": "affirmed",
+        "attribution": "self",
+        "temporal_scope": "present",
+        "setting": "synthetic interview"
+      }
+    }
+  },
+  {
+    "utterance_id": "SYN02",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "MFOEM",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-051261cb5cef",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN02",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "MFOMD",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-051261cb5cef",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN02",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "SNOMED_CT",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-051261cb5cef",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN03",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "overwhelmed",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "overwhelmed"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "overwhelmed"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN03",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "social",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "social pressure",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "social pressure"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "social pressure"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN03",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "unresolved",
+      "meanings": [],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN04",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "worry",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN04",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "worry",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN04",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "worry",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN04",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "sense_id": "FARAJA:demo-ecd1174f30b2",
+      "meaning_id": "h1",
+      "source_label": "Mawazo mengi",
+      "english_gloss": "worry",
+      "definition": "SIMULATED contextual sense: worry",
+      "synonyms": [],
+      "cultural_applicability": "Constructed context only; not validated community usage",
+      "example_refs": [
+        "SYN04"
+      ],
+      "evidence_refs": [
+        "E1"
+      ],
+      "owner": "SIMULATED research curator",
+      "reuse_approved": true,
+      "applicability": {
+        "language": "sw",
+        "region_variety": null,
+        "conversation": "The synthetic speaker is worried about an upcoming examination.",
+        "assertion": "affirmed",
+        "attribution": "self",
+        "temporal_scope": "present",
+        "setting": "synthetic interview"
+      }
+    }
+  },
+  {
+    "utterance_id": "SYN04",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "MFOEM",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-ecd1174f30b2",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN04",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "MFOMD",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-ecd1174f30b2",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN04",
+    "actor": "demo_curator",
+    "simulated": true,
+    "decision": {
+      "resource": "SNOMED_CT",
+      "action": "gap",
+      "sense_id": "FARAJA:demo-ecd1174f30b2",
+      "candidate_id": null,
+      "predicate": null,
+      "rationale": "SIMULATED fit decision against fictional release only; no real terminology verification",
+      "evidence_refs": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "utterance_id": "SYN05",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "denied worry",
+          "qualifiers": {
+            "assertion": "negated",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "denied worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "denied worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN05",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "denied worry",
+          "qualifiers": {
+            "assertion": "negated",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "denied worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "denied worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN05",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "denied worry",
+          "qualifiers": {
+            "assertion": "negated",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "denied worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "denied worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN06",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "reported emotional pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "SYN-other",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "reported emotional pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "reported emotional pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN06",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "different attributed experiencer",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "unknown",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "different attributed experiencer"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different attributed experiencer"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN06",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "reported emotional pain",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "reported",
+            "event_time": "present",
+            "experiencer": "SYN-other",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "reported emotional pain"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "reported emotional pain"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN07",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "fatigue",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "fatigue"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "fatigue"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN07",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "minority",
+      "preferred": [
+        {
+          "category": "uncertain",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "possible desire for absence",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "possible desire for absence"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "possible desire for absence"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN07",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "fatigue",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "fatigue"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "fatigue"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN08",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "dread",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "dread"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN08",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "dread",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "dread"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN08",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "dread",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "dread"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "dread"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN09",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "possible urgent distress",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "possible urgent distress"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "possible urgent distress"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN09",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "possible urgent distress",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "possible urgent distress"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "possible urgent distress"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN09",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "possible urgent distress",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "possible urgent distress"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "possible urgent distress"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN10",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "joy",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "joy"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "joy"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN10",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "joy",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "joy"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "joy"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN10",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "joy",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "joy"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "joy"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN11",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "enjoyment of food",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "enjoyment of food"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "enjoyment of food"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN11",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "enjoyment of food",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "enjoyment of food"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "enjoyment of food"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN11",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "enjoyment of food",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "enjoyment of food"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "enjoyment of food"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN12",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "work fatigue",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "work fatigue"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN12",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "work fatigue",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "work fatigue"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN12",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "work fatigue",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "work fatigue"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work fatigue"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN13",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "uncertain",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "uncertain state",
+          "qualifiers": {
+            "assertion": "uncertain",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "uncertain state"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "uncertain state"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN13",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "social",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "social pressure",
+          "qualifiers": {
+            "assertion": "uncertain",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "social pressure"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "social pressure"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN13",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "uncertain",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "uncertain state",
+          "qualifiers": {
+            "assertion": "uncertain",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "uncertain state"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "uncertain state"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN14",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "spiritual",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "spiritual unease",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "spiritual unease"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "spiritual unease"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN14",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "spiritual",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "different contextual reading",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "different contextual reading"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different contextual reading"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN14",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "spiritual",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "spiritual unease",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "spiritual unease"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "spiritual unease"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN15",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "social",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "work stress",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "work stress"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work stress"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN15",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "social",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "work stress",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "work stress"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work stress"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN15",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "social",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "work stress",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "work stress"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "work stress"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN16",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "sadness",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "sadness"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "sadness"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN16",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "sadness",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "sadness"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "sadness"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN16",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "sadness",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "sadness"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "sadness"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN17",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "uncertain",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "uncertain description",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "uncertain description"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "uncertain description"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN17",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "uncertain",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "uncertain description",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "uncertain description"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "uncertain description"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN17",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "request_context",
+      "meanings": [],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN18",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "low mood",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "low mood"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "low mood"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN18",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "low mood",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "low mood"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "low mood"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN18",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "low mood",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "low mood"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "low mood"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN19",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "past worry",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "past year",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "past worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "past worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN19",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "different contextual reading",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "unknown",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "different contextual reading"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "different contextual reading"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN19",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "emotional",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "past worry",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "past year",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "past worry"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "past worry"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  },
+  {
+    "utterance_id": "SYN20",
+    "actor": "demo_ke",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "celebration planning",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "celebration planning"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "celebration planning"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN20",
+    "actor": "demo_tz",
+    "simulated": true,
+    "decision": {
+      "action": "accept",
+      "preferred": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "celebration planning",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "celebration planning"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "celebration planning"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "comment": "SIMULATED independent submission for software testing only",
+      "evidence_refs": [
+        "E1"
+      ],
+      "uncertainties": [
+        "Cultural validity NOT MEASURED"
+      ],
+      "risk_signal": "not_flagged",
+      "applicability_confirmed": false
+    }
+  },
+  {
+    "utterance_id": "SYN20",
+    "actor": "demo_arbitrator",
+    "simulated": true,
+    "decision": {
+      "action": "approve",
+      "meanings": [
+        {
+          "category": "non_distress",
+          "counterevidence": [
+            "Alternative readings may remain plausible"
+          ],
+          "cultural_notes": [],
+          "evidence_refs": [
+            "E1"
+          ],
+          "id": "h1",
+          "meaning": "celebration planning",
+          "qualifiers": {
+            "assertion": "affirmed",
+            "attribution": "self",
+            "event_time": "present",
+            "experiencer": "SYN-person",
+            "setting": "synthetic interview",
+            "utterance_time": "2026-01-01T12:00:00Z"
+          },
+          "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+          "search_terms": [
+            "celebration planning"
+          ],
+          "semantic_frame": {
+            "cause": "contextual possibility",
+            "cultural_reading": "not established",
+            "experience": "celebration planning"
+          },
+          "uncertainty": "Constructed unvalidated interpretation"
+        }
+      ],
+      "rationale": "SIMULATED adjudication; competing readings in the burning-heart example are illustrative, not cultural facts.",
+      "evidence_refs": [
+        "E1"
+      ],
+      "risk_signal": "not_flagged"
+    }
+  }
+]

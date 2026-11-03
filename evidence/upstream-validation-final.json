@@ -1,0 +1,10 @@
+{
+  "sssom_schema": "1.0.0",
+  "official_mapping_model_rows": 3,
+  "mlcroissant": "1.0.22",
+  "recordset_counts": {
+    "records/approved-synthetic.csv": 18,
+    "records/approved-mappings.csv": 3
+  },
+  "network_blocked": true
+}

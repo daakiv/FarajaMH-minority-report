@@ -1,0 +1,107 @@
+# Explicit live retrieval for synthetic research tests. No credentials stored here.
+mode: connected
+storage: work/live.sqlite  # connected-mode cases only; earlier fixture/local cases stay in work/research.sqlite
+output: work/outputs
+fixtures: pilot/model_responses.json
+prompt: farajamh/prompts/interpret-v2.md  # v2 asks for numeric confidence; config.yaml fixtures stay on v1
+voting:
+  minimum_primary_votes: 3
+  grouping_version: semantic-frame-conservative-v1
+  aliases: {}
+review:
+  workflow: single_reviewer
+  minimum_reviewers: 2
+  ckb_requires_arbitration: true
+risk:
+  priority_signals:
+  - flagged
+  - uncertain
+  terms:
+  - suicide
+  - self-harm
+  - kill myself
+  - kujidhuru
+  - kujiua
+network:
+  allowed_origins:
+  - http://127.0.0.1:11434
+  - https://www.ebi.ac.uk
+  timeout_seconds: 120
+models:
+- id: gemma3:12b
+  provider: ollama
+  model: gemma3:12b
+  endpoint: http://127.0.0.1:11434
+  settings:
+    temperature: 0
+    seed: 42
+- id: qwen2.5:7b
+  provider: ollama
+  model: qwen2.5:7b
+  endpoint: http://127.0.0.1:11434
+  settings:
+    temperature: 0
+    seed: 42
+- id: llama3.1:8b
+  provider: ollama
+  model: llama3.1:8b
+  endpoint: http://127.0.0.1:11434
+  settings:
+    temperature: 0
+    seed: 42
+terminology:
+  MFOEM:
+    enabled: true
+    adapter: ols
+    limit: 20
+    endpoint: https://www.ebi.ac.uk/ols4/api
+    ontology: mfoem
+    release: '2025-07-31'
+    experimental_lookup_only: false
+  MFOMD:
+    enabled: true
+    adapter: ols
+    limit: 20
+    endpoint: https://www.ebi.ac.uk/ols4/api
+    ontology: mfomd
+    release: '2020-04-26'
+    experimental_lookup_only: false
+  SNOMED_CT:
+    enabled: true
+    adapter: ols
+    limit: 20
+    endpoint: https://www.ebi.ac.uk/ols4/api
+    ontology: snomed
+    release: http://snomed.info/sct/900000000000207008/version/20251017
+    experimental_lookup_only: true
+identities:
+  david_local:
+    roles:
+    - reviewer
+    - curator
+    - terminology
+    token_env: FARAJA_DAVID_TOKEN
+    simulated: false
+    expertise:
+    - User-controlled research test reviewer; qualification not verified by software
+    locality_familiarity: User supplied review
+exports:
+  mapping_set_id: https://example.org/farajamh/research/mappings
+  license: https://creativecommons.org/licenses/by/4.0/
+  sssom_schema_version: '1.0'
+  curie_map:
+    FARAJA: https://example.org/farajamh/sense/
+    reviewer: https://example.org/farajamh/reviewer/
+    MFOEM: http://purl.obolibrary.org/obo/MFOEM_
+    MFOMD: http://purl.obolibrary.org/obo/MFOMD_
+    SNOMEDCT: http://snomed.info/id/
+    FIXTURE: https://example.org/farajamh/fictional-term/
+    skos: http://www.w3.org/2004/02/skos/core#
+    semapv: https://w3id.org/semapv/vocab/
+dictionary:
+  path: pilot/workshop-dummy/dictionary.json
+
+retrieval:
+  ranking:
+    model: nomic-embed-text:latest
+    endpoint: http://127.0.0.1:11434

@@ -1,0 +1,11 @@
+{
+  "resource": "MFOEM",
+  "action": "approve",
+  "sense_id": "FARAJA:example-emotional-pain",
+  "candidate_id": "FIXTURE:MFOEM-emotional-pain",
+  "predicate": "skos:relatedMatch",
+  "rationale": "SIMULATED relation to a fictional candidate",
+  "evidence_refs": [
+    "E1"
+  ]
+}

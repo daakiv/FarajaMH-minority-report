@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "dataset": "utterances.jsonl",
+  "count": 20,
+  "description": "Constructed, unvalidated Kiswahili/code-switching examples and deterministic model fixtures. No Sheng authenticity claim.",
+  "community_validated": false
+}

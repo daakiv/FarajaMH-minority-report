@@ -1,0 +1,26 @@
+{
+  "sense_id": "FARAJA:example-emotional-pain",
+  "meaning_id": "h1",
+  "source_label": "My heart is burning",
+  "english_gloss": "emotional pain",
+  "definition": "SIMULATED contextual emotional pain sense",
+  "synonyms": [],
+  "cultural_applicability": "Constructed example only",
+  "example_refs": [
+    "SYN01"
+  ],
+  "evidence_refs": [
+    "E1"
+  ],
+  "owner": "SIMULATED curator",
+  "reuse_approved": true,
+  "applicability": {
+    "language": "en",
+    "region_variety": null,
+    "conversation": "A synthetic speaker discusses a loss and also mentions discomfort after a meal.",
+    "assertion": "affirmed",
+    "attribution": "self",
+    "temporal_scope": "present",
+    "setting": "synthetic interview"
+  }
+}

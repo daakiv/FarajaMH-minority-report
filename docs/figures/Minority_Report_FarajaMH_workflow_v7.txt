@@ -1,0 +1,119 @@
+The Minority Report · FarajaMH
+1
+Utterance and context
+2
+Identify expressions
+3
+Model interpretations
+4
+Dictionary evidence
+5
+Compare and route
+6
+HITL Review: meaning
+7
+Terminology lookup
+8
+Record and outputs
+Original wording · language or dialect ·
+setting
+Keep the source-language record
+Illustrative example
+“Moyo wangu unaniuma”
+Synthetic context: grief and reported
+chest discomfort
+Extract each expression as a span
+Keep full context; reviewers may
+correct boundaries
+Illustrative example
+Span: “Moyo wangu unaniuma”
+Retain grief and chest-discomfort
+context
+Model A
+Model B
+Model C
++ more
+Separate calls before dictionary
+exposure
+Model and prompt versions pinned
+Translation · meanings · category ·
+evidence
+Confidence recorded, never used for
+routing
+Illustrative example
+Model A (mock): emotional pain
+Model B (mock): possible chest pain
+Model C (mock): context unclear
+Digital, versioned idiom library
+Proposed seed: FarajaMH workshop
+library
+Meaning · category · context limits ·
+source
+Evidence source, not a vote
+Illustrative example
+Mock entry: emotional pain
+Check applicability to this speaker and
+context
+Model–model: Do the models agree?
+Model–dictionary: Do they match the
+library?
+Check category and applicability:
+negation · experiencer · time
+Review all disagreements, all safety flags
+and a random sample of agreed cases
+Other agreed cases: unreviewed; no
+approved mapping or export
+Illustrative example
+Emotional vs physical reading
+Speaker · not negated · current
+Chest-pain concern: assess separately
+R1 · Meaning and category
+Safety assessment remains separate
+Second opinion when needed
+Unresolved meaning → request context
+Qualified reviewers · no JSON editing
+Illustrative example
+Illustrative approved meaning:
+emotional pain linked to grief
+Chest-pain concern still requires
+separate assessment
+Automated candidates
+From the terminology service, using the
+approved meaning
+MFOEM · MFOMD · SNOMED CT
+LOINC (PHQ-9/GAD-7 items)
+OMOP standard vocabularies
+R2 · Terminologist sign-off
+Exact, close or related match · record a gap
+· defer
+A local concept can remain without an
+external match.
+Illustrative example
+Query: emotional pain linked to grief
+External match pending
+Related item ≠ questionnaire score
+Versioned decision recorded
+SSSOM: relation · justification ·
+provenance
+Suitable validated mappings → OMOP
+Custom, non-standard local IDs >
+2,000,000,000
+Optional export when required
+Illustrative example
+Retain reviewed local meaning
+No external mapping or export while
+pending
+Mappings are not patient outcomes
+Selected for
+review
+Approved
+meaning
+Record
+decision
+For each expression, steps 3–7 repeat
+Correction proposal → curator approval → new dictionary version (no automatic overwrite)
+Dictionary evidence ≠ model vote
+Model agreement ≠ correctness
+Concept mapping ≠ diagnosis
+Illustrative example: the context, dictionary entry, model outputs and review are invented; Swahili readings and codes need verification.
+No real patient data in consumer chatbots. Proposed design: not yet adopted or implemented.

@@ -1,0 +1,937 @@
+[
+  {
+    "utterance_id": "SYN01",
+    "source_version": 12,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [
+      {
+        "id": "FARAJA:demo-a3c624b70b9c",
+        "meaning_id": "emotional",
+        "version": 1
+      },
+      {
+        "id": "FARAJA:demo-fbf2add9da52",
+        "meaning_id": "somatic",
+        "version": 1
+      }
+    ],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "emotional",
+        "meaning": "emotional pain",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "emotional pain"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "emotional pain"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      },
+      {
+        "category": "somatic",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "somatic",
+        "meaning": "physical burning sensation",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "physical burning sensation"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "physical burning sensation"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN02",
+    "source_version": 8,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [
+      {
+        "id": "FARAJA:demo-051261cb5cef",
+        "meaning_id": "h1",
+        "version": 1
+      }
+    ],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "somatic",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "physical pain",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "physical pain"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "physical pain"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN04",
+    "source_version": 8,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [
+      {
+        "id": "FARAJA:demo-ecd1174f30b2",
+        "meaning_id": "h1",
+        "version": 1
+      }
+    ],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "worry",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "worry"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "worry"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN05",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "negated",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "denied worry",
+        "qualifiers": {
+          "assertion": "negated",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "denied worry"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "denied worry"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN06",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "reported",
+      "event_time": "present",
+      "experiencer": "SYN-other",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "reported emotional pain",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "reported",
+          "event_time": "present",
+          "experiencer": "SYN-other",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "reported emotional pain"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "reported emotional pain"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN07",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "fatigue",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "fatigue"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "fatigue"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "PRIORITY",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN08",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "dread",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "dread"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "dread"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "PRIORITY",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN09",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "possible urgent distress",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "possible urgent distress"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "possible urgent distress"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "PRIORITY",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN10",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "non_distress",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "joy",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "joy"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "joy"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN11",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "non_distress",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "enjoyment of food",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "enjoyment of food"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "enjoyment of food"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN12",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "work fatigue",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "work fatigue"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "work fatigue"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN13",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "uncertain",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "uncertain",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "uncertain state",
+        "qualifiers": {
+          "assertion": "uncertain",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "uncertain state"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "uncertain state"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN14",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "spiritual",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "spiritual unease",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "spiritual unease"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "spiritual unease"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN15",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "social",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "work stress",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "work stress"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "work stress"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN16",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "sadness",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "sadness"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "sadness"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN18",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "low mood",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "low mood"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "low mood"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN19",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "past year",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "emotional",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "past worry",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "past year",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "past worry"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "past worry"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  },
+  {
+    "utterance_id": "SYN20",
+    "source_version": 4,
+    "synthetic": true,
+    "simulated_review": true,
+    "sense_links": [],
+    "qualifiers": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "event_time": "present",
+      "experiencer": "SYN-person",
+      "setting": "synthetic interview",
+      "utterance_time": "2026-01-01T12:00:00Z"
+    },
+    "adjudicated_meanings": [
+      {
+        "category": "non_distress",
+        "counterevidence": [
+          "Alternative readings may remain plausible"
+        ],
+        "cultural_notes": [],
+        "evidence_refs": [
+          "E1"
+        ],
+        "id": "h1",
+        "meaning": "celebration planning",
+        "qualifiers": {
+          "assertion": "affirmed",
+          "attribution": "self",
+          "event_time": "present",
+          "experiencer": "SYN-person",
+          "setting": "synthetic interview",
+          "utterance_time": "2026-01-01T12:00:00Z"
+        },
+        "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+        "search_terms": [
+          "celebration planning"
+        ],
+        "semantic_frame": {
+          "cause": "contextual possibility",
+          "cultural_reading": "not established",
+          "experience": "celebration planning"
+        },
+        "uncertainty": "Constructed unvalidated interpretation"
+      }
+    ],
+    "risk_review_queue": "STANDARD",
+    "omop_concept_id": null
+  }
+]

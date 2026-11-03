@@ -1,0 +1,681 @@
+{
+  "MFOEM": {
+    "state": "HITS",
+    "by_meaning": {
+      "meaning-65aa85f3-bce6-4145-bbb2-c7bac948b8b7": {
+        "meaning": "Racing-heart sensation before a meeting with the boss",
+        "queries": [
+          "palpitations",
+          "racing heart"
+        ],
+        "state": "NO_RESULTS",
+        "ranking": {
+          "meaning_id": "meaning-65aa85f3-bce6-4145-bbb2-c7bac948b8b7",
+          "method": "not applicable",
+          "notice": "No candidates to rank"
+        },
+        "coverage": [
+          {
+            "limit": 20,
+            "query": "palpitations",
+            "returned": 0,
+            "total_reported": 0
+          },
+          {
+            "limit": 20,
+            "query": "racing heart",
+            "returned": 0,
+            "total_reported": 0
+          }
+        ],
+        "candidates": []
+      },
+      "meaning-b2d2896c-b462-4055-aeea-861dad1c74ad": {
+        "meaning": "Feeling anxious before a meeting with the boss",
+        "queries": [
+          "anxiety",
+          "nervousness"
+        ],
+        "state": "HITS",
+        "ranking": {
+          "approved_meaning": "Feeling anxious before a meeting with the boss [category: emotional]",
+          "input_hash": "e1e95bede2a98a9e44175ca59ecc23cca35fcea77f0fd585b297f442649ac3d1",
+          "meaning_id": "meaning-b2d2896c-b462-4055-aeea-861dad1c74ad",
+          "method": "local embedding cosine",
+          "model": "nomic-embed-text:latest",
+          "model_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+          "notice": "Similarity is not confidence, approval or proof of a semantic gap."
+        },
+        "coverage": [
+          {
+            "limit": 20,
+            "query": "anxiety",
+            "returned": 5,
+            "total_reported": 5
+          },
+          {
+            "limit": 20,
+            "query": "nervousness",
+            "returned": 3,
+            "total_reported": 3
+          }
+        ],
+        "candidates": [
+          {
+            "id": "MFOEM:000196",
+            "label": "anxious mood",
+            "query": "anxiety",
+            "rank": 1,
+            "semantic_similarity": 0.6862036173204741
+          },
+          {
+            "id": "MFOEM:000124",
+            "label": "feeling nervous",
+            "query": "anxiety",
+            "rank": 2,
+            "semantic_similarity": 0.681364880645135
+          },
+          {
+            "id": "MFOEM:000028",
+            "label": "anxiety",
+            "query": "anxiety",
+            "rank": 3,
+            "semantic_similarity": 0.6498713302511531
+          },
+          {
+            "id": "MFOEM:000026",
+            "label": "fear",
+            "query": "anxiety",
+            "rank": 4,
+            "semantic_similarity": 0.6397578550510464
+          },
+          {
+            "id": "MFOEM:000025",
+            "label": "jealousy",
+            "query": "anxiety",
+            "rank": 5,
+            "semantic_similarity": 0.5748743006331397
+          },
+          {
+            "id": "MFOEM:000003",
+            "label": "physiological process involved in an emotion",
+            "query": "nervousness",
+            "rank": 6,
+            "semantic_similarity": 0.568146811954996
+          }
+        ]
+      }
+    }
+  },
+  "MFOMD": {
+    "state": "HITS",
+    "by_meaning": {
+      "meaning-65aa85f3-bce6-4145-bbb2-c7bac948b8b7": {
+        "meaning": "Racing-heart sensation before a meeting with the boss",
+        "queries": [
+          "palpitations",
+          "racing heart"
+        ],
+        "state": "NO_RESULTS",
+        "ranking": {
+          "meaning_id": "meaning-65aa85f3-bce6-4145-bbb2-c7bac948b8b7",
+          "method": "not applicable",
+          "notice": "No candidates to rank"
+        },
+        "coverage": [
+          {
+            "limit": 20,
+            "query": "palpitations",
+            "returned": 1,
+            "total_reported": 1
+          },
+          {
+            "limit": 20,
+            "query": "racing heart",
+            "returned": 0,
+            "total_reported": 0
+          }
+        ],
+        "candidates": []
+      },
+      "meaning-b2d2896c-b462-4055-aeea-861dad1c74ad": {
+        "meaning": "Feeling anxious before a meeting with the boss",
+        "queries": [
+          "anxiety",
+          "nervousness"
+        ],
+        "state": "HITS",
+        "ranking": {
+          "approved_meaning": "Feeling anxious before a meeting with the boss [category: emotional]",
+          "input_hash": "e1e95bede2a98a9e44175ca59ecc23cca35fcea77f0fd585b297f442649ac3d1",
+          "meaning_id": "meaning-b2d2896c-b462-4055-aeea-861dad1c74ad",
+          "method": "local embedding cosine",
+          "model": "nomic-embed-text:latest",
+          "model_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+          "notice": "Similarity is not confidence, approval or proof of a semantic gap."
+        },
+        "coverage": [
+          {
+            "limit": 20,
+            "query": "anxiety",
+            "returned": 20,
+            "total_reported": 33
+          },
+          {
+            "limit": 20,
+            "query": "nervousness",
+            "returned": 6,
+            "total_reported": 6
+          }
+        ],
+        "candidates": [
+          {
+            "id": "MFOMD:0000184",
+            "label": "nervousness",
+            "query": "anxiety",
+            "rank": 1,
+            "semantic_similarity": 0.6963076738558145
+          },
+          {
+            "id": "MFOMD:0000102",
+            "label": "apprehension",
+            "query": "anxiety",
+            "rank": 2,
+            "semantic_similarity": 0.6906211220155186
+          },
+          {
+            "id": "MFOMD:0000117",
+            "label": "pathological anxiety",
+            "query": "anxiety",
+            "rank": 3,
+            "semantic_similarity": 0.6587333017476649
+          },
+          {
+            "id": "MFOMD:0000188",
+            "label": "dysphoria",
+            "query": "anxiety",
+            "rank": 4,
+            "semantic_similarity": 0.5865883205922383
+          },
+          {
+            "id": "MFOMD:0000147",
+            "label": "nightmare",
+            "query": "anxiety",
+            "rank": 5,
+            "semantic_similarity": 0.5859201190924453
+          },
+          {
+            "id": "MFOMD:0000196",
+            "label": "hyperarousal",
+            "query": "anxiety",
+            "rank": 6,
+            "semantic_similarity": 0.5816296061121305
+          },
+          {
+            "id": "MFOMD:0000197",
+            "label": "substance-induced anxiety disorder",
+            "query": "anxiety",
+            "rank": 7,
+            "semantic_similarity": 0.5635509192932096
+          },
+          {
+            "id": "MFOMD:0000013",
+            "label": "depressed mood episode",
+            "query": "anxiety",
+            "rank": 8,
+            "semantic_similarity": 0.5622332638329762
+          },
+          {
+            "id": "MFOMD:0000189",
+            "label": "premenstrual dysphoric disorder",
+            "query": "anxiety",
+            "rank": 9,
+            "semantic_similarity": 0.5614806083170877
+          },
+          {
+            "id": "MFOMD:0000185",
+            "label": "paranoia",
+            "query": "anxiety",
+            "rank": 10,
+            "semantic_similarity": 0.5422704956384794
+          },
+          {
+            "id": "MFOMD:0000167",
+            "label": "defense mechanism",
+            "query": "anxiety",
+            "rank": 11,
+            "semantic_similarity": 0.5397198002065652
+          },
+          {
+            "id": "MFOMD:0000172",
+            "label": "displacement",
+            "query": "anxiety",
+            "rank": 12,
+            "semantic_similarity": 0.5393864842853292
+          },
+          {
+            "id": "MFOMD:0000107",
+            "label": "compulsion",
+            "query": "anxiety",
+            "rank": 13,
+            "semantic_similarity": 0.527670638179407
+          },
+          {
+            "id": "MFOMD:0000109",
+            "label": "obsession",
+            "query": "anxiety",
+            "rank": 14,
+            "semantic_similarity": 0.5250796223252658
+          },
+          {
+            "id": "MFOMD:0000081",
+            "label": "sexual desire disorder",
+            "query": "anxiety",
+            "rank": 15,
+            "semantic_similarity": 0.48518153897852156
+          },
+          {
+            "id": "MFOMD:0000046",
+            "label": "addiction disorder",
+            "query": "anxiety",
+            "rank": 16,
+            "semantic_similarity": 0.4818778479689519
+          }
+        ]
+      }
+    }
+  },
+  "SNOMED_CT": {
+    "state": "HITS",
+    "by_meaning": {
+      "meaning-65aa85f3-bce6-4145-bbb2-c7bac948b8b7": {
+        "meaning": "Racing-heart sensation before a meeting with the boss",
+        "queries": [
+          "palpitations",
+          "racing heart"
+        ],
+        "state": "HITS",
+        "ranking": {
+          "approved_meaning": "Racing-heart sensation before a meeting with the boss [category: somatic]",
+          "input_hash": "8dc3ff6e0536d0e20ad94204c0a5e52df81fe70c103a2e75e79236cd94f25223",
+          "meaning_id": "meaning-65aa85f3-bce6-4145-bbb2-c7bac948b8b7",
+          "method": "local embedding cosine",
+          "model": "nomic-embed-text:latest",
+          "model_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+          "notice": "Similarity is not confidence, approval or proof of a semantic gap."
+        },
+        "coverage": [
+          {
+            "limit": 20,
+            "query": "palpitations",
+            "returned": 6,
+            "total_reported": 6
+          },
+          {
+            "limit": 20,
+            "query": "racing heart",
+            "returned": 0,
+            "total_reported": 0
+          }
+        ],
+        "candidates": [
+          {
+            "id": "SNOMEDCT:80313002",
+            "label": "Palpitations",
+            "query": "palpitations",
+            "rank": 1,
+            "semantic_similarity": 0.620544822834769
+          },
+          {
+            "id": "SNOMEDCT:248648003",
+            "label": "Palpitations - rapid",
+            "query": "palpitations",
+            "rank": 2,
+            "semantic_similarity": 0.5979705108382645
+          },
+          {
+            "id": "SNOMEDCT:428919002",
+            "label": "Palpitations with regular rhythm",
+            "query": "palpitations",
+            "rank": 3,
+            "semantic_similarity": 0.582718640465459
+          },
+          {
+            "id": "SNOMEDCT:102590007",
+            "label": "Intermittent palpitations",
+            "query": "palpitations",
+            "rank": 4,
+            "semantic_similarity": 0.5692091632542537
+          },
+          {
+            "id": "SNOMEDCT:473122004",
+            "label": "History of palpitations",
+            "query": "palpitations",
+            "rank": 5,
+            "semantic_similarity": 0.5677414998733196
+          },
+          {
+            "id": "SNOMEDCT:161966006",
+            "label": "No palpitations",
+            "query": "palpitations",
+            "rank": 6,
+            "semantic_similarity": 0.5060139736835241
+          }
+        ]
+      },
+      "meaning-b2d2896c-b462-4055-aeea-861dad1c74ad": {
+        "meaning": "Feeling anxious before a meeting with the boss",
+        "queries": [
+          "anxiety",
+          "nervousness"
+        ],
+        "state": "HITS",
+        "ranking": {
+          "approved_meaning": "Feeling anxious before a meeting with the boss [category: emotional]",
+          "input_hash": "e1e95bede2a98a9e44175ca59ecc23cca35fcea77f0fd585b297f442649ac3d1",
+          "meaning_id": "meaning-b2d2896c-b462-4055-aeea-861dad1c74ad",
+          "method": "local embedding cosine",
+          "model": "nomic-embed-text:latest",
+          "model_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+          "notice": "Similarity is not confidence, approval or proof of a semantic gap."
+        },
+        "coverage": [
+          {
+            "limit": 20,
+            "query": "anxiety",
+            "returned": 20,
+            "total_reported": 194
+          },
+          {
+            "limit": 20,
+            "query": "nervousness",
+            "returned": 20,
+            "total_reported": 527
+          }
+        ],
+        "candidates": [
+          {
+            "id": "SNOMEDCT:48694002",
+            "label": "Anxiety",
+            "query": "anxiety",
+            "rank": 1,
+            "semantic_similarity": 0.6499719807909456
+          },
+          {
+            "id": "SNOMEDCT:416619008",
+            "label": "Depression anxiety stress scales anxiety score",
+            "query": "anxiety",
+            "rank": 2,
+            "semantic_similarity": 0.5936615696911662
+          },
+          {
+            "id": "SNOMEDCT:1141959006",
+            "label": "Abnormal anxiety related behavior (finding)",
+            "query": "anxiety",
+            "rank": 3,
+            "semantic_similarity": 0.5896062642046241
+          },
+          {
+            "id": "SNOMEDCT:21897009",
+            "label": "Generalized anxiety disorder (disorder)",
+            "query": "anxiety",
+            "rank": 4,
+            "semantic_similarity": 0.585591566410573
+          },
+          {
+            "id": "SNOMEDCT:718747002",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) generalized anxiety subscale",
+            "query": "anxiety",
+            "rank": 5,
+            "semantic_similarity": 0.5714354612705844
+          },
+          {
+            "id": "SNOMEDCT:718743003",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) total anxiety subscale",
+            "query": "anxiety",
+            "rank": 6,
+            "semantic_similarity": 0.5670385040281966
+          },
+          {
+            "id": "SNOMEDCT:718746006",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) separation anxiety subscale",
+            "query": "anxiety",
+            "rank": 7,
+            "semantic_similarity": 0.566695379741604
+          },
+          {
+            "id": "SNOMEDCT:11003002",
+            "label": "Nervous diarrhea (disorder)",
+            "query": "nervousness",
+            "rank": 8,
+            "semantic_similarity": 0.564869394977975
+          },
+          {
+            "id": "SNOMEDCT:718733001",
+            "label": "RCADS-P (Revised Children's Anxiety and Depression Scale Parent Version) generalized anxiety subscale",
+            "query": "anxiety",
+            "rank": 9,
+            "semantic_similarity": 0.5628583696200739
+          },
+          {
+            "id": "SNOMEDCT:718732006",
+            "label": "RCADS-P (Revised Children's Anxiety and Depression Scale Parent Version) separation anxiety subscale",
+            "query": "anxiety",
+            "rank": 10,
+            "semantic_similarity": 0.5603720126966688
+          },
+          {
+            "id": "SNOMEDCT:718656000",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) generalized anxiety score",
+            "query": "anxiety",
+            "rank": 11,
+            "semantic_similarity": 0.5600120276692094
+          },
+          {
+            "id": "SNOMEDCT:718563007",
+            "label": "RCADS-P (Revised Children's Anxiety and Depression Scale Parent Version) total anxiety subscale",
+            "query": "anxiety",
+            "rank": 12,
+            "semantic_similarity": 0.5591452706863045
+          },
+          {
+            "id": "SNOMEDCT:718659007",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) separation anxiety score",
+            "query": "anxiety",
+            "rank": 13,
+            "semantic_similarity": 0.5535933162382429
+          },
+          {
+            "id": "SNOMEDCT:718661003",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) total anxiety score",
+            "query": "anxiety",
+            "rank": 14,
+            "semantic_similarity": 0.5531411250694377
+          },
+          {
+            "id": "SNOMEDCT:718745005",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) total anxiety and depression subscale",
+            "query": "anxiety",
+            "rank": 15,
+            "semantic_similarity": 0.5507647145311878
+          },
+          {
+            "id": "SNOMEDCT:718735008",
+            "label": "RCADS-P (Revised Children's Anxiety and Depression Scale Parent Version) total anxiety and depression subscale",
+            "query": "anxiety",
+            "rank": 16,
+            "semantic_similarity": 0.5435764347899547
+          },
+          {
+            "id": "SNOMEDCT:718666008",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) Parent Version generalized anxiety score",
+            "query": "anxiety",
+            "rank": 17,
+            "semantic_similarity": 0.5431558130276702
+          },
+          {
+            "id": "SNOMEDCT:718669001",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) Parent Version separation anxiety score",
+            "query": "anxiety",
+            "rank": 18,
+            "semantic_similarity": 0.5427151244802878
+          },
+          {
+            "id": "SNOMEDCT:718671001",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) Parent Version total anxiety score",
+            "query": "anxiety",
+            "rank": 19,
+            "semantic_similarity": 0.5414613342267842
+          },
+          {
+            "id": "SNOMEDCT:718662005",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) total anxiety and depression score",
+            "query": "anxiety",
+            "rank": 20,
+            "semantic_similarity": 0.5392661847996183
+          },
+          {
+            "id": "SNOMEDCT:718672008",
+            "label": "RCADS (Revised Children's Anxiety and Depression Scale) Parent Version total anxiety and depression score",
+            "query": "anxiety",
+            "rank": 21,
+            "semantic_similarity": 0.5315704327994744
+          },
+          {
+            "id": "SNOMEDCT:200078007",
+            "label": "Central nervous system complications of anesthesia during labor and delivery (disorder)",
+            "query": "nervousness",
+            "rank": 22,
+            "semantic_similarity": 0.5089029365935039
+          },
+          {
+            "id": "SNOMEDCT:269496008",
+            "label": "Neoplasm of uncertain behavior of endocrine glands and nervous system (disorder)",
+            "query": "nervousness",
+            "rank": 23,
+            "semantic_similarity": 0.5026508771277589
+          },
+          {
+            "id": "SNOMEDCT:10749811000119108",
+            "label": "Obstetric anesthesia with central nervous system complication in childbirth (disorder)",
+            "query": "nervousness",
+            "rank": 24,
+            "semantic_similarity": 0.49181486602904706
+          },
+          {
+            "id": "SNOMEDCT:351591000119106",
+            "label": "Neoplasm of uncertain behavior of autonomic nervous system (disorder)",
+            "query": "nervousness",
+            "rank": 25,
+            "semantic_similarity": 0.4897278069716345
+          },
+          {
+            "id": "SNOMEDCT:109917000",
+            "label": "Neoplasm of uncertain behavior of peripheral nerves and peripheral autonomic nervous system (disorder)",
+            "query": "nervousness",
+            "rank": 26,
+            "semantic_similarity": 0.4896196895328736
+          },
+          {
+            "id": "SNOMEDCT:362494009",
+            "label": "Entire celiac nervous plexus (body structure)",
+            "query": "nervousness",
+            "rank": 27,
+            "semantic_similarity": 0.48688519402878916
+          },
+          {
+            "id": "SNOMEDCT:203804005",
+            "label": "Entire esophageal plexus of thoracic sympathetic nervous system (body structure)",
+            "query": "nervousness",
+            "rank": 28,
+            "semantic_similarity": 0.471320374417607
+          },
+          {
+            "id": "SNOMEDCT:200061003",
+            "label": "Obstetric anesthesia with central nervous system complications (disorder)",
+            "query": "nervousness",
+            "rank": 29,
+            "semantic_similarity": 0.4690940677744187
+          },
+          {
+            "id": "SNOMEDCT:25053000",
+            "label": "Obstetrical central nervous system complication of anesthesia AND/OR sedation (disorder)",
+            "query": "nervousness",
+            "rank": 30,
+            "semantic_similarity": 0.4617875367391203
+          },
+          {
+            "id": "SNOMEDCT:136721551000119105",
+            "label": "Hemangioblastoma of central nervous system (disorder)",
+            "query": "nervousness",
+            "rank": 31,
+            "semantic_similarity": 0.4566021855598758
+          },
+          {
+            "id": "SNOMEDCT:396920006",
+            "label": "World Health Organization grade for central nervous system tumor (observable entity)",
+            "query": "nervousness",
+            "rank": 32,
+            "semantic_similarity": 0.4445964042732338
+          },
+          {
+            "id": "SNOMEDCT:254368001",
+            "label": "United Kingdom children's cancer study group central nervous system tumor staging system (tumor staging)",
+            "query": "nervousness",
+            "rank": 33,
+            "semantic_similarity": 0.42513164326251096
+          },
+          {
+            "id": "SNOMEDCT:1197280002",
+            "label": "Yolk sac tumor of central nervous system (disorder)",
+            "query": "nervousness",
+            "rank": 34,
+            "semantic_similarity": 0.42394635182161344
+          },
+          {
+            "id": "SNOMEDCT:389081007",
+            "label": "Gray matter structure of central nervous system (body structure)",
+            "query": "nervousness",
+            "rank": 35,
+            "semantic_similarity": 0.4199310200875782
+          },
+          {
+            "id": "SNOMEDCT:253061008",
+            "label": "Nervous system tumor morphology (morphologic abnormality)",
+            "query": "nervousness",
+            "rank": 36,
+            "semantic_similarity": 0.416736368907599
+          },
+          {
+            "id": "SNOMEDCT:13601000119109",
+            "label": "Necrosis of central nervous system caused by ionizing radiation (disorder)",
+            "query": "nervousness",
+            "rank": 37,
+            "semantic_similarity": 0.40504393044980747
+          },
+          {
+            "id": "SNOMEDCT:253062001",
+            "label": "Central nervous system tumor morphology (morphologic abnormality)",
+            "query": "nervousness",
+            "rank": 38,
+            "semantic_similarity": 0.40165221242993315
+          },
+          {
+            "id": "SNOMEDCT:31076000",
+            "label": "Congenital ischemic atrophy of central nervous system structure (disorder)",
+            "query": "nervousness",
+            "rank": 39,
+            "semantic_similarity": 0.3938064105285833
+          },
+          {
+            "id": "SNOMEDCT:1259636005",
+            "label": "Chronic inflammatory demyelinating disease of peripheral nervous system and central nervous system",
+            "query": "nervousness",
+            "rank": 40,
+            "semantic_similarity": 0.37192471918133585
+          }
+        ]
+      }
+    }
+  }
+}

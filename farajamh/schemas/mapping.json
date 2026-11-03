@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:farajamh:schema:mapping:1",
+  "type": "object",
+  "properties": {
+    "resource": {
+      "enum": [
+        "MFOEM",
+        "MFOMD",
+        "SNOMED_CT"
+      ]
+    },
+    "action": {
+      "enum": [
+        "approve",
+        "reject",
+        "gap",
+        "unresolved",
+        "contest",
+        "challenge_meaning"
+      ]
+    },
+    "sense_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "predicate": {
+      "enum": [
+        null,
+        "skos:exactMatch",
+        "skos:closeMatch",
+        "skos:broadMatch",
+        "skos:narrowMatch",
+        "skos:relatedMatch"
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "resource",
+    "action",
+    "sense_id",
+    "candidate_id",
+    "predicate",
+    "rationale",
+    "evidence_refs"
+  ],
+  "additionalProperties": false
+}

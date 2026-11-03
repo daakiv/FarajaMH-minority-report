@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:farajamh:schema:source:1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "utterance_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "synthetic": {
+      "const": true
+    },
+    "original_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language_spans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "language": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "supplied",
+              "hypothesis",
+              "reviewed"
+            ]
+          }
+        },
+        "required": [
+          "start",
+          "end",
+          "language",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "source_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "speaker_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "speaker_ref": {
+      "type": "string",
+      "pattern": "^SYN-"
+    },
+    "region_variety": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conversation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualifiers": {
+      "type": "object",
+      "properties": {
+        "experiencer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assertion": {
+          "enum": [
+            "affirmed",
+            "negated",
+            "uncertain",
+            "unknown"
+          ]
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1
+        },
+        "event_time": {
+          "type": "string",
+          "minLength": 1
+        },
+        "utterance_time": {
+          "type": "string",
+          "minLength": 1
+        },
+        "setting": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "experiencer",
+        "assertion",
+        "attribution",
+        "event_time",
+        "utterance_time",
+        "setting"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "reference"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "expression_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end",
+        "text"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "parent_utterance_id": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "utterance_id",
+    "synthetic",
+    "original_text",
+    "language",
+    "language_spans",
+    "source_type",
+    "speaker_role",
+    "speaker_ref",
+    "region_variety",
+    "conversation",
+    "qualifiers",
+    "evidence"
+  ],
+  "additionalProperties": false
+}

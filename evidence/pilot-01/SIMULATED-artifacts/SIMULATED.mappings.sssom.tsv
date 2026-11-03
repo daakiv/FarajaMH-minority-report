@@ -1,0 +1,20 @@
+# mapping_set_id: https://example.org/farajamh/research/mappings/SIMULATED
+# mapping_set_version: d3e56fdffda45bfeaa0bfa3cabbba4dcca751747b047cafebd67cfe4149fb902
+# mapping_set_title: "SIMULATED \u2014 NOT FOR RELEASE"
+# mapping_set_description: "SIMULATED \u2014 NOT FOR RELEASE; details in mapping-provenance.json"
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   FARAJA: https://example.org/farajamh/sense/
+#   reviewer: https://example.org/farajamh/reviewer/
+#   MFOEM: http://purl.obolibrary.org/obo/MFOEM_
+#   MFOMD: http://purl.obolibrary.org/obo/MFOMD_
+#   SNOMEDCT: http://snomed.info/id/
+#   FIXTURE: https://example.org/farajamh/fictional-term/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+# mapping_tool: farajamh
+# mapping_tool_version: 1.0.0
+subject_id	object_id	predicate_id	mapping_justification	subject_label	object_label	author_id	reviewer_id	mapping_date	subject_source_version	object_source_version	mapping_tool	mapping_tool_version
+FARAJA:demo-a3c624b70b9c	FIXTURE:MFOEM-emotional-pain	skos:relatedMatch	semapv:ManualMappingCuration	emotional pain	Fictional emotional pain concept	reviewer:demo_curator	reviewer:demo_curator	2026-10-05	1	FICTIONAL-1	farajamh	1.0.0
+FARAJA:demo-a3c624b70b9c	FIXTURE:MFOMD-emotional-pain	skos:relatedMatch	semapv:ManualMappingCuration	emotional pain	Fictional emotional pain concept	reviewer:demo_curator	reviewer:demo_curator	2026-10-05	1	FICTIONAL-1	farajamh	1.0.0
+FARAJA:demo-a3c624b70b9c	FIXTURE:SNOMED_CT-emotional-pain	skos:relatedMatch	semapv:ManualMappingCuration	emotional pain	Fictional emotional pain concept	reviewer:demo_curator	reviewer:demo_curator	2026-10-05	1	FICTIONAL-1	farajamh	1.0.0

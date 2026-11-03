@@ -1,0 +1,27 @@
+[
+  {
+    "id": "KISWA-LIVE-05",
+    "before": [
+      "DUMMY_DICT_09"
+    ],
+    "proposed_after": [
+      "DUMMY_DICT_09"
+    ]
+  },
+  {
+    "id": "KISWA-LIVE-06",
+    "before": [
+      "DUMMY_DICT_15"
+    ],
+    "proposed_after": []
+  },
+  {
+    "id": "KISWA-LIVE-07",
+    "before": [
+      "DUMMY_DICT_09"
+    ],
+    "proposed_after": [
+      "DUMMY_DICT_09"
+    ]
+  }
+]

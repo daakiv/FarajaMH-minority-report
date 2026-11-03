@@ -1,0 +1,548 @@
+{
+  "scope": "Software behavior only; fixture interpretations are not cultural evidence",
+  "utterances": 20,
+  "model_counts": {
+    "selected": 80,
+    "completed": 78,
+    "failed": 2,
+    "abstaining": 2,
+    "voting": 76
+  },
+  "agreement_states": {
+    "TIED": 4,
+    "MAJORITY_WITH_DISSENT": 2,
+    "NO_MAJORITY": 2,
+    "UNANIMOUS": 11,
+    "INSUFFICIENT_PARTICIPATION": 1
+  },
+  "tie_rate": {
+    "numerator": 4,
+    "denominator": 20,
+    "rate": 0.2
+  },
+  "no_majority_rate": {
+    "numerator": 2,
+    "denominator": 20,
+    "rate": 0.1
+  },
+  "substantive_dissent_rate": {
+    "numerator": 8,
+    "denominator": 20,
+    "rate": 0.4
+  },
+  "dissent_retention": {
+    "numerator": 28,
+    "denominator": 28,
+    "rate": 1.0
+  },
+  "fleiss_kappa": {
+    "value": 0.659403956924618,
+    "eligible_items": 17,
+    "excluded_items": 3,
+    "observed_pair_agreement": 0.8039215686274509,
+    "expected_agreement": 0.4243079584775087,
+    "assumption": "Same four model configurations; primary distress category; complete items only; undefined when expected agreement=1"
+  },
+  "terminology": {
+    "MFOEM": {
+      "states": {
+        "HITS": 4,
+        "NO_RESULTS": 14
+      },
+      "hit_rate": {
+        "numerator": 4,
+        "denominator": 18,
+        "rate": 0.2222222222222222
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      }
+    },
+    "MFOMD": {
+      "states": {
+        "HITS": 4,
+        "NO_RESULTS": 14
+      },
+      "hit_rate": {
+        "numerator": 4,
+        "denominator": 18,
+        "rate": 0.2222222222222222
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      }
+    },
+    "SNOMED_CT": {
+      "states": {
+        "HITS": 4,
+        "NO_RESULTS": 14
+      },
+      "hit_rate": {
+        "numerator": 4,
+        "denominator": 18,
+        "rate": 0.2222222222222222
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      }
+    }
+  },
+  "simulated_review_metrics": {
+    "submissions": 40,
+    "minority_selection": {
+      "numerator": 2,
+      "denominator": 40,
+      "rate": 0.05
+    },
+    "adjudicator_override": {
+      "numerator": 1,
+      "denominator": 13,
+      "rate": 0.07692307692307693
+    },
+    "outcomes": {
+      "multiple": 1,
+      "approve": 17,
+      "unresolved": 1,
+      "request_context": 1
+    }
+  },
+  "real_reviewer_metrics": "NOT MEASURED",
+  "unresolved": 2,
+  "gaps": 9,
+  "local_concepts": 4,
+  "review_completion": {
+    "numerator": 20,
+    "denominator": 20,
+    "rate": 1.0
+  },
+  "runtime_per_model_utterance": [
+    {
+      "utterance_id": "SYN01",
+      "model": "small-qwen",
+      "seconds": 0.0005850829766131938
+    },
+    {
+      "utterance_id": "SYN01",
+      "model": "small-llama",
+      "seconds": 0.00044824997894465923
+    },
+    {
+      "utterance_id": "SYN01",
+      "model": "medium-gemma",
+      "seconds": 0.0004342910251580179
+    },
+    {
+      "utterance_id": "SYN01",
+      "model": "comparison-qwen",
+      "seconds": 0.0004122090176679194
+    },
+    {
+      "utterance_id": "SYN02",
+      "model": "small-qwen",
+      "seconds": 0.0004814580315724015
+    },
+    {
+      "utterance_id": "SYN02",
+      "model": "small-llama",
+      "seconds": 0.00046570802805945277
+    },
+    {
+      "utterance_id": "SYN02",
+      "model": "medium-gemma",
+      "seconds": 0.0004196660011075437
+    },
+    {
+      "utterance_id": "SYN02",
+      "model": "comparison-qwen",
+      "seconds": 0.0004158330266363919
+    },
+    {
+      "utterance_id": "SYN03",
+      "model": "small-qwen",
+      "seconds": 0.00046608399134129286
+    },
+    {
+      "utterance_id": "SYN03",
+      "model": "small-llama",
+      "seconds": 0.00043045799247920513
+    },
+    {
+      "utterance_id": "SYN03",
+      "model": "medium-gemma",
+      "seconds": 0.0004207499441690743
+    },
+    {
+      "utterance_id": "SYN03",
+      "model": "comparison-qwen",
+      "seconds": 0.00044187495950609446
+    },
+    {
+      "utterance_id": "SYN04",
+      "model": "small-qwen",
+      "seconds": 0.0004462500219233334
+    },
+    {
+      "utterance_id": "SYN04",
+      "model": "small-llama",
+      "seconds": 0.0004099999787285924
+    },
+    {
+      "utterance_id": "SYN04",
+      "model": "medium-gemma",
+      "seconds": 0.00040033302502706647
+    },
+    {
+      "utterance_id": "SYN04",
+      "model": "comparison-qwen",
+      "seconds": 0.0004002090427093208
+    },
+    {
+      "utterance_id": "SYN05",
+      "model": "small-qwen",
+      "seconds": 0.0004936660407111049
+    },
+    {
+      "utterance_id": "SYN05",
+      "model": "small-llama",
+      "seconds": 0.0004437500028871
+    },
+    {
+      "utterance_id": "SYN05",
+      "model": "medium-gemma",
+      "seconds": 0.00043708301382139325
+    },
+    {
+      "utterance_id": "SYN05",
+      "model": "comparison-qwen",
+      "seconds": 0.00044225004967302084
+    },
+    {
+      "utterance_id": "SYN06",
+      "model": "small-qwen",
+      "seconds": 0.00047183403512462974
+    },
+    {
+      "utterance_id": "SYN06",
+      "model": "small-llama",
+      "seconds": 0.00043454201659187675
+    },
+    {
+      "utterance_id": "SYN06",
+      "model": "medium-gemma",
+      "seconds": 0.00042608403600752354
+    },
+    {
+      "utterance_id": "SYN06",
+      "model": "comparison-qwen",
+      "seconds": 0.0004207080346532166
+    },
+    {
+      "utterance_id": "SYN07",
+      "model": "small-qwen",
+      "seconds": 0.0004561669775284827
+    },
+    {
+      "utterance_id": "SYN07",
+      "model": "small-llama",
+      "seconds": 0.0004260419518686831
+    },
+    {
+      "utterance_id": "SYN07",
+      "model": "medium-gemma",
+      "seconds": 0.0004331669770181179
+    },
+    {
+      "utterance_id": "SYN07",
+      "model": "comparison-qwen",
+      "seconds": 0.0004158749943599105
+    },
+    {
+      "utterance_id": "SYN08",
+      "model": "small-qwen",
+      "seconds": 0.00042991701047867537
+    },
+    {
+      "utterance_id": "SYN08",
+      "model": "small-llama",
+      "seconds": 0.00042470800690352917
+    },
+    {
+      "utterance_id": "SYN08",
+      "model": "medium-gemma",
+      "seconds": 0.00041458301711827517
+    },
+    {
+      "utterance_id": "SYN08",
+      "model": "comparison-qwen",
+      "seconds": 0.0004236659733578563
+    },
+    {
+      "utterance_id": "SYN09",
+      "model": "small-qwen",
+      "seconds": 0.0004641660489141941
+    },
+    {
+      "utterance_id": "SYN09",
+      "model": "small-llama",
+      "seconds": 0.000424250029027462
+    },
+    {
+      "utterance_id": "SYN09",
+      "model": "medium-gemma",
+      "seconds": 0.0004179160459898412
+    },
+    {
+      "utterance_id": "SYN09",
+      "model": "comparison-qwen",
+      "seconds": 0.00041045801481232047
+    },
+    {
+      "utterance_id": "SYN10",
+      "model": "small-qwen",
+      "seconds": 0.0004337909631431103
+    },
+    {
+      "utterance_id": "SYN10",
+      "model": "small-llama",
+      "seconds": 0.00042408303124830127
+    },
+    {
+      "utterance_id": "SYN10",
+      "model": "medium-gemma",
+      "seconds": 0.0004267910262569785
+    },
+    {
+      "utterance_id": "SYN10",
+      "model": "comparison-qwen",
+      "seconds": 0.00042050000047311187
+    },
+    {
+      "utterance_id": "SYN11",
+      "model": "small-qwen",
+      "seconds": 0.00045904202852398157
+    },
+    {
+      "utterance_id": "SYN11",
+      "model": "small-llama",
+      "seconds": 0.00042866700096055865
+    },
+    {
+      "utterance_id": "SYN11",
+      "model": "medium-gemma",
+      "seconds": 0.0004284169990569353
+    },
+    {
+      "utterance_id": "SYN11",
+      "model": "comparison-qwen",
+      "seconds": 0.000410459004342556
+    },
+    {
+      "utterance_id": "SYN12",
+      "model": "small-qwen",
+      "seconds": 0.0004711670335382223
+    },
+    {
+      "utterance_id": "SYN12",
+      "model": "small-llama",
+      "seconds": 0.000435416994150728
+    },
+    {
+      "utterance_id": "SYN12",
+      "model": "medium-gemma",
+      "seconds": 0.0004199999966658652
+    },
+    {
+      "utterance_id": "SYN12",
+      "model": "comparison-qwen",
+      "seconds": 0.00041625002631917596
+    },
+    {
+      "utterance_id": "SYN13",
+      "model": "small-qwen",
+      "seconds": 0.00044308300130069256
+    },
+    {
+      "utterance_id": "SYN13",
+      "model": "small-llama",
+      "seconds": 0.00043041695607826114
+    },
+    {
+      "utterance_id": "SYN13",
+      "model": "medium-gemma",
+      "seconds": 0.0004141249810345471
+    },
+    {
+      "utterance_id": "SYN13",
+      "model": "comparison-qwen",
+      "seconds": 0.000453874992672354
+    },
+    {
+      "utterance_id": "SYN14",
+      "model": "small-qwen",
+      "seconds": 0.0004442919744178653
+    },
+    {
+      "utterance_id": "SYN14",
+      "model": "small-llama",
+      "seconds": 0.00042058300459757447
+    },
+    {
+      "utterance_id": "SYN14",
+      "model": "medium-gemma",
+      "seconds": 0.00041141704423353076
+    },
+    {
+      "utterance_id": "SYN14",
+      "model": "comparison-qwen",
+      "seconds": 0.00042575004044920206
+    },
+    {
+      "utterance_id": "SYN15",
+      "model": "small-qwen",
+      "seconds": 0.0004598330124281347
+    },
+    {
+      "utterance_id": "SYN15",
+      "model": "small-llama",
+      "seconds": 0.000441916985437274
+    },
+    {
+      "utterance_id": "SYN15",
+      "model": "medium-gemma",
+      "seconds": 0.0004183329874649644
+    },
+    {
+      "utterance_id": "SYN15",
+      "model": "comparison-qwen",
+      "seconds": 0.0003095000283792615
+    },
+    {
+      "utterance_id": "SYN16",
+      "model": "small-qwen",
+      "seconds": 0.0007147080032154918
+    },
+    {
+      "utterance_id": "SYN16",
+      "model": "small-llama",
+      "seconds": 0.00041441700886934996
+    },
+    {
+      "utterance_id": "SYN16",
+      "model": "medium-gemma",
+      "seconds": 0.00041554198833182454
+    },
+    {
+      "utterance_id": "SYN16",
+      "model": "comparison-qwen",
+      "seconds": 0.0004074580501765013
+    },
+    {
+      "utterance_id": "SYN17",
+      "model": "small-qwen",
+      "seconds": 0.0005434170016087592
+    },
+    {
+      "utterance_id": "SYN17",
+      "model": "small-llama",
+      "seconds": 0.00042270898120477796
+    },
+    {
+      "utterance_id": "SYN17",
+      "model": "medium-gemma",
+      "seconds": 0.00042470800690352917
+    },
+    {
+      "utterance_id": "SYN17",
+      "model": "comparison-qwen",
+      "seconds": 0.0004107499844394624
+    },
+    {
+      "utterance_id": "SYN18",
+      "model": "small-qwen",
+      "seconds": 0.00044233299558982253
+    },
+    {
+      "utterance_id": "SYN18",
+      "model": "small-llama",
+      "seconds": 0.0004255829844623804
+    },
+    {
+      "utterance_id": "SYN18",
+      "model": "medium-gemma",
+      "seconds": 0.00041795801371335983
+    },
+    {
+      "utterance_id": "SYN18",
+      "model": "comparison-qwen",
+      "seconds": 0.00040845799958333373
+    },
+    {
+      "utterance_id": "SYN19",
+      "model": "small-qwen",
+      "seconds": 0.0004469169653020799
+    },
+    {
+      "utterance_id": "SYN19",
+      "model": "small-llama",
+      "seconds": 0.0004380830214358866
+    },
+    {
+      "utterance_id": "SYN19",
+      "model": "medium-gemma",
+      "seconds": 0.00043645797995850444
+    },
+    {
+      "utterance_id": "SYN19",
+      "model": "comparison-qwen",
+      "seconds": 0.0004403329803608358
+    },
+    {
+      "utterance_id": "SYN20",
+      "model": "small-qwen",
+      "seconds": 0.0004437500028871
+    },
+    {
+      "utterance_id": "SYN20",
+      "model": "small-llama",
+      "seconds": 0.00042916700476780534
+    },
+    {
+      "utterance_id": "SYN20",
+      "model": "medium-gemma",
+      "seconds": 0.00040800002170726657
+    },
+    {
+      "utterance_id": "SYN20",
+      "model": "comparison-qwen",
+      "seconds": 0.0004075419856235385
+    }
+  ],
+  "runtime_per_utterance": {
+    "SYN01": 0.0018798329983837903,
+    "SYN02": 0.0017826650873757899,
+    "SYN03": 0.0017591668874956667,
+    "SYN04": 0.001656792068388313,
+    "SYN05": 0.001816749107092619,
+    "SYN06": 0.0017531681223772466,
+    "SYN07": 0.0017312509007751942,
+    "SYN08": 0.001692874007858336,
+    "SYN09": 0.0017167901387438178,
+    "SYN10": 0.001705165021121502,
+    "SYN11": 0.0017265850328840315,
+    "SYN12": 0.0017428340506739914,
+    "SYN13": 0.0017414999310858548,
+    "SYN14": 0.0017020420636981726,
+    "SYN15": 0.0016295830137096345,
+    "SYN16": 0.0019521250505931675,
+    "SYN17": 0.0018015839741565287,
+    "SYN18": 0.0016943319933488965,
+    "SYN19": 0.0017617909470573068,
+    "SYN20": 0.0016884590149857104
+  }
+}

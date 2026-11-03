@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "dataset": "workshop-inspired-dummy-0.1",
+  "count": 16,
+  "description": "Workshop wording with invented contexts plus invented English controls. No validated meanings or diagnoses.",
+  "community_validated": false
+}

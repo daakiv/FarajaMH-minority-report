@@ -1,0 +1,4 @@
+subject_id,object_id,predicate_id,mapping_justification,subject_label,object_label,author_id,reviewer_id,mapping_date,subject_source_version,object_source_version,mapping_tool,mapping_tool_version
+FARAJA:demo-a3c624b70b9c,FIXTURE:MFOEM-emotional-pain,skos:relatedMatch,semapv:UnspecifiedMatching,emotional pain,Fictional emotional pain concept,reviewer:demo_curator,reviewer:demo_curator,2026-10-05,1,FICTIONAL-1,farajamh,1.0.0
+FARAJA:demo-a3c624b70b9c,FIXTURE:MFOMD-emotional-pain,skos:relatedMatch,semapv:UnspecifiedMatching,emotional pain,Fictional emotional pain concept,reviewer:demo_curator,reviewer:demo_curator,2026-10-05,1,FICTIONAL-1,farajamh,1.0.0
+FARAJA:demo-a3c624b70b9c,FIXTURE:SNOMED_CT-emotional-pain,skos:relatedMatch,semapv:UnspecifiedMatching,emotional pain,Fictional emotional pain concept,reviewer:demo_curator,reviewer:demo_curator,2026-10-05,1,FICTIONAL-1,farajamh,1.0.0

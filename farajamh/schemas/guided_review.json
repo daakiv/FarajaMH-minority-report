@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decision",
+    "annotations",
+    "safety_note",
+    "applicability_confirmed",
+    "second_opinion_requested"
+  ],
+  "properties": {
+    "decision": {
+      "type": "object"
+    },
+    "annotations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "family_code",
+          "dap_categories"
+        ],
+        "properties": {
+          "family_code": {
+            "enum": [
+              "C",
+              "E",
+              "S",
+              "Sp",
+              "Cl",
+              "Cs",
+              "Ob",
+              "undetermined",
+              "social",
+              "non_distress",
+              "other"
+            ]
+          },
+          "dap_categories": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "Depression",
+                "Anxiety",
+                "Psychosis"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "safety_note": {
+      "type": "string"
+    },
+    "applicability_confirmed": {
+      "type": "boolean"
+    },
+    "second_opinion_requested": {
+      "type": "boolean"
+    },
+    "safety_checks": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "self_harm_wording",
+          "harm_to_others",
+          "crisis_or_urgency"
+        ]
+      },
+      "description": "What the reviewer actually checked; unticked by default."
+    },
+    "model_ratings": {
+      "type": "object",
+      "description": "Reviewer rating of each usable model reading; literal translation and contextual interpretation are scored separately.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "literal",
+          "contextual"
+        ],
+        "properties": {
+          "literal": {
+            "enum": [
+              "correct",
+              "partly_correct",
+              "wrong",
+              "cannot_assess"
+            ]
+          },
+          "contextual": {
+            "enum": [
+              "correct",
+              "partly_correct",
+              "wrong",
+              "cannot_assess"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

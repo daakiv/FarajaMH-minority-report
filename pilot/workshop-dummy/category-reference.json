@@ -1,0 +1,120 @@
+{
+  "provenance": {
+    "workbook": {
+      "filename": "_Room C_  Idioms_FarajaMH Workshop KE 1-2nd Oct 2026.xlsx",
+      "sha256": "064df1c690d7bfea89040cf6c4088686f9c6cb52744df9e070a70cc79dd87859"
+    },
+    "slides": {
+      "filename": "Idiom_family_definitions_slide (1) (1).pptx",
+      "sha256": "fb25f14e15ede9f856f69d7711a00d5c39919d084e3a70b76ebbc293cca380d7"
+    },
+    "review_status": "WORKSHOP_REFERENCE_NOT_VALIDATED_DICTIONARY",
+    "code_convention": "Workbook Cs and Ob retained by user instruction; R kept separately",
+    "diagnostic_labels": "Workshop DAP/comorbidity annotations are not verified patient diagnoses or gold labels"
+  },
+  "families": [
+    {
+      "source_range": "Info!B10:F10",
+      "code": "C",
+      "family": "Cognitive: Thinking too much",
+      "primary_category": "Cognitive process",
+      "question": "What is happening in the person's thinking or mental processing?",
+      "definition": "Expressions describing excessive, persistent, intrusive or uncontrollable thinking, rumination, overthinking, mental preoccupation or inability to stop thinking.",
+      "role": "family",
+      "slide_code": "C"
+    },
+    {
+      "source_range": "Info!B11:F11",
+      "code": "E",
+      "family": "Sadness, grief, hopelessness",
+      "primary_category": "Emotional state",
+      "question": "What emotion or emotional experience is being expressed?",
+      "definition": "Expressions describing sadness, sorrow, grief, despair, hopelessness, emotional heaviness or loss of positive emotional experience.",
+      "role": "family",
+      "slide_code": "E"
+    },
+    {
+      "source_range": "Info!B12:F12",
+      "code": "E",
+      "family": "Heart-centred",
+      "primary_category": "Emotional state",
+      "question": "What emotion or emotional experience is being expressed?",
+      "definition": "Expressions in which the heart is used to communicate an emotional or psychological experience, such as sadness, emotional pain, distress, worry or inner suffering. If the heart expression refers to a physical sensation, annotate S instead.",
+      "role": "family",
+      "slide_code": "E"
+    },
+    {
+      "source_range": "Info!B13:F13",
+      "code": "E",
+      "family": "Fear, worry, shock, trauma",
+      "primary_category": "Emotional state",
+      "question": "What emotion or emotional experience is being expressed?",
+      "definition": "Expressions describing fear, apprehension, excessive worry, alarm, shock, emotional disturbance or experiences associated with traumatic events. Where the expression specifically describes a traumatic event or its circumstances rather than the emotional experience, Cs may also apply.",
+      "role": "family",
+      "slide_code": "E"
+    },
+    {
+      "source_range": "Info!B14:F14",
+      "code": "S",
+      "family": "Head, brain, somatic heat",
+      "primary_category": "Somatic experience",
+      "question": "Is psychological distress being expressed through the body?",
+      "definition": "Expressions describing psychological distress through bodily sensations or locations involving the head, brain or sensations of heat, pressure, heaviness, pain or unusual bodily experience.",
+      "role": "family",
+      "slide_code": "S"
+    },
+    {
+      "source_range": "Info!B15:F15",
+      "code": "Sp",
+      "family": "Spirit, ancestral, witchcraft",
+      "primary_category": "Spiritual/supernatural",
+      "question": "Is the experience attributed to spiritual/supernatural forces?",
+      "definition": "Expressions attributing distress, unusual experiences or behavioural changes to spirits, ancestors, witchcraft, curses, possession or other supernatural/spiritual forces.",
+      "role": "family",
+      "slide_code": "Sp"
+    },
+    {
+      "source_range": "Info!B16:F16",
+      "code": "Cl",
+      "family": "Madness, severe disturbance",
+      "primary_category": "Clinical symptom",
+      "question": "Does it describe a recognisable severe psychological/behavioural symptom or disturbance?",
+      "definition": "Expressions describing severe psychological or behavioural disturbance, loss of mental control, unusual behaviour, “madness” or states perceived as indicating serious mental illness.",
+      "role": "family",
+      "slide_code": "Cl"
+    },
+    {
+      "source_range": "Info!B17:F17",
+      "code": "Cs",
+      "family": "Context-specific",
+      "primary_category": "Context-specific",
+      "question": "Does its interpretation depend on a particular context?",
+      "definition": "Expressions whose meaning or interpretation depends substantially on a particular social, cultural, environmental or life context and cannot be adequately classified without that context.",
+      "role": "family",
+      "slide_code": "Cx"
+    },
+    {
+      "source_range": "Info!B18:F18",
+      "code": "Ob",
+      "family": "Other bodily",
+      "primary_category": null,
+      "question": "Does the expression describe a physical or bodily sensation, change, or discomfort associated with the person’s emotional or psychological experience?",
+      "definition": "Expressions that describe physical sensations, bodily changes, or bodily experiences associated with distress or mental health that do not specifically fall under another defined somatic idiom family, such as head, brain, or somatic heat.",
+      "role": "family",
+      "slide_code": "S"
+    },
+    {
+      "source_range": "Info!B19:F19",
+      "code": "R",
+      "family": "",
+      "primary_category": "Risk/safety",
+      "question": "Does it indicate self-harm, suicide, harm to others, abuse, neglect or another immediate safety concern?",
+      "definition": "Risk or Safety when an expression contains an explicit or implied indication of potential harm, danger, or compromised safety, regardless of whether it is also classified under another category such as emotional, cognitive, somatic, social/relational, or spiritual.",
+      "role": "separate_safety_flag",
+      "slide_code": "R"
+    }
+  ],
+  "unresolved": [
+    "Workbook Ob primary category is blank; do not infer it from the slide."
+  ]
+}

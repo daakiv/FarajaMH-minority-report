@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "utterance_id": "SYN01",
+  "synthetic": true,
+  "original_text": "My heart is burning",
+  "language": "en",
+  "language_spans": [],
+  "source_type": "constructed-text",
+  "speaker_role": "synthetic narrator",
+  "speaker_ref": "SYN-person",
+  "region_variety": null,
+  "conversation": "A synthetic speaker discusses a loss and also mentions discomfort after a meal.",
+  "qualifiers": {
+    "experiencer": "SYN-person",
+    "assertion": "affirmed",
+    "attribution": "self",
+    "event_time": "present",
+    "utterance_time": "2026-01-01T12:00:00Z",
+    "setting": "synthetic interview"
+  },
+  "evidence": [
+    {
+      "id": "E1",
+      "text": "A synthetic speaker discusses a loss and also mentions discomfort after a meal.",
+      "reference": "synthetic-fixture:SYN01"
+    }
+  ]
+}

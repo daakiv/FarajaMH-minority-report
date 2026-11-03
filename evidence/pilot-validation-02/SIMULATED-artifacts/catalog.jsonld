@@ -1,0 +1,341 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "@id": "file:///Users/davidamadi/Documents/Projects/farajamh-cultural-interpretation-pipeline/evidence/pilot-validation-02/SIMULATED-artifacts/catalog.jsonld",
+  "name": "FarajaMH synthetic workflow — SIMULATED NOT FOR RELEASE",
+  "description": "Synthetic research artifacts. Catalog metadata does not establish clinical or cultural validity.",
+  "citeAs": "FarajaMH synthetic software demonstration, prototype 1.0.0; not a validated research dataset.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "1.0",
+  "datePublished": "2026-10-05",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file/approved-synthetic.csv",
+      "name": "approved-synthetic.csv",
+      "contentUrl": "approved-synthetic.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "60ebc7d49b63220da10e39aaf5cc865e076bca802aaf72a326412d21bafcae5a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file/approved-mappings.csv",
+      "name": "approved-mappings.csv",
+      "contentUrl": "approved-mappings.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "0fd650e0fcd82a5d0f27155ea73adf81732a3f570dc9f333dd4faf151466498b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file/SIMULATED.mappings.sssom.tsv",
+      "name": "SIMULATED.mappings.sssom.tsv",
+      "contentUrl": "SIMULATED.mappings.sssom.tsv",
+      "encodingFormat": "text/tab-separated-values",
+      "sha256": "a9049c696250b9314428f31ade8326ea3005a2f668acc433b6a116bea49cf846"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records/approved-synthetic.csv",
+      "name": "approved-synthetic",
+      "description": "Synthetic approved workflow artifact; simulated reviews explicitly labelled",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-synthetic.csv/utterance_id",
+          "name": "utterance_id",
+          "description": "utterance id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-synthetic.csv"
+            },
+            "extract": {
+              "column": "utterance_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-synthetic.csv/original_text",
+          "name": "original_text",
+          "description": "original text",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-synthetic.csv"
+            },
+            "extract": {
+              "column": "original_text"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-synthetic.csv/synthetic",
+          "name": "synthetic",
+          "description": "synthetic",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-synthetic.csv"
+            },
+            "extract": {
+              "column": "synthetic"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records/approved-mappings.csv",
+      "name": "approved-mappings",
+      "description": "Synthetic approved workflow artifact; simulated reviews explicitly labelled",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/subject_id",
+          "name": "subject_id",
+          "description": "subject id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "subject_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/object_id",
+          "name": "object_id",
+          "description": "object id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "object_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/predicate_id",
+          "name": "predicate_id",
+          "description": "predicate id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "predicate_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/mapping_justification",
+          "name": "mapping_justification",
+          "description": "mapping justification",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "mapping_justification"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/subject_label",
+          "name": "subject_label",
+          "description": "subject label",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "subject_label"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/object_label",
+          "name": "object_label",
+          "description": "object label",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "object_label"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/author_id",
+          "name": "author_id",
+          "description": "author id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "author_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/reviewer_id",
+          "name": "reviewer_id",
+          "description": "reviewer id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "reviewer_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/mapping_date",
+          "name": "mapping_date",
+          "description": "mapping date",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "mapping_date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/subject_source_version",
+          "name": "subject_source_version",
+          "description": "subject source version",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "subject_source_version"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/object_source_version",
+          "name": "object_source_version",
+          "description": "object source version",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "object_source_version"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/mapping_tool",
+          "name": "mapping_tool",
+          "description": "mapping tool",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "mapping_tool"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/approved-mappings.csv/mapping_tool_version",
+          "name": "mapping_tool_version",
+          "description": "mapping tool version",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file/approved-mappings.csv"
+            },
+            "extract": {
+              "column": "mapping_tool_version"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

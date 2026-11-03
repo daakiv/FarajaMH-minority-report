@@ -1,0 +1,12 @@
+{
+  "status": "USER_PROPOSED_TEST_SETTINGS_NOT_RUNTIME_CONFIGURATION",
+  "agreed_case_sampling_rate": 0.1,
+  "sampling_protocol": "pending",
+  "meaning_reviewers": 1,
+  "same_trained_reviewer_covers_terminology": true,
+  "code_convention": "workbook_Cs_Ob",
+  "risk_is_separate": true,
+  "dictionary_curator_role": "pending clarification",
+  "second_opinion_role": "pending clarification",
+  "project_adopted": false
+}

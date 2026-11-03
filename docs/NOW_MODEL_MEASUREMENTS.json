@@ -1,0 +1,110 @@
+[
+  {
+    "id": "E1",
+    "format": "before",
+    "models": [
+      {
+        "model": "gemma3:12b",
+        "status": "FAILED",
+        "seconds": 73.36,
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "failure": "'schema_version' is a required property"
+      },
+      {
+        "model": "qwen2.5:7b",
+        "status": "COMPLETED",
+        "seconds": 21.62,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "failure": ""
+      },
+      {
+        "model": "llama3.1:8b",
+        "status": "FAILED",
+        "seconds": 21.86,
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "failure": "Evidence reference not in authorized source evidence"
+      }
+    ]
+  },
+  {
+    "id": "E1",
+    "format": "after",
+    "models": [
+      {
+        "model": "gemma3:12b",
+        "status": "COMPLETED",
+        "seconds": 31.31,
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "failure": ""
+      },
+      {
+        "model": "qwen2.5:7b",
+        "status": "COMPLETED",
+        "seconds": 11.33,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "failure": ""
+      },
+      {
+        "model": "llama3.1:8b",
+        "status": "COMPLETED",
+        "seconds": 10.8,
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "failure": ""
+      }
+    ]
+  },
+  {
+    "id": "KISWA-LIVE-05",
+    "format": "before",
+    "models": [
+      {
+        "model": "gemma3:12b",
+        "status": "FAILED",
+        "seconds": 47.88,
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "failure": "[] should be non-empty"
+      },
+      {
+        "model": "qwen2.5:7b",
+        "status": "COMPLETED",
+        "seconds": 22.09,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "failure": ""
+      },
+      {
+        "model": "llama3.1:8b",
+        "status": "FAILED",
+        "seconds": 22.32,
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "failure": "Evidence reference not in authorized source evidence"
+      }
+    ]
+  },
+  {
+    "id": "KISWA-LIVE-05",
+    "format": "after",
+    "models": [
+      {
+        "model": "gemma3:12b",
+        "status": "FAILED",
+        "seconds": 52.91,
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "failure": "Reply did not match the output schema: Evidence reference not in authorized source evidence"
+      },
+      {
+        "model": "qwen2.5:7b",
+        "status": "COMPLETED",
+        "seconds": 10.84,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "failure": ""
+      },
+      {
+        "model": "llama3.1:8b",
+        "status": "COMPLETED",
+        "seconds": 10.75,
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "failure": ""
+      }
+    ]
+  }
+]

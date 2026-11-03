@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:farajamh:schema:curation:1",
+  "type": "object",
+  "properties": {
+    "sense_id": {
+      "type": "string",
+      "pattern": "^FARAJA:[A-Za-z0-9_-]+$"
+    },
+    "meaning_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "english_gloss": {
+      "type": "string",
+      "minLength": 1
+    },
+    "definition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "cultural_applicability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "example_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reuse_approved": {
+      "type": "boolean"
+    },
+    "applicability": {
+      "type": "object",
+      "properties": {
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "region_variety": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "conversation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assertion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1
+        },
+        "temporal_scope": {
+          "enum": [
+            "present",
+            "past",
+            "future",
+            "recurrent",
+            "unknown"
+          ]
+        },
+        "setting": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "language",
+        "region_variety",
+        "conversation",
+        "assertion",
+        "attribution",
+        "temporal_scope",
+        "setting"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "sense_id",
+    "meaning_id",
+    "source_label",
+    "english_gloss",
+    "definition",
+    "synonyms",
+    "cultural_applicability",
+    "example_refs",
+    "evidence_refs",
+    "owner",
+    "reuse_approved",
+    "applicability"
+  ],
+  "additionalProperties": false
+}

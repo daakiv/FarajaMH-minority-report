@@ -1,0 +1,117 @@
+Mode: built-in image_gen; referenced image edit.
+
+Final text-correction passes:
+Correct two spelling errors ONLY, preserving all layout and other text. In card1's illustrative example, the quoted expression must read EXACTLY “Moyo wangu unaniuma” — copy the identical correct expression from card2, do not change its spelling. In the far-right rotated teal label replace any malformed word "propoaals" with "proposals": the full text must be EXACTLY "Reviewer correction proposals → curator approval → new dictionary version". Preserve all arrows, all eight cards, no subtitle, step7terminology, and all footer text. Do not rewrite other words.
+
+Repaint two text regions completely, rather than preserving their existing glyphs. Everything else stays.
+REGION 1: Card1 lightblue Illustrative example box. Remove its bold quoted expression line. Replace with TWO lines in larger regular sans-serif:
+"Moyo wangu"
+"unaniuma"
+Spell second line u-n-a-n-i-u-m-a, exactly eight letters, no added e. Keep syntheticcontextbelow. Quotation marks optional.
+REGION2: Far-right vertical teal label. Remove every existing glyph of the label and replace with new shorter plain text, rotated90degrees: "Reviewers propose → curator approves → new dictionary version". Use a clean regular sans-serif font, spaced legibly. Keep noautomaticoverwrite note andfeedbackline.
+These changes intentionally change text layout. They must visibly replace old malformed text. No changes to remaining cards, arrows, title or footer.
+
+Change ONE text phrase only in the far-right teal vertical label. Replace the malformed "curator appoose" phrase with the noun phrase "CURATOR APPROVAL" in uppercase. Full label should read "Reviewers propose → CURATOR APPROVAL → new dictionary version". Draw the corrected words clearly; uppercase spelling C U R A T O R space A P P R O V A L. Every other part of the image remains unchanged.
+
+Edit the supplied v5 into v6. Preserve its successful EIGHT equal cards in two rows of four, left-to-right sequence, single gray row-wrap 4→5, same title and no subtitle. Retain flat two-tone icons, whitecardbodies, coloredheaders, readable sans-serif. Shorten headers to prevent condensedfont. All cardheaders samefontsizeandwidthstyle. Highest supported native resolution, around2000x1700 landscape. Title EXACT "The Minority Report · FarajaMH", one uniformfont, no subtitle.
+
+Mainchange: Step6 meaning review, Step7 automated terminology lookup AFTER approvedmeaning +R2signoff, Step8recordandoutputs. Use exact concise copy below replacing existingtext. Keep an illustrativeexamplearea in eachcard. Example phrase same throughout. All examplecontexts/dictionary/modeloutputs/decisionsareinvented.
+
+1 navyheader "Utterance and context", speechbubbleicon
+"Original wording · language/dialect · setting"
+"Keep the source-language record"
+Example label "Illustrative example"
+"“Moyo wangu unaniuma”"
+"Synthetic context: grief and reported chest discomfort"
+
+2 navyheader "Identify expressions", highlightedspansicon
+"Extract each expression as a span"
+"Keep full context; reviewers may correct boundaries"
+Example
+"Span: “Moyo wangu unaniuma”"
+"Retain grief and chest-discomfort context"
+
+3 purpleheader "Model interpretations", three smallrobotheads labelledModelA/ModelB/ModelC plusdashed"+ more"chip.
+"Separate calls before dictionary exposure"
+"Model and prompt versions pinned"
+"Translation · meanings · category · evidence"
+"Confidence recorded, never used for routing"
+Example
+"Model A (mock): emotional pain"
+"Model B (mock): possible chest pain"
+"Model C (mock): context unclear"
+No voteorpercentages.
+
+4 tealheader "Dictionary evidence", COMPUTERMONITORwithlistmagnifier, NOBOOKS
+"Digital, versioned idiom library"
+"Proposed seed: FarajaMH workshop library"
+"Meaning · category · context limits · source"
+Tag "Evidence source, not a vote"
+Example
+"Mock entry: emotional pain"
+"Check applicability to this speaker and context"
+
+5 blueheader "Compare and route", scalesicon
+"Model–model: Do the models agree?"
+"Model–dictionary: Do they match the library?"
+"Check category · negation · experiencer · time"
+"Review all disagreements, all safety flags and a random sample of agreed cases"
+"Other agreed cases: unreviewed; no approved mapping or export"
+Example
+"Emotional vs physical reading"
+"Speaker · not negated · current"
+Redwarningstrip "Chest-pain concern: assess separately"
+
+6 burnt-orangeheader "HITL Review: meaning", flatthreepeopleicon
+"R1 · Meaning and category"
+"Safety assessment remains separate"
+"Second opinion when needed"
+"Unresolved meaning → request context"
+"Qualified reviewers · no JSON editing"
+Example
+"Illustrative approved meaning:"
+"Emotional pain linked to grief"
+"Chest-pain concern still requires separate assessment"
+
+7 greenheader "Terminology lookup", magnifieroverconnectednodesicon.
+First phase label "Automated candidates"
+"From the terminology service, using the approved meaning"
+Small sourceslist neatlywrapped:
+"MFOEM · MFOMD · SNOMED CT"
+"LOINC (PHQ-9/GAD-7 items)"
+"OMOP standard vocabularies"
+Second phase label "R2 · Terminologist sign-off"
+"Exact, close or related match · record a gap · defer"
+Example
+"Query: emotional pain linked to grief"
+"External match pending"
+"Related item ≠ questionnaire score"
+No inventedcodeoractualcandidateidentifier.
+
+8 greenheader "Record and outputs", connectednodesanddatabaseicons.
+"R3 · Record the versioned decision"
+"SSSOM: relation · justification · provenance"
+"Suitable validated mappings → OMOP"
+"Custom, non-standard local IDs > 2,000,000,000"
+"Optional export when required"
+"A local concept can remain without an external match"
+Example
+"Retain reviewed local meaning"
+"No external mapping or export while pending"
+"Mappings are not patient outcomes"
+Spell SSSOM exactly THREE S letters then O M, NEVER SISSOM.
+
+CONNECTORS: gray1→2→3→4; singlegrayrow-wrap4→5label "For each expression, steps 3–7 repeat"; gray5→6label "Selected for review";gray6→7label "Approved meaning";gray7→8label "Record decision". No skippingorotherarrows.
+Teal dashed feedback from rightedgecard8 upward alongrightmargininto4, label EXACT "Reviewer correction proposals → curator approval → new dictionary version". Add small "No automatic overwrite" by feedback. This is recorded reviewerproposals, not automaticmachineedits.
+
+FOOTER SIMPLIFY radically: DELETE all existing category/provenance/terminology rows and the3separatepills. Exactly ONE readable banner and ONE readable note belowcards. Reserveappropriateheight10%, no microscopictext.
+Banner darknavy: "Dictionary evidence ≠ model vote   ·   Model agreement ≠ correctness   ·   Concept mapping ≠ diagnosis"
+Note on white, canwrapinto2-3lines in ONE textblock atlargelegiblefont:
+"Invented example: context, dictionary entry, model outputs and review require verification. No real patient data in consumer chatbots. Proposed design: not yet adopted or implemented."
+No otherfooterbars. Exactword "or implemented", not "for implemented".
+Do notadddiagnosis, treatmentadvice, scores or unverifiedcodes. Show chestpain as separateunresolvedsafetyconcern, neverdeclareclearedbygriefinterpretation. Retain NOsubtitle and evenfonttitles.
+
+Feedback correction:
+Edit ONLY the teal feedback connector and its label in the far-right margin. The current label is duplicated and overlapping. Erase ALL existing rotated teal text in that margin. Add some blank canvas width on the RIGHT if necessary, preserving all eight cards and all their text exactly.
+Draw ONE clean dashed teal line from the RIGHT edge of card8's GREEN HEADER up along the right margin into the RIGHT EDGE of card4 Dictionary; arrowhead only at dictionary. Place ONE single rotated label in its own clear column beside it: "Reviewer correction proposals → curator approval → new dictionary version". This must appear exactly ONCE, no overlapping lines. Use the full vertical space for the label, not tiny lettering. Add "No automatic overwrite" as a separate small horizontal teal note just above the darkblue bottom banner, aligned right in clear whitespace. It may occupy the new extra right margin.
+Everything else must remain unchanged: title, no subtitle, eight cards, step7terminologyservice, R1 R2 R3, examples, oneprinciplebanner and onenoteblock. Preserve footer exact wording "not yet adopted or implemented". No extrafooterbars.

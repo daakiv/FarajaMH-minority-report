@@ -1,0 +1,116 @@
+Mode: built-in image_gen. Edit of v3 with a completely rebuilt layout.
+
+Final text restoration:
+Final text-restoration edit. Keep all existing layout, images, icons, color and connector topology.
+A. Footer bar "Recorded for every case" has lost important fields. Replace its content EXACTLY with: "Recorded for every case: expression span · model and version · prompt and version · dictionary version · evidence · reviewer decisions". Put "Proposed design: not yet adopted or implemented" as a second line in that same bar. Enlarge this footer bar vertically so both lines are readable; keep the three principle pills below it. Add canvas height at bottom if needed, do not shrink other text.
+B. Restore the arrow label "Approved decision" next to the grey downarrow from HITL band to Outputs. This arrow should begin at the bottom edge of the whole HITL band, slightly BELOW all reviewer cards, not at R1 card itself.
+C. In Applicability strip, replace "experiencer (who it is about)" with that exact spelling and spacing, fully readable.
+D. Teal feedback must visibly originate from rightedge of the burnt-orange HITL HEADER, then run up along right margin to dictionary. Ensure a short horizontal teal dashed line joins header's rightedge to the existing vertical feedback line. One arrowhead only at dictionary. Keep its full rotated label visible.
+E. Keep all 12grey arrows, two orange arbitration arrows and their directions unchanged. Do not delete any other words from the figure. Highest native resolution possible.
+
+Correction pass:
+Edit this infographic with only the following precise corrections. Preserve ALL panels, wording, colors, icons and the five-band layout.
+1. DELETE the grey horizontal arrow between Step2 and the dark "Why ‘Minority Report’?" box. The Why box is explanatory and must have NO connectors.
+2. MOVE the grey vertical arrow now running from Dictionary into Step5 Route. This is WRONG. Shift this arrow LEFT so its center is just inside the left edge of Dictionary and just inside the right edge of Step4 Compare: in this reference image approx x=785. It must start at Dictionary's bottom edge and point straight DOWN into the TOP EDGE of Step4 Compare (which ends at x=818). Delete the old dictionary-to-Route arrow at x=880 entirely. BOTH model and dictionary arrows must enter Step4; Step5 has only its leftward input from Step4 (an arrow pointing RIGHT).
+3. Correct teal feedback: keep ONE dashed teal connector from the RIGHT OUTER EDGE of the whole Step6 HITL band, at the burnt-orange HEADER height (~y=770), UP the far right margin to the Dictionary right edge (~y=355). Its only arrowhead points LEFT INTO DICTIONARY. Remove the lower arrowhead near the second-opinion card at y~858 and remove any connector section below the HITL HEADER. Feedback originates in the WHOLE HITL band, not the second-opinion card.
+4. Add the missing feedback label "Correction proposal → curator approval → new dictionary version". Expand the canvas with a slim extra margin on the RIGHT if needed; place the label rotated 90 degrees along the right margin beside its teal connector, legible and not overlapping the content. Keep it outside all cards. Do not omit this label.
+5. In Applicability strip correct "(who it is about)" (current image dropped 'it is'). Preserve all other text.
+6. Make the two footer bars readable. Put the three principle pills on their OWN fullwidth third footer row below the two bars, as three equalwidth pills. Do not squeeze them beside the recorded-for-every-case bar.
+Maintain exactly12 solid greyflowarrows and2orangearbitrationarrows and1tealfeedbackarrow. Thin grey dashed enclosure stays around Gather/Decide/Review, never outputs. No other connectorchanges. Highest supported resolution, preferably about2000x1700 or greater.
+
+Use case: infographic-diagram. Rebuild the supplied infographic as a NEW layout following the specification below. The supplied image is the old content reference, NOT a layout template. Entirely discard its asymmetric columns, serif font and old connector paths. Create polished flat-design scientific workflow infographic in LANDSCAPE 2000x1700 or highest supported size with similar aspect ratio. Readable sans-serif throughout (Inter/Arial style), white card bodies and offwhite canvas, neat evenly spaced horizontal rows. Text is important. No photos, no scenes of people, no book icons. Flat two-tone line icons consistently.
+
+TITLE: "The Minority Report · FarajaMH"
+SUBTITLE: "Cultural interpretation of idioms of distress · proposed workflow for discussion with Jay, Lucy and Slava"
+
+FIVE FULL-WIDTH HORIZONTAL BANDS A-E, equal left and right alignment, no blank left column. Content should occupy the page evenly. Title8%, A13%, B19%, C17%, D19%, E14%, footer10%; adapt for readability. Use small uniform grey arrowheads on all solid connector lines. Only feedback/arbitration arrows colored. Thin light-grey DASHED ROUNDED RECTANGLE encloses WHOLE of bands B,C,D only, with generous outer padding, completely OUTSIDE their card edges. No dashed boundary across cards. Label at TOP RIGHT of enclosure "↻ Repeat steps 3–6 for each expression". Boundary is not a flow connector. Reserve far-right margin INSIDE this enclosure for the one teal feedback connector; it must not touch card text.
+
+BAND A INPUT: Three cards left-to-right.
+Card1 navy#1E3A8A header whitecircle1, "Utterance and context". Speech-bubbletexticon. Exactly3bullets:
+"Original wording in the source language"
+"Language or dialect (Kiswahili, Sheng…)"
+"Surrounding conversation and setting"
+Grey rightarrow into Card2 navy header whitecircle2, "Identify expression occurrences". Highlightedtextspansicon.3bullets:
+"Extract each expression as a span"
+"Keep the full context linked to it"
+"Reviewers can correct boundaries"
+Card3 ONLY dark panel navybody, white text: "Why ‘Minority Report’?" / "Dissent is evidence to preserve. Every interpretation stays in the record. Qualified people assess meanings; model votes do not decide."
+Single grey downarrow from Card2BOTTOM to Step3 TOPEDGE. No connectionfromWhybox.
+
+BAND B GATHER: Fullwidth step3header "3 · Gather model interpretations and dictionary evidence (independently)" on darkneutralbar. Below two halfwidth panels:
+LEFT purple#6D28D9 header "Independent model interpretations", three SMALL robot heads in distinct colors labelled "Model A", "Model B", "Model C", dashed "+ more models" chip.
+Only2bullets:
+"Separate calls with original expression and context, before dictionary exposure; model and prompt versions pinned"
+"Returns literal translation · proposed meanings · category · evidence explanation"
+RIGHT teal#0F766E header "Dictionary evidence", subtitle "Digital, versioned idiom library", COMPUTER MONITOR list and magnifyingglassicon, no books.
+3bullets:
+"Proposed seed: FarajaMH workshop library"
+"Curator-approved sources and versions"
+"Meaning · category · context limits · source"
+tag "Evidence source, not a vote".
+One straight down grey arrow from each panel to the TOP of step4 in nextband. Align arrows using the overlap in x coordinates; the dictionary arrow can leave near its left lower corner so it lands in step4, NOT step5. No connectors between models and dictionary.
+
+BAND C DECIDE: Step4 wide left65%, Step5 right35%.
+Step4 BLUE#0369A1header "4 · Compare interpretations and evidence", scalesicon.
+Four small side-by-side tiles:
+"Model–model" / "Do models agree?" with2robotheads
+"Model–dictionary" / "Match the library?" withrobotandmonitor
+"Category" / "Same meaning, different category?" withtagicon
+"Applicability" / "Does it apply here?" withquestionmagnifier.
+Strip "Applicability: distress or ordinary use? · negation · experiencer (who it is about) · time"
+Small RED#DC2626strip warningtriangle "Safety concern is flagged on its own track"
+Grey arrow RIGHT fromStep4 toStep5.
+Step5 AMBER#B45309header "5 · Route cases", splitsymbol people/pauseicon.
+"To HITL Review: every disagreement, every safety flag, and a random sample of agreed cases"
+"Other agreed cases: model-agreed, unreviewed. Proposals retained; no approved mapping or export."
+smallprint "Sampling rule to be agreed in the research protocol"
+No external branch connector for unreviewedcases: this is terminal status written INSIDE step5.
+Grey straight DOWN from Step5 bottom to fullwidth Step6 header, labelled "Selected for review". Must enter HEADER of entireStep6, not the secondopinioncard.
+
+BAND D REVIEW: Fullwidth burnt orange#C2410Cheader "6 · HITL Review", groupofthreepeopleicon, sidecaption "Qualified reviewers · guided screens, no JSON editing". Four cards across inside the band R1,R2,R3,Secondopinion. R1/R2/R3 equal width, secondopinion can be slightly narrower.
+R1header "R1 · Meaning and category", pencilondocumenticon.
+"Clinical, cultural or linguistic expertise"
+"Select or edit a meaning · keep alternatives · request context"
+"One reviewer may also cover R2 if qualified for both"
+Grey rightarrow into R2.
+R2header "R2 · Concept relationships", connectednodesicon.
+"Qualified terminologist signs off"
+"MFOEM · MFOMD · SNOMED CT · PHQ-9 / GAD-7 items (LOINC)"
+"Approve a fit · record a gap · defer"
+italic "Related content ≠ questionnaire answer or score"
+Grey rightarrow into R3.
+R3header "R3 · Check and submit", clipboardtickicon.
+"Expert reviewer"
+"Evidence · uncertainty · safety assessment"
+"One versioned decision; unresolved meaning leaves concept approval pending"
+Secondopinion card dashedorangeborder, twopeopleicon "Second opinion / arbitration" / "When needed" / "Challenged or unclear decisions. Dissent is preserved." / "Result returns to R3".
+Between R3 and secondopinion exactly TWO parallel dashedORANGE arrows: upperpointsright R3→opinion, lowerpointsleft opinion→R3. These andfeedback are the ONLY reversearrows allowed.
+One solid GREY STRAIGHT DOWN arrow from the BOTTOM EDGE OF WHOLE STEP6 BAND (under R1, x position of first output center) to first outputTOP. Label "Approved decision". This is the band completion path, not a shortcut fromR1. Must not attach to individualR1card.
+One dashedTEAL feedbackconnector explicitly from rightedgeofStep6band UP FAR RIGHT MARGIN, then leftwardarrowhead INTO dictionary RIGHTEDGE. Label "Correction proposal → curator approval → new dictionary version" in clear rightmargin, no overlap. No other up or left flowlines.
+
+BAND E OUTPUTS: Title "Outputs". FOUR EQUAL WIDTH/HEIGHT WHITE CARDS with GREEN#15803Dheaders, horizontally arranged, same fullpage width as allbands.
+1 "Approved contextual meaning and local concept", greencheckdocumenticon.
+"Alternatives and semantic gaps retained"
+"A valid local concept need not have an external match"
+grey rightarrow.
+2 "SSSOM mapping records (versioned)", nodes/sharesymbol.
+"Source · relation · target · justification · provenance"
+"Governed mapping records, not patient outcomes"
+grey rightarrow.
+3 "OMOP vocabulary mapping, where suitable", databasecylinder.
+"Proposed: transform validated SSSOM mappings"
+"Custom, non-standard local concept IDs > 2,000,000,000"
+grey rightarrow.
+4 "Optional OMOP data export", boxoutgoingarrowicon.
+"Only when required"
+"For approved model training and analysis"
+The SSSOM→OMOP arrow is one-way. No additional mappings connector, no reverse arrow.
+
+FOOTERS:
+Thinbar1 "Primary categories (codebook pending): Cognitive process · Emotional state · Somatic experience · Spiritual/supernatural · Clinical symptom · Context-specific · Other / cannot determine" and redtriangle "Risk/safety is assessed separately".
+Thinbar2 "Recorded for every case: expression span · model and version · prompt and version · dictionary version · evidence · reviewer decisions" and italic "Proposed design: not yet adopted or implemented".
+Three darknavypills "Dictionary evidence ≠ model vote" / "Model agreement ≠ correctness" / "Concept mapping ≠ diagnosis".
+
+ARROW AUDIT: exactly12solidgreyflowarrows:1→2;2→3;Models→4;Dictionary→4;4→5;5→6;R1→R2;R2→R3;Step6→Output1;Output1→2;Output2→3;Output3→4. Exactly2dashedorangearrows R3⇄opinion and1dashedtealHITL→Dictionary. Do NOT add anysolidarrowtoopinion or between3models. Icons may contain arrow motifs but flowconnectors must match list. Samegreyarrowheads every solidline. No line crossings. No step2→4. Loopboundary is only aroundB-D and is thinneutralgrey notcoloredfeedback.
+
+Use ONE sans-serif font. Large extraboldtitle, boldwhitecoloredstepheaders, readable body notmicroscopic. No serif. No literalBandA-E labels required. No workedexample, modelbrands, diagnosticcodes, percentages or inventedtechnicalclaims. This replaces prior image layout; match this new grid exactly.

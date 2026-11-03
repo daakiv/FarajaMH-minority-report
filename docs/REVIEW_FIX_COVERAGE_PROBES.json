@@ -1,0 +1,73 @@
+{
+  "MFOEM / heart beating at faster rate": {
+    "state": "HITS",
+    "count": 1,
+    "coverage": [
+      {
+        "query": "heart beating at faster rate",
+        "returned": 1,
+        "total_reported": 1,
+        "limit": 20
+      }
+    ],
+    "error": null,
+    "candidates": [
+      {
+        "id": "MFOEM:000139",
+        "label": "heart beating at faster rate"
+      }
+    ]
+  },
+  "MFOEM / heart beating faster": {
+    "state": "HITS",
+    "count": 1,
+    "coverage": [
+      {
+        "query": "heart beating faster",
+        "returned": 1,
+        "total_reported": 1,
+        "limit": 20
+      }
+    ],
+    "error": null,
+    "candidates": [
+      {
+        "id": "MFOEM:000139",
+        "label": "heart beating at faster rate"
+      }
+    ]
+  },
+  "SNOMED_CT / chest heaviness": {
+    "state": "NO_RESULTS",
+    "count": 0,
+    "coverage": [
+      {
+        "query": "chest heaviness",
+        "returned": 0,
+        "total_reported": 0,
+        "limit": 20
+      }
+    ],
+    "error": null,
+    "candidates": []
+  },
+  "SNOMED_CT / tight chest": {
+    "state": "HITS",
+    "count": 1,
+    "coverage": [
+      {
+        "query": "tight chest",
+        "returned": 1,
+        "total_reported": 1,
+        "limit": 20
+      }
+    ],
+    "error": null,
+    "candidates": [
+      {
+        "id": "SNOMEDCT:23924001",
+        "label": "Tight chest"
+      }
+    ]
+  }
+}

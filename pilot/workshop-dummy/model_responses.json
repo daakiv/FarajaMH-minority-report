@@ -1,0 +1,3298 @@
+{
+  "DUMMY_WC_01": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: persistent thoughts about tasks",
+        "contextual_rendering": "persistent thoughts about tasks",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "persistent thoughts about tasks",
+            "category": "other",
+            "semantic_frame": {
+              "experience": "persistent thoughts about tasks",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_01",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "persistent thoughts about tasks"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: persistent thoughts about tasks",
+        "contextual_rendering": "persistent thoughts about tasks",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "persistent thoughts about tasks",
+            "category": "other",
+            "semantic_frame": {
+              "experience": "persistent thoughts about tasks",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_01",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "persistent thoughts about tasks"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: persistent thoughts about tasks",
+        "contextual_rendering": "persistent thoughts about tasks",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "persistent thoughts about tasks",
+            "category": "other",
+            "semantic_frame": {
+              "experience": "persistent thoughts about tasks",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_01",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "persistent thoughts about tasks"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: persistent thoughts about tasks",
+        "contextual_rendering": "persistent thoughts about tasks",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "persistent thoughts about tasks",
+            "category": "other",
+            "semantic_frame": {
+              "experience": "persistent thoughts about tasks",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_01",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "persistent thoughts about tasks"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_02": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: sadness after loss",
+        "contextual_rendering": "sadness after loss",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "sadness after loss",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "sadness after loss",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_02",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "sadness after loss"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: sadness after loss",
+        "contextual_rendering": "sadness after loss",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "sadness after loss",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "sadness after loss",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_02",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "sadness after loss"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: sadness after loss",
+        "contextual_rendering": "sadness after loss",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "sadness after loss",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "sadness after loss",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_02",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "sadness after loss"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: sadness after loss",
+        "contextual_rendering": "sadness after loss",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "sadness after loss",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "sadness after loss",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_02",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "sadness after loss"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_03": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: physical chest heaviness",
+        "contextual_rendering": "physical chest heaviness",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "physical chest heaviness",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "physical chest heaviness",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_03",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "physical chest heaviness"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "uncertain",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: physical chest heaviness",
+        "contextual_rendering": "physical chest heaviness",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "physical chest heaviness",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "physical chest heaviness",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_03",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "physical chest heaviness"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "uncertain",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: physical chest heaviness",
+        "contextual_rendering": "physical chest heaviness",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "physical chest heaviness",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "physical chest heaviness",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_03",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "physical chest heaviness"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "uncertain",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: physical chest heaviness",
+        "contextual_rendering": "alternative unresolved reading",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "alternative unresolved reading",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "alternative unresolved reading",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_03",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "alternative unresolved reading"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "uncertain",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_04": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: spiritual attribution of reluctance",
+        "contextual_rendering": "spiritual attribution of reluctance",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "spiritual attribution of reluctance",
+            "category": "spiritual",
+            "semantic_frame": {
+              "experience": "spiritual attribution of reluctance",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_04",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "spiritual attribution of reluctance"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: spiritual attribution of reluctance",
+        "contextual_rendering": "spiritual attribution of reluctance",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "spiritual attribution of reluctance",
+            "category": "spiritual",
+            "semantic_frame": {
+              "experience": "spiritual attribution of reluctance",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_04",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "spiritual attribution of reluctance"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: spiritual attribution of reluctance",
+        "contextual_rendering": "spiritual attribution of reluctance",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "spiritual attribution of reluctance",
+            "category": "spiritual",
+            "semantic_frame": {
+              "experience": "spiritual attribution of reluctance",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_04",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "spiritual attribution of reluctance"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: spiritual attribution of reluctance",
+        "contextual_rendering": "spiritual attribution of reluctance",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "spiritual attribution of reluctance",
+            "category": "spiritual",
+            "semantic_frame": {
+              "experience": "spiritual attribution of reluctance",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_04",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "spiritual attribution of reluctance"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_05": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: confusion needing clarification",
+        "contextual_rendering": "confusion needing clarification",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "confusion needing clarification",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "confusion needing clarification",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_05",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "confusion needing clarification"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: confusion needing clarification",
+        "contextual_rendering": "confusion needing clarification",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "confusion needing clarification",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "confusion needing clarification",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_05",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "confusion needing clarification"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: confusion needing clarification",
+        "contextual_rendering": "confusion needing clarification",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "confusion needing clarification",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "confusion needing clarification",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_05",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "confusion needing clarification"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: confusion needing clarification",
+        "contextual_rendering": "confusion needing clarification",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "confusion needing clarification",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "confusion needing clarification",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_05",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "confusion needing clarification"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_06": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: meaning needs more context",
+        "contextual_rendering": "meaning needs more context",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "meaning needs more context",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "meaning needs more context",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_06",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "meaning needs more context"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: meaning needs more context",
+        "contextual_rendering": "meaning needs more context",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "meaning needs more context",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "meaning needs more context",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_06",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "meaning needs more context"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: meaning needs more context",
+        "contextual_rendering": "meaning needs more context",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "meaning needs more context",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "meaning needs more context",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_06",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "meaning needs more context"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: meaning needs more context",
+        "contextual_rendering": "alternative unresolved reading",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "alternative unresolved reading",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "alternative unresolved reading",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_06",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "alternative unresolved reading"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_07": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: internal bodily shaking sensation",
+        "contextual_rendering": "internal bodily shaking sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "internal bodily shaking sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "internal bodily shaking sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_07",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "internal bodily shaking sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: internal bodily shaking sensation",
+        "contextual_rendering": "internal bodily shaking sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "internal bodily shaking sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "internal bodily shaking sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_07",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "internal bodily shaking sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: internal bodily shaking sensation",
+        "contextual_rendering": "internal bodily shaking sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "internal bodily shaking sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "internal bodily shaking sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_07",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "internal bodily shaking sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: internal bodily shaking sensation",
+        "contextual_rendering": "internal bodily shaking sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "internal bodily shaking sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "internal bodily shaking sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_07",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "internal bodily shaking sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_08": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: distress with a separate safety concern",
+        "contextual_rendering": "distress with a separate safety concern",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "distress with a separate safety concern",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "distress with a separate safety concern",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_08",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "distress with a separate safety concern"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: distress with a separate safety concern",
+        "contextual_rendering": "distress with a separate safety concern",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "distress with a separate safety concern",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "distress with a separate safety concern",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_08",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "distress with a separate safety concern"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: distress with a separate safety concern",
+        "contextual_rendering": "distress with a separate safety concern",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "distress with a separate safety concern",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "distress with a separate safety concern",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_08",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "distress with a separate safety concern"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: distress with a separate safety concern",
+        "contextual_rendering": "distress with a separate safety concern",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "distress with a separate safety concern",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "distress with a separate safety concern",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_08",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "distress with a separate safety concern"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_09": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: racing-heart sensation",
+        "contextual_rendering": "racing-heart sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "racing-heart sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "racing-heart sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_09",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "racing-heart sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "uncertain",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: racing-heart sensation",
+        "contextual_rendering": "racing-heart sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "racing-heart sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "racing-heart sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_09",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "racing-heart sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "uncertain",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: racing-heart sensation",
+        "contextual_rendering": "racing-heart sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "racing-heart sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "racing-heart sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_09",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "racing-heart sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "uncertain",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: racing-heart sensation",
+        "contextual_rendering": "alternative unresolved reading",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "alternative unresolved reading",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "alternative unresolved reading",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_09",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "alternative unresolved reading"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "uncertain",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_10": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: ordinary device-battery comment",
+        "contextual_rendering": "ordinary device-battery comment",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "ordinary device-battery comment",
+            "category": "non_distress",
+            "semantic_frame": {
+              "experience": "ordinary device-battery comment",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_10",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "ordinary device-battery comment"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: ordinary device-battery comment",
+        "contextual_rendering": "ordinary device-battery comment",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "ordinary device-battery comment",
+            "category": "non_distress",
+            "semantic_frame": {
+              "experience": "ordinary device-battery comment",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_10",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "ordinary device-battery comment"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: ordinary device-battery comment",
+        "contextual_rendering": "ordinary device-battery comment",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "ordinary device-battery comment",
+            "category": "non_distress",
+            "semantic_frame": {
+              "experience": "ordinary device-battery comment",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_10",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "ordinary device-battery comment"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: ordinary device-battery comment",
+        "contextual_rendering": "ordinary device-battery comment",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "ordinary device-battery comment",
+            "category": "non_distress",
+            "semantic_frame": {
+              "experience": "ordinary device-battery comment",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_10",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "ordinary device-battery comment"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_11": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: repetitive task-related thinking",
+        "contextual_rendering": "repetitive task-related thinking",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "repetitive task-related thinking",
+            "category": "other",
+            "semantic_frame": {
+              "experience": "repetitive task-related thinking",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_11",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "repetitive task-related thinking"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: repetitive task-related thinking",
+        "contextual_rendering": "repetitive task-related thinking",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "repetitive task-related thinking",
+            "category": "other",
+            "semantic_frame": {
+              "experience": "repetitive task-related thinking",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_11",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "repetitive task-related thinking"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: repetitive task-related thinking",
+        "contextual_rendering": "repetitive task-related thinking",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "repetitive task-related thinking",
+            "category": "other",
+            "semantic_frame": {
+              "experience": "repetitive task-related thinking",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_11",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "repetitive task-related thinking"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: repetitive task-related thinking",
+        "contextual_rendering": "repetitive task-related thinking",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "repetitive task-related thinking",
+            "category": "other",
+            "semantic_frame": {
+              "experience": "repetitive task-related thinking",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_11",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "repetitive task-related thinking"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_12": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: present heaviness denied",
+        "contextual_rendering": "present heaviness denied",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "present heaviness denied",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "present heaviness denied",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_12",
+              "assertion": "negated",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "present heaviness denied"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: present heaviness denied",
+        "contextual_rendering": "present heaviness denied",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "present heaviness denied",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "present heaviness denied",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_12",
+              "assertion": "negated",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "present heaviness denied"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: present heaviness denied",
+        "contextual_rendering": "present heaviness denied",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "present heaviness denied",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "present heaviness denied",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_12",
+              "assertion": "negated",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "present heaviness denied"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: present heaviness denied",
+        "contextual_rendering": "present heaviness denied",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "present heaviness denied",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "present heaviness denied",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_12",
+              "assertion": "negated",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "present heaviness denied"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_13": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: reported emotional heaviness in another person",
+        "contextual_rendering": "reported emotional heaviness in another person",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "reported emotional heaviness in another person",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "reported emotional heaviness in another person",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-other-person",
+              "assertion": "affirmed",
+              "attribution": "other",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "reported emotional heaviness in another person"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: reported emotional heaviness in another person",
+        "contextual_rendering": "reported emotional heaviness in another person",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "reported emotional heaviness in another person",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "reported emotional heaviness in another person",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-other-person",
+              "assertion": "affirmed",
+              "attribution": "other",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "reported emotional heaviness in another person"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: reported emotional heaviness in another person",
+        "contextual_rendering": "reported emotional heaviness in another person",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "reported emotional heaviness in another person",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "reported emotional heaviness in another person",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-other-person",
+              "assertion": "affirmed",
+              "attribution": "other",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "reported emotional heaviness in another person"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: reported emotional heaviness in another person",
+        "contextual_rendering": "reported emotional heaviness in another person",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "reported emotional heaviness in another person",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "reported emotional heaviness in another person",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-other-person",
+              "assertion": "affirmed",
+              "attribution": "other",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "reported emotional heaviness in another person"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_14": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: past head-heat sensation",
+        "contextual_rendering": "past head-heat sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "past head-heat sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "past head-heat sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_14",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "past",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "past head-heat sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: past head-heat sensation",
+        "contextual_rendering": "past head-heat sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "past head-heat sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "past head-heat sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_14",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "past",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "past head-heat sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: past head-heat sensation",
+        "contextual_rendering": "past head-heat sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "past head-heat sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "past head-heat sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_14",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "past",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "past head-heat sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: past head-heat sensation",
+        "contextual_rendering": "past head-heat sensation",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "past head-heat sensation",
+            "category": "somatic",
+            "semantic_frame": {
+              "experience": "past head-heat sensation",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_14",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "past",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "past head-heat sensation"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_15": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: emotional heaviness and repetitive thoughts",
+        "contextual_rendering": "emotional heaviness and repetitive thoughts",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "emotional heaviness and repetitive thoughts",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "emotional heaviness and repetitive thoughts",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_15",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "emotional heaviness and repetitive thoughts"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: emotional heaviness and repetitive thoughts",
+        "contextual_rendering": "emotional heaviness and repetitive thoughts",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "emotional heaviness and repetitive thoughts",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "emotional heaviness and repetitive thoughts",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_15",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "emotional heaviness and repetitive thoughts"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: emotional heaviness and repetitive thoughts",
+        "contextual_rendering": "emotional heaviness and repetitive thoughts",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "emotional heaviness and repetitive thoughts",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "emotional heaviness and repetitive thoughts",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_15",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "emotional heaviness and repetitive thoughts"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: emotional heaviness and repetitive thoughts",
+        "contextual_rendering": "emotional heaviness and repetitive thoughts",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "emotional heaviness and repetitive thoughts",
+            "category": "emotional",
+            "semantic_frame": {
+              "experience": "emotional heaviness and repetitive thoughts",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_15",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "emotional heaviness and repetitive thoughts"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  },
+  "DUMMY_WC_16": {
+    "small-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: unresolved unfamiliar experience",
+        "contextual_rendering": "unresolved unfamiliar experience",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "unresolved unfamiliar experience",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "unresolved unfamiliar experience",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_16",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "unresolved unfamiliar experience"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "small-llama": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: unresolved unfamiliar experience",
+        "contextual_rendering": "unresolved unfamiliar experience",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "unresolved unfamiliar experience",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "unresolved unfamiliar experience",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_16",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "unresolved unfamiliar experience"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "medium-gemma": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: unresolved unfamiliar experience",
+        "contextual_rendering": "unresolved unfamiliar experience",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "unresolved unfamiliar experience",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "unresolved unfamiliar experience",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_16",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "unresolved unfamiliar experience"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ],
+    "comparison-qwen": [
+      {
+        "schema_version": "1.0",
+        "literal_gloss": "UNVALIDATED dummy gloss: unresolved unfamiliar experience",
+        "contextual_rendering": "unresolved unfamiliar experience",
+        "hypotheses": [
+          {
+            "id": "h1",
+            "meaning": "unresolved unfamiliar experience",
+            "category": "uncertain",
+            "semantic_frame": {
+              "experience": "unresolved unfamiliar experience",
+              "cause": "contextual possibility",
+              "cultural_reading": "not established"
+            },
+            "qualifiers": {
+              "experiencer": "SYN-DUMMY_WC_16",
+              "assertion": "affirmed",
+              "attribution": "self",
+              "event_time": "present",
+              "utterance_time": "2026-10-10T09:00:00Z",
+              "setting": "synthetic interview"
+            },
+            "search_terms": [
+              "unresolved unfamiliar experience"
+            ],
+            "evidence_refs": [
+              "E1"
+            ],
+            "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+            "counterevidence": [
+              "Alternative readings may remain plausible"
+            ],
+            "uncertainty": "Constructed unvalidated interpretation",
+            "cultural_notes": []
+          }
+        ],
+        "primary_hypothesis": "h1",
+        "risk": {
+          "signal": "not_flagged",
+          "evidence_refs": [
+            "E1"
+          ],
+          "rationale": "Synthetic risk routing example"
+        },
+        "questions": [
+          "What additional context would clarify this reading?"
+        ],
+        "confidence_uncalibrated": null
+      }
+    ]
+  }
+}

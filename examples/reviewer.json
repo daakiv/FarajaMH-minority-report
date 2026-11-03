@@ -1,0 +1,44 @@
+{
+  "action": "accept",
+  "preferred": [
+    {
+      "id": "h1",
+      "meaning": "emotional pain",
+      "category": "emotional",
+      "semantic_frame": {
+        "experience": "emotional pain",
+        "cause": "contextual possibility",
+        "cultural_reading": "not established"
+      },
+      "qualifiers": {
+        "experiencer": "SYN-person",
+        "assertion": "affirmed",
+        "attribution": "self",
+        "event_time": "present",
+        "utterance_time": "2026-01-01T12:00:00Z",
+        "setting": "synthetic interview"
+      },
+      "search_terms": [
+        "emotional pain"
+      ],
+      "evidence_refs": [
+        "E1"
+      ],
+      "rationale": "Illustrative fixture reading of E1; not a verified cultural fact.",
+      "counterevidence": [
+        "Alternative readings may remain plausible"
+      ],
+      "uncertainty": "Constructed unvalidated interpretation",
+      "cultural_notes": []
+    }
+  ],
+  "comment": "SIMULATED example review; not a cultural fact",
+  "evidence_refs": [
+    "E1"
+  ],
+  "uncertainties": [
+    "Unvalidated example"
+  ],
+  "risk_signal": "not_flagged",
+  "applicability_confirmed": false
+}

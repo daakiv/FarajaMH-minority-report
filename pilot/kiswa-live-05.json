@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "utterance_id": "KISWA-LIVE-05",
+  "synthetic": true,
+  "original_text": "Kabla ya mkutano na bosi, nasikia moyo inadunda, roho inaenda mbio.",
+  "language": "sw",
+  "language_spans": [],
+  "source_type": "Constructed test from DUMMY_DICT_09; wording needs linguistic review",
+  "speaker_role": "synthetic speaker",
+  "speaker_ref": "SYN-KISWA-05",
+  "region_variety": null,
+  "conversation": "Synthetic test. The speaker describes how they feel before a meeting with their boss. No further context supplied.",
+  "qualifiers": {
+    "experiencer": "self",
+    "assertion": "affirmed",
+    "attribution": "self",
+    "event_time": "unknown",
+    "utterance_time": "unknown",
+    "setting": "synthetic test"
+  },
+  "expression_span": {
+    "start": 34,
+    "end": 66,
+    "text": "moyo inadunda, roho inaenda mbio"
+  },
+  "evidence": [
+    {
+      "id": "E1",
+      "text": "Kabla ya mkutano na bosi, nasikia moyo inadunda, roho inaenda mbio.",
+      "reference": "Constructed test example suggested by user, 2026-10-28"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "applicability": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "conversation": "The synthetic speaker mentions missing a friend; physical discomfort has not been excluded.",
+      "language": "sw",
+      "region_variety": null,
+      "setting": "synthetic interview",
+      "temporal_scope": "present"
+    },
+    "created_at": "2026-10-05T20:06:17.110795+00:00",
+    "cultural_applicability": "Constructed context only; not validated community usage",
+    "curator": {
+      "expertise": [
+        "SIMULATED terminology curator"
+      ],
+      "id": "demo_curator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "curator",
+        "terminology"
+      ],
+      "simulated": true
+    },
+    "definition": "SIMULATED contextual sense: physical pain",
+    "english_gloss": "physical pain",
+    "evidence_refs": [
+      "E1"
+    ],
+    "example_refs": [
+      "SYN02"
+    ],
+    "id": "FARAJA:demo-051261cb5cef",
+    "meaning": {
+      "category": "somatic",
+      "id": "h1",
+      "meaning": "physical pain",
+      "search_terms": [
+        "physical pain"
+      ],
+      "semantic_frame": {
+        "cause": "contextual possibility",
+        "cultural_reading": "not established",
+        "experience": "physical pain"
+      },
+      "uncertainty": "Constructed unvalidated interpretation"
+    },
+    "meaning_decision_hash": "d24bff97db69d52f9be613ff622c872ceab300dae3ae166a692cc602b540bbbc",
+    "meaning_id": "h1",
+    "origin_utterance": "SYN02",
+    "owner": "SIMULATED research curator",
+    "reuse_approved": true,
+    "sense_id": "FARAJA:demo-051261cb5cef",
+    "simulated": true,
+    "source_label": "Moyo unauma",
+    "status": "APPROVED",
+    "synonyms": [],
+    "version": 1
+  },
+  {
+    "applicability": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "conversation": "A synthetic speaker discusses a loss and also mentions discomfort after a meal.",
+      "language": "en",
+      "region_variety": null,
+      "setting": "synthetic interview",
+      "temporal_scope": "present"
+    },
+    "created_at": "2026-10-05T20:06:17.096113+00:00",
+    "cultural_applicability": "Constructed context only; not validated community usage",
+    "curator": {
+      "expertise": [
+        "SIMULATED terminology curator"
+      ],
+      "id": "demo_curator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "curator",
+        "terminology"
+      ],
+      "simulated": true
+    },
+    "definition": "SIMULATED contextual sense: emotional pain",
+    "english_gloss": "emotional pain",
+    "evidence_refs": [
+      "E1"
+    ],
+    "example_refs": [
+      "SYN01"
+    ],
+    "id": "FARAJA:demo-a3c624b70b9c",
+    "meaning": {
+      "category": "emotional",
+      "id": "emotional",
+      "meaning": "emotional pain",
+      "search_terms": [
+        "emotional pain"
+      ],
+      "semantic_frame": {
+        "cause": "contextual possibility",
+        "cultural_reading": "not established",
+        "experience": "emotional pain"
+      },
+      "uncertainty": "Constructed unvalidated interpretation"
+    },
+    "meaning_decision_hash": "2510c285594c8ac83fd22a33dbb4e6df271d646b5906717f49118074d5920c8e",
+    "meaning_id": "emotional",
+    "origin_utterance": "SYN01",
+    "owner": "SIMULATED research curator",
+    "reuse_approved": true,
+    "sense_id": "FARAJA:demo-a3c624b70b9c",
+    "simulated": true,
+    "source_label": "My heart is burning",
+    "status": "APPROVED",
+    "synonyms": [],
+    "version": 1
+  },
+  {
+    "applicability": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "conversation": "The synthetic speaker is worried about an upcoming examination.",
+      "language": "sw",
+      "region_variety": null,
+      "setting": "synthetic interview",
+      "temporal_scope": "present"
+    },
+    "created_at": "2026-10-05T20:06:17.124151+00:00",
+    "cultural_applicability": "Constructed context only; not validated community usage",
+    "curator": {
+      "expertise": [
+        "SIMULATED terminology curator"
+      ],
+      "id": "demo_curator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "curator",
+        "terminology"
+      ],
+      "simulated": true
+    },
+    "definition": "SIMULATED contextual sense: worry",
+    "english_gloss": "worry",
+    "evidence_refs": [
+      "E1"
+    ],
+    "example_refs": [
+      "SYN04"
+    ],
+    "id": "FARAJA:demo-ecd1174f30b2",
+    "meaning": {
+      "category": "emotional",
+      "id": "h1",
+      "meaning": "worry",
+      "search_terms": [
+        "worry"
+      ],
+      "semantic_frame": {
+        "cause": "contextual possibility",
+        "cultural_reading": "not established",
+        "experience": "worry"
+      },
+      "uncertainty": "Constructed unvalidated interpretation"
+    },
+    "meaning_decision_hash": "e2fbcc377907064b65032a5c9887e30024bddaf437a32aa49abbe881ecbe0a41",
+    "meaning_id": "h1",
+    "origin_utterance": "SYN04",
+    "owner": "SIMULATED research curator",
+    "reuse_approved": true,
+    "sense_id": "FARAJA:demo-ecd1174f30b2",
+    "simulated": true,
+    "source_label": "Mawazo mengi",
+    "status": "APPROVED",
+    "synonyms": [],
+    "version": 1
+  },
+  {
+    "applicability": {
+      "assertion": "affirmed",
+      "attribution": "self",
+      "conversation": "A synthetic speaker discusses a loss and also mentions discomfort after a meal.",
+      "language": "en",
+      "region_variety": null,
+      "setting": "synthetic interview",
+      "temporal_scope": "present"
+    },
+    "created_at": "2026-10-05T20:06:17.098245+00:00",
+    "cultural_applicability": "Constructed context only; not validated community usage",
+    "curator": {
+      "expertise": [
+        "SIMULATED terminology curator"
+      ],
+      "id": "demo_curator",
+      "locality_familiarity": "SIMULATED Kenya/Tanzania review panel",
+      "roles": [
+        "curator",
+        "terminology"
+      ],
+      "simulated": true
+    },
+    "definition": "SIMULATED contextual sense: physical burning sensation",
+    "english_gloss": "physical burning sensation",
+    "evidence_refs": [
+      "E1"
+    ],
+    "example_refs": [
+      "SYN01"
+    ],
+    "id": "FARAJA:demo-fbf2add9da52",
+    "meaning": {
+      "category": "somatic",
+      "id": "somatic",
+      "meaning": "physical burning sensation",
+      "search_terms": [
+        "physical burning sensation"
+      ],
+      "semantic_frame": {
+        "cause": "contextual possibility",
+        "cultural_reading": "not established",
+        "experience": "physical burning sensation"
+      },
+      "uncertainty": "Constructed unvalidated interpretation"
+    },
+    "meaning_decision_hash": "2510c285594c8ac83fd22a33dbb4e6df271d646b5906717f49118074d5920c8e",
+    "meaning_id": "somatic",
+    "origin_utterance": "SYN01",
+    "owner": "SIMULATED research curator",
+    "reuse_approved": true,
+    "sense_id": "FARAJA:demo-fbf2add9da52",
+    "simulated": true,
+    "source_label": "My heart is burning",
+    "status": "APPROVED",
+    "synonyms": [],
+    "version": 1
+  }
+]

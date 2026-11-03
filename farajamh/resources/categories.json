@@ -1,0 +1,46 @@
+{
+  "C": [
+    "Cognitive process",
+    "cognitive"
+  ],
+  "E": [
+    "Emotional state",
+    "emotional"
+  ],
+  "S": [
+    "Somatic experience",
+    "somatic"
+  ],
+  "Sp": [
+    "Spiritual/supernatural",
+    "spiritual"
+  ],
+  "Cl": [
+    "Clinical symptom",
+    "clinical"
+  ],
+  "Cs": [
+    "Context-specific",
+    "context_specific"
+  ],
+  "Ob": [
+    "Other bodily",
+    "somatic"
+  ],
+  "undetermined": [
+    "Cannot determine",
+    "uncertain"
+  ],
+  "social": [
+    "Social/relational (no workshop code assigned)",
+    "social"
+  ],
+  "non_distress": [
+    "Ordinary / non-distress use (no workshop code assigned)",
+    "non_distress"
+  ],
+  "other": [
+    "Other (no workshop code assigned)",
+    "other"
+  ]
+}

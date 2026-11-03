@@ -1,0 +1,53 @@
+Use case: infographic-diagram.
+Create a NEW high resolution professional research workflow infographic for FarajaMH. Request maximum available native resolution, preferably 3840 x 2160 landscape, with pin-sharp readable typography suitable for presentation and sharing. White background, dark navy text, restrained teal and amber accents, elegant academic editorial layout, generous whitespace, consistent clean flat icons, absolutely no photos, fake logos, decoration or invented scientific claims.
+
+Title verbatim: "FarajaMH Cultural Interpretation Workflow"
+Subtitle verbatim: "Proposed workflow for discussion with Lucy and Slava"
+
+Layout: a wide upper pipeline, a middle evidence-comparison region, and a lower band of three reviewer steps with a small outputs region. Clear arrow connections and excellent hierarchy. Use only the concise text supplied below. Preserve all acronyms exactly. Do not add diagnostic outputs or automatic approval. Do not draw the dictionary as a voter.
+
+UPPER PIPELINE four readable numbered modules left to right:
+1 "Utterance and context"
+body "Original wording • Language or dialect • Surrounding conversation"
+2 "Identify expression occurrences"
+body "Extract spans • Preserve full context • Reviewer can correct boundaries"
+3 "For each expression"
+body "Literal translation • Proposed meanings • Suggested categories"
+4 "Compare evidence and interpretations"
+body "Retain agreement, alternatives and disagreement"
+
+Below module 3 show two separate parallel inputs into module 4:
+A "Dictionary evidence"
+body "Matched entry • Meaning • Category • Source and version • Contextual applicability"
+B "Independent model interpretations"
+body "Model A • Model B • Model C"
+small note "First model pass uses the original expression and context before seeing dictionary evidence."
+Show dictionary retrieval from expression original-language and model pass as separate branches. Dictionary is explicitly labeled "Evidence source, not a vote". Do not imply pretrained model knowledge is a verified source.
+
+Below module 4 show three small comparison labels: "Model–model", "Model–dictionary", "Meaning–category". small explanatory text "Different meanings and different categories are reviewed separately."
+
+LOWER BAND heading "Three steps for one qualified expert reviewer"
+three cards left to right:
+1 "Confirm meaning and category"
+body "Select, edit or add a meaning"
+body "Keep alternatives or request context"
+2 "Confirm concept relationships"
+body "Check definitions in MFOEM, MFOMD and SNOMED CT"
+body "Approve a fit, record a gap or defer"
+3 "Check and submit"
+body "Evidence • Uncertainty • Safety concern"
+body "One versioned expert decision"
+An amber optional branch from reviewer band to small box "Request a second opinion" body "Unresolved meaning, cultural expertise, terminology uncertainty or challenged decision"; no mandatory arbitrator gate.
+Readable slim category strip: "Categories: Cognitive process • Emotional state • Somatic experience • Spiritual/supernatural • Clinical symptom • Context-specific • Other / cannot determine"
+Adjacent short line: "Safety concern is assessed separately."
+
+OUTPUTS region at bottom right, clean and connected to approved reviewer steps:
+"Approved local sense and ontology relationships"
+splits into "SSSOM mapping records" and "OMOP vocabulary mapping, where suitable".
+From OMOP mapping connect to SSSOM records and to small text "OMOP data export, if required".
+Ensure SSSOM does NOT depend on having an OMOP match. SSSOM records concept mappings and provenance, not patient-level clinical outcomes. A local sense can be retained with no suitable ontology/OMOP match.
+
+Footer verbatim: "Dictionary evidence ≠ model vote    Model agreement ≠ correctness    Concept mapping ≠ diagnosis"
+Small footer note "Unresolved meanings leave concept approval pending. No JSON editing for reviewers."
+
+Focus on accurate topology and legibility. Omit no major workflow block. No confidence percentages. No depiction of DSM diagnoses or inferred questionnaire scores. It is a proposed design, not an already implemented system.

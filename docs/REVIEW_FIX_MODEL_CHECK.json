@@ -1,0 +1,35 @@
+{
+  "models": [
+    {
+      "id": "gemma3:12b",
+      "status": "COMPLETED",
+      "seconds": 25.159679040996707,
+      "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+      "failure": null,
+      "cultural_note_references": [
+        [
+          "CN1",
+          "E1"
+        ]
+      ]
+    },
+    {
+      "id": "qwen2.5:7b",
+      "status": "COMPLETED",
+      "seconds": 11.028132082996308,
+      "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "failure": null,
+      "cultural_note_references": []
+    },
+    {
+      "id": "llama3.1:8b",
+      "status": "COMPLETED",
+      "seconds": 10.276292124995962,
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "failure": null,
+      "cultural_note_references": []
+    }
+  ],
+  "comparison": "TIED",
+  "votes": 3
+}

@@ -1,0 +1,96 @@
+{
+  "release": "FICTIONAL-2",
+  "notice": "Synthetic retrieval catalogue only; no real ontology IDs or coverage implied.",
+  "resources": {
+    "MFOEM": [
+      {
+        "id": "FIXTURE:MFOEM-emotional-pain",
+        "label": "Fictional emotional pain concept",
+        "synonyms": [
+          "sad",
+          "sadness"
+        ],
+        "definition": "Synthetic test concept; not an ontology entity"
+      },
+      {
+        "id": "FIXTURE:MFOEM-social-pressure",
+        "label": "Fictional social pressure concept",
+        "synonyms": [
+          "interpersonal demands",
+          "pressure from others",
+          "social strain"
+        ],
+        "definition": "Invented candidate for testing contextual social-pressure retrieval; not an ontology entity or diagnosis."
+      },
+      {
+        "id": "FIXTURE:MFOEM-overwhelmed",
+        "label": "Fictional overwhelmed experience",
+        "synonyms": [
+          "overwhelmed",
+          "overload"
+        ],
+        "definition": "Invented candidate for retrieval testing; contextual fit requires review."
+      }
+    ],
+    "MFOMD": [
+      {
+        "id": "FIXTURE:MFOMD-emotional-pain",
+        "label": "Fictional emotional pain concept",
+        "synonyms": [
+          "sad",
+          "sadness"
+        ],
+        "definition": "Synthetic test concept; not an ontology entity"
+      },
+      {
+        "id": "FIXTURE:MFOMD-social-pressure",
+        "label": "Fictional social pressure concept",
+        "synonyms": [
+          "interpersonal demands",
+          "pressure from others",
+          "social strain"
+        ],
+        "definition": "Invented candidate for testing contextual social-pressure retrieval; not an ontology entity or diagnosis."
+      },
+      {
+        "id": "FIXTURE:MFOMD-overwhelmed",
+        "label": "Fictional overwhelmed experience",
+        "synonyms": [
+          "overwhelmed",
+          "overload"
+        ],
+        "definition": "Invented candidate for retrieval testing; contextual fit requires review."
+      }
+    ],
+    "SNOMED_CT": [
+      {
+        "id": "FIXTURE:SNOMED_CT-emotional-pain",
+        "label": "Fictional emotional pain concept",
+        "synonyms": [
+          "sad",
+          "sadness"
+        ],
+        "definition": "Synthetic test concept; not an ontology entity"
+      },
+      {
+        "id": "FIXTURE:SNOMED_CT-social-pressure",
+        "label": "Fictional social pressure concept",
+        "synonyms": [
+          "interpersonal demands",
+          "pressure from others",
+          "social strain"
+        ],
+        "definition": "Invented candidate for testing contextual social-pressure retrieval; not an ontology entity or diagnosis."
+      },
+      {
+        "id": "FIXTURE:SNOMED_CT-overwhelmed",
+        "label": "Fictional overwhelmed experience",
+        "synonyms": [
+          "overwhelmed",
+          "overload"
+        ],
+        "definition": "Invented candidate for retrieval testing; contextual fit requires review."
+      }
+    ]
+  }
+}
