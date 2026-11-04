@@ -102,6 +102,28 @@
           }
         }
       }
+    },
+    "meaning_origins": {
+      "type": "object",
+      "description": "Model reading each approved meaning was started from (via 'Use this reading'). Missing for meanings the reviewer wrote themselves.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "model",
+          "hypothesis_id"
+        ],
+        "properties": {
+          "model": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hypothesis_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
     }
   }
 }

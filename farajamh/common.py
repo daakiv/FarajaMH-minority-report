@@ -58,13 +58,29 @@ def config(path: str | Path) -> dict:
     require(cfg["mode"] in ("fixture", "local", "connected"), "Invalid execution mode")
     require(set(cfg["terminology"]) == set(RESOURCES), "All three required resources must be configured")
     require(all(cfg["terminology"][r]["enabled"] for r in RESOURCES), "Required terminology cannot be disabled")
-    models = cfg["models"]
-    require(len(models) >= 3 and len({m["id"] for m in models}) == len(models), "Select at least three distinct configurations")
-    require(len({digest({k: v for k, v in m.items() if k != "id"}) for m in models}) == len(models), "Duplicate model configurations")
+    # Named model sets (e.g. small local, large hosted). A plain `models:` list is one set called "default".
+    require(not ("models" in cfg and "model_profiles" in cfg), "Use either models or model_profiles, not both")
+    profiles = cfg.get("model_profiles") or {"default": {"label": "Configured models", "models": cfg.get("models", [])}}
+    for name, profile in profiles.items():
+        require(re.fullmatch(r"[a-z0-9_-]+", name), "Model set names use lowercase letters, digits, - or _")
+        models = profile["models"]
+        require(len(models) >= 3 and len({m["id"] for m in models}) == len(models), f"Model set {name}: select at least three distinct configurations")
+        require(len({digest({k: v for k, v in m.items() if k != "id"}) for m in models}) == len(models), f"Model set {name}: duplicate model configurations")
+        # Hosted means the utterance is sent off this machine (an API, or an Ollama cloud model).
+        profile["hosted"] = any(m["provider"] == "openai_compatible" or str(m.get("model", "")).endswith("-cloud") for m in models)
+        profile.setdefault("label", name)
+    cfg["model_profiles"] = profiles
+    cfg.setdefault("model_profile", next(iter(profiles)))
+    require(cfg["model_profile"] in profiles, "model_profile must name one of model_profiles")
+    cfg["models"] = profiles[cfg["model_profile"]]["models"]
     require(cfg["voting"]["minimum_primary_votes"] >= 3, "Minimum participation cannot be below three")
     require(cfg["review"]["minimum_reviewers"] >= 1, "Human review required")
     require(cfg["review"].get("workflow", "legacy") in ("legacy", "single_reviewer"), "Unknown review workflow")
     require(cfg["review"]["ckb_requires_arbitration"] is True, "This prototype requires arbitration for CKB reuse as well")
+    rate = cfg["review"].get("agreed_sample_rate")
+    require(rate is None or (isinstance(rate, (int, float)) and 0 <= rate <= 1), "agreed_sample_rate must be between 0 and 1")
+    require(rate is None or isinstance(cfg["review"].get("agreed_sample_seed"), str) and cfg["review"]["agreed_sample_seed"].strip(),
+        "Set agreed_sample_seed so the review sample can be reproduced")
     require({"flagged", "uncertain"} <= set(cfg["risk"]["priority_signals"]), "Flagged and uncertain risk must enter PRIORITY")
     require(cfg["voting"]["grouping_version"] == "semantic-frame-conservative-v1", "Unsupported grouping procedure version")
     for identity, person in cfg["identities"].items():

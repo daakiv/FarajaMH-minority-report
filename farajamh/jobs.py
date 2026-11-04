@@ -1,4 +1,5 @@
 """Authenticated, process-local intake runs. A worker owns its SQLite connection."""
+import os
 from concurrent.futures import ThreadPoolExecutor
 from copy import deepcopy
 from threading import Lock
@@ -9,10 +10,10 @@ from .pipeline import App
 
 def model_availability(cfg):
     rows, endpoints = [], {}
-    models = list(cfg['models'])
+    models = [dict(m, profile=name) for name, p in cfg['model_profiles'].items() for m in p['models']]
     ranking = cfg.get('retrieval', {}).get('ranking', {})
     if ranking.get('model'):
-        models.append(dict(ranking, id='ranking', provider='ollama'))
+        models.append(dict(ranking, id='ranking', provider='ollama', profile=None))
     for model in models:
         name, endpoint = model['model'], model.get('endpoint', '').rstrip('/')
         state = 'unavailable'
@@ -25,7 +26,10 @@ def model_availability(cfg):
             installed = endpoints[endpoint]
             if installed is not None:
                 state = 'installed' if any(name in (m.get('name'), m.get('model')) for m in installed) else 'missing'
-        rows.append({'id': model['id'], 'model': name, 'state': state,
+        if model['provider'] == 'openai_compatible':
+            # Only whether the key is present; the key itself never leaves the environment.
+            state = 'hosted · key set' if os.environ.get(model['key_env']) else 'hosted · key missing (set ' + model['key_env'] + ')'
+        rows.append({'id': model['id'], 'model': name, 'state': state, 'profile': model['profile'],
             'command': 'ollama pull ' + name if state == 'missing' else None})
     return rows
 
@@ -38,14 +42,18 @@ class Runs:
     def start(self, app, fields, person):
         with self.lock:
             app.check_mode()
+            fields = dict(fields)
+            profile = fields.pop('model_profile', None) or self.cfg['model_profile']
+            if profile not in self.cfg['model_profiles']:
+                raise IntakeError('model_profile', 'Choose one of the configured model sets.')
             source = prepare_case(fields, mode=self.cfg['mode'], person=person,
                 exists=lambda uid: uid in self.jobs or bool(app.store.db.execute('SELECT 1 FROM sources WHERE id=?', (uid,)).fetchone()))
             uid = source['utterance_id']
             self.jobs[uid] = {'id': uid, 'state': 'QUEUED', 'events': [], 'owner': person['id']}
-            self.pool.submit(self.work, uid, source, person['id'])
+            self.pool.submit(self.work, uid, source, person['id'], profile)
             return deepcopy(self.jobs[uid])
 
-    def work(self, uid, source, actor):
+    def work(self, uid, source, actor, profile=None):
         app = None
         def emit(event):
             with self.lock:
@@ -54,7 +62,7 @@ class Runs:
             with self.lock:
                 self.jobs[uid]['state'] = 'RUNNING'
             app = App(self.cfg)
-            app.run(source, progress=emit, actor=actor)
+            app.run(source, progress=emit, actor=actor, profile=profile)
             with self.lock:
                 self.jobs[uid]['state'] = 'COMPLETED'
         except Exception as exc:

@@ -12,6 +12,10 @@ review:
   workflow: single_reviewer
   minimum_reviewers: 2
   ckb_requires_arbitration: true
+  # Step 5: disagreements, safety signals and unrecorded who/negation/time are always reviewed;
+  # agreed cases are drawn reproducibly at this rate. Remove both lines to review every case.
+  agreed_sample_rate: 0.10
+  agreed_sample_seed: farajamh-pilot-2026-11
 risk:
   priority_signals:
   - flagged
@@ -27,28 +31,59 @@ network:
   - http://127.0.0.1:11434
   - https://www.ebi.ac.uk
   timeout_seconds: 120
-models:
-- id: gemma3:12b
-  provider: ollama
-  model: gemma3:12b
-  endpoint: http://127.0.0.1:11434
-  settings:
-    temperature: 0
-    seed: 42
-- id: qwen2.5:7b
-  provider: ollama
-  model: qwen2.5:7b
-  endpoint: http://127.0.0.1:11434
-  settings:
-    temperature: 0
-    seed: 42
-- id: llama3.1:8b
-  provider: ollama
-  model: llama3.1:8b
-  endpoint: http://127.0.0.1:11434
-  settings:
-    temperature: 0
-    seed: 42
+# Model sets. Each case is read by one set (chosen on the New expression form, or --model-set),
+# and the case records which, so small- and large-model readings are never pooled.
+model_profile: small  # default set
+model_profiles:
+  small:
+    label: Small local models (Ollama)
+    models:
+    - id: gemma3:12b
+      provider: ollama
+      model: gemma3:12b
+      endpoint: http://127.0.0.1:11434
+      settings:
+        temperature: 0
+        seed: 42
+    - id: qwen2.5:7b
+      provider: ollama
+      model: qwen2.5:7b
+      endpoint: http://127.0.0.1:11434
+      settings:
+        temperature: 0
+        seed: 42
+    - id: llama3.1:8b
+      provider: ollama
+      model: llama3.1:8b
+      endpoint: http://127.0.0.1:11434
+      settings:
+        temperature: 0
+        seed: 42
+  # Large hosted set, to fill in once CODATA confirms the provider. Needs at least three models.
+  # 1. Replace the endpoint and model names with the provider's (endpoint usually ends in /v1).
+  # 2. Add the endpoint's origin (e.g. https://api.provider.example) to network.allowed_origins.
+  # 3. Put the key in your terminal, never in this file:  export FARAJA_LLM_API_KEY=...
+  # large:
+  #   label: Large hosted models (CODATA)
+  #   models:
+  #   - id: large-a
+  #     provider: openai_compatible
+  #     endpoint: https://api.provider.example/v1
+  #     model: provider-model-a
+  #     key_env: FARAJA_LLM_API_KEY
+  #     settings: {temperature: 0, seed: 42}
+  #   - id: large-b
+  #     provider: openai_compatible
+  #     endpoint: https://api.provider.example/v1
+  #     model: provider-model-b
+  #     key_env: FARAJA_LLM_API_KEY
+  #     settings: {temperature: 0, seed: 42}
+  #   - id: large-c
+  #     provider: openai_compatible
+  #     endpoint: https://api.provider.example/v1
+  #     model: provider-model-c
+  #     key_env: FARAJA_LLM_API_KEY
+  #     settings: {temperature: 0, seed: 42}
 terminology:
   MFOEM:
     enabled: true

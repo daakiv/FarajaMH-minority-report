@@ -23,6 +23,16 @@ python3.13 -m venv .venv
 
 `connected` additionally permits explicitly allowlisted HTTPS origins. MFOEM/MFOMD can use OLS; an OpenAI-compatible model uses `provider: openai_compatible`, its exact endpoint/model, `key_env: FARAJA_API_KEY` and supported settings. Add the origin to `network.allowed_origins`. The adapter appends `/chat/completions`; supply an endpoint including `/v1` where required. Keys come only from environment variables. Redirects and URL-embedded credentials are refused. No paid/remote calls were run during development.
 
+## Model sets (small local, large hosted)
+
+`model_profiles` names several model sets and `model_profile` picks the default; a plain `models:` list is one set called `default`. `config.live-test.yaml` has a `small` set (local Ollama) and a commented `large` template for a hosted service. To enable the hosted set:
+
+1. Uncomment `large` and replace the endpoint and model names with the provider's. Each set needs at least three models.
+2. Add the endpoint's origin, for example `https://api.provider.example`, to `network.allowed_origins`.
+3. Set the key in the terminal that starts the server, never in a file: `export FARAJA_LLM_API_KEY=...`.
+
+The review screen then shows a **Model set** choice on the New expression form (the CLI uses `--model-set` on `run`, `batch` and `intake`). Model availability shows whether a hosted key is set, never its value. A hosted set, including Ollama models ending in `-cloud`, sends the utterance and context off the machine, and the form says so. Each case records the set that read it (`model_set`), the comparison only ever groups models within that set, and the scorecard reports each set separately. Cases from before model sets existed are matched to a set by their exact model list.
+
 There is no general-purpose policy/ODRL interpreter: the source, permission, endpoint, state and export requirements are directly enforced by application code. Trusted local configuration is an operator boundary, not a multi-tenant identity management system.
 
 ## Ollama acquisition and resource expectations

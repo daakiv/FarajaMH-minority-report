@@ -10,7 +10,7 @@ from .common import canonical, config, require, resolve, validate
 from .exports import export_sssom, review_package, validate_catalog, validate_sssom
 from .pilot import deny_network, dry_run
 from .pipeline import App
-from .reporting import report
+from .reporting import report, scorecard
 from .terminology import import_owl, import_rf2
 
 
@@ -22,9 +22,11 @@ def parser():
     sub.add_parser("preflight", help="Report required terminology prerequisites; no model downloads")
     run = sub.add_parser("run", help="Process one synthetic JSON record; ends awaiting human review")
     run.add_argument("input", type=Path)
+    run.add_argument("--model-set", help="Model set from model_profiles (default: the configured model_profile)")
     batch = sub.add_parser("batch")
     batch.add_argument("input", type=Path)
     batch.add_argument("--manifest", type=Path, required=True)
+    batch.add_argument("--model-set")
     for name in ("review", "adjudicate", "curate", "mapping-review", "add-evidence"):
         cmd = sub.add_parser(name)
         cmd.add_argument("utterance_id", nargs="?" if name == "review" else None)
@@ -54,9 +56,11 @@ def parser():
         cmd.add_argument("--out", type=Path, required=True)
     sub.choices["report"].add_argument("--include-flagged", action="store_true",
         help="Include cases marked as test or withdrawn")
+    sub.add_parser("scorecard", help="Each model against reviewer-approved meanings (synthetic cases only)")
     intake = sub.add_parser("intake", help="Check, then run, a CSV or JSONL file of synthetic cases using the review screen's fields")
     intake.add_argument("input", type=Path)
     intake.add_argument("--token-env", default="FARAJA_SESSION_TOKEN")
+    intake.add_argument("--model-set")
     store = sub.add_parser("set-token", help="Store a salted hash of an identity's token in SQLite")
     store.add_argument("identity")
     store.add_argument("--token-env", help="Read the token from this variable (default: the identity's configured token_env); prompts if unset")
@@ -90,7 +94,7 @@ def execute(args, cfg):
             return {"terminology": results, "ready": all(r["state"] in ("HITS", "NO_RESULTS") for r in results.values()),
                     "model_calls": "NOT EXECUTED; model availability checked during run"}
         if args.command == "run":
-            d = app.run(json.loads(args.input.read_text()))
+            d = app.run(json.loads(args.input.read_text()), profile=args.model_set)
             return {"utterance_id": d["source"]["utterance_id"], "version": d["version"], "state": d["state"], "comparison": d["comparison"]["state"]}
         if args.command == "batch":
             manifest = json.loads(args.manifest.read_text())
@@ -99,9 +103,10 @@ def execute(args, cfg):
             require(len(records) == manifest["count"], "Manifest count mismatch")
             # Validate all inputs before first model call/write.
             for source in records: validate("source", source)
-            results = [app.run(source) for source in records]
+            results = [app.run(source, profile=args.model_set) for source in records]
             return {"count": len(results), "states": [d["state"] for d in results]}
         if args.command == "report": return report(app, args.out, args.include_flagged)
+        if args.command == "scorecard": return scorecard(app.store.all(), cfg["model_profiles"])
         if args.command == "set-token":
             profile = cfg["identities"].get(args.identity)
             require(profile is not None, "Unknown identity")
@@ -111,7 +116,7 @@ def execute(args, cfg):
         token = os.environ.get(args.token_env, "")
         if args.command == "intake":
             from .intake import run_file
-            return run_file(app, args.input, token)
+            return run_file(app, args.input, token, args.model_set)
         if args.command == "export-sssom": return export_sssom(app, args.out, token, args.demonstration)
         if args.command == "review" and args.export_package:
             return review_package(app, args.utterance_id, args.export_package, token)

@@ -30,6 +30,14 @@ def excluded_case(d: dict) -> bool:
     return (d.get("case_flag") or {}).get("status") in ("test", "withdrawn")
 
 
+SAMPLING_PROCEDURE = "sha256(seed|utterance_id)-v1"
+
+
+def sample_draw(seed: str, uid: str) -> float:
+    """Reproducible uniform draw in [0, 1): anyone with the seed can recheck which cases were sampled."""
+    return int(digest(seed + "|" + uid)[:13], 16) / 16 ** 13
+
+
 def applicability(source: dict) -> dict:
     q = source["qualifiers"]
     time = q["event_time"].casefold()
@@ -73,6 +81,19 @@ class App:
         return {"queue": "PRIORITY" if evidence else "STANDARD", "evidence": evidence,
                 "notice": "Research review priority only; no patient contact, diagnosis or treatment"}
 
+    def routing(self, d: dict) -> dict:
+        """Step 5: disagreements, safety flags and unrecorded who/negation/time always go to review; agreed cases are sampled."""
+        q = d["source"]["qualifiers"]
+        reasons = (["safety"] if d["priority"]["queue"] == "PRIORITY" else []) + (["disagreement"] if d["comparison"]["escalation"] else []) + (
+            ["applicability_unknown"] if any(q[k] in ("unknown", "uncertain") for k in ("experiencer", "assertion", "event_time")) else [])
+        rate = self.cfg["review"].get("agreed_sample_rate")
+        if reasons or rate is None:
+            return {"review_required": True, "reasons": reasons or ["sampling_not_configured"]}
+        seed = self.cfg["review"]["agreed_sample_seed"]
+        draw = sample_draw(seed, d["source"]["utterance_id"])
+        return {"review_required": draw < rate, "reasons": ["agreed_sampled" if draw < rate else "agreed_not_sampled"],
+            "sample": {"rate": rate, "seed": seed, "draw": round(draw, 6), "procedure": SAMPLING_PROCEDURE}}
+
     def sense_current(self, sense: dict) -> bool:
         d = self.store.get(sense["origin_utterance"])
         return bool(d.get("adjudication") and d["adjudication"]["decision_hash"] == sense["meaning_decision_hash"]
@@ -100,8 +121,12 @@ class App:
         if dossier is not None:
             require(dossier.get("mode") == self.cfg["mode"], "Case mode differs from running configuration; changes refused")
 
-    def run(self, source: dict, progress=None, actor=None) -> dict:
+    def run(self, source: dict, progress=None, actor=None, profile=None) -> dict:
         self.check_mode()
+        profile = profile or self.cfg["model_profile"]
+        require(profile in self.cfg["model_profiles"], "Unknown model set")
+        # Each case is read by one model set only, so small- and large-model readings are never pooled.
+        run_cfg = {**self.cfg, "models": self.cfg["model_profiles"][profile]["models"]}
         emit = progress or (lambda event: None)
         validate("source", source)
         scan_identifiers(source)
@@ -113,8 +138,8 @@ class App:
             require(span["start"] < span["end"] <= len(source["original_text"]), "Invalid language span")
         require(not self.store.db.execute("SELECT 1 FROM sources WHERE id=?", (source["utterance_id"],)).fetchone(), "Utterance already exists; immutable input")
         # Infographic v9.1: first-pass interpretations precede dictionary exposure.
-        emit({"stage": "input_checked", "models": len(self.cfg["models"])})
-        runs = interpret(self.cfg, source, progress) if progress else interpret(self.cfg, source)
+        emit({"stage": "input_checked", "models": len(run_cfg["models"]), "model_set": profile})
+        runs = interpret(run_cfg, source, progress) if progress else interpret(run_cfg, source)
         triage = self.triage(source)
         dictionary = dictionary_evidence(self.cfg, source)
         emit({"stage": "dictionary", "state": dictionary.get("state", "CHECKED"), "count": len(dictionary.get("entries", []))})
@@ -125,14 +150,17 @@ class App:
             triage["route"] = "NEAR_MATCH"
             triage["reason"] = "New/current-context risk or unresolved qualifier requires interpretation"
         d = {"schema_version": "1.0", "source": source, "version": 0, "created_at": now(),
-            "mode": self.cfg["mode"], "state": "AWAITING_REVIEW", "triage": triage, "dictionary_evidence": dictionary,
+            "mode": self.cfg["mode"], "model_set": {"name": profile, "label": self.cfg["model_profiles"][profile]["label"],
+                "hosted": self.cfg["model_profiles"][profile]["hosted"], "models": [m["id"] for m in run_cfg["models"]]}, "state": "AWAITING_REVIEW", "triage": triage, "dictionary_evidence": dictionary,
             "normalization": {"text": source["original_text"], "changes": [], "uncertainty": "No automatic normalization; original preserved"},
             "models": runs, "comparison": compare(runs, self.cfg["voting"]), "priority": self.priority(source, runs),
             "reviews": [], "adjudication": None, "terminology": {}, "mapping_reviews": [], "sense_links": [],
             "external_evidence": [], "stale_artifacts": [],
             "provenance": {"config_hash": digest(self.cfg), "code_hash": code_hash(),
                 "upstream_commit": "a7cb9cbf90cffb186c69699b5a188f970d22e5b9", "synthetic": True}}
-        emit({"stage": "comparison", "state": d["comparison"]["state"], "usable": d["comparison"]["counts"]["voting"], "groups": len(d["comparison"]["groups"]), "queue": d["priority"]["queue"]})
+        d["routing"] = self.routing(d)
+        emit({"stage": "comparison", "state": d["comparison"]["state"], "usable": d["comparison"]["counts"]["voting"], "groups": len(d["comparison"]["groups"]), "queue": d["priority"]["queue"],
+            "review_required": d["routing"]["review_required"]})
         with self.store.transaction():
             self.check_mode()
             self.store.save(d)
@@ -268,6 +296,10 @@ class App:
         for model_id in payload.get("model_ratings", {}):
             if model_id not in usable:
                 raise field_error("model_ratings", f"{model_id} has no usable reading to rate.")
+        readings = {(r["configuration_id"], h["id"]) for r in snapshot["models"] if r.get("output") for h in r["output"]["hypotheses"]}
+        for meaning_id, origin in payload.get("meaning_origins", {}).items():
+            require(meaning_id in ids, "Meaning origin refers to a meaning that is not in this decision")
+            require((origin["model"], origin["hypothesis_id"]) in readings, "Meaning origin must be a reading from this case's models")
         self.check_mode(snapshot)
         require(snapshot["version"] == expected, "Stale version: refresh the dossier")
         self.check_refs(snapshot, decision_payload["evidence_refs"])

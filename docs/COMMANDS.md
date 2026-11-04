@@ -118,7 +118,10 @@ These real-resource commands are illustrative and were not executed: authorized 
 
 ```sh
 .venv/bin/python -m farajamh report --out work/current-report
+.venv/bin/python -m farajamh scorecard
 .venv/bin/python -m pytest -q
 ```
+
+`scorecard` prints, per model, how its readings compared with reviewer-approved meanings: how often the reviewer started from its reading (and how often that was a minority reading), the reviewer's optional ratings, average self-reported confidence on readings rated correct versus wrong, and run time. `report` also writes it to `model-scorecard.csv`. The same table is on the review screen under **Model scorecard**. Counts cover approved synthetic cases only and are not accuracy.
 
 `report` reads the configured store and writes metrics, full dossiers and the audit log. Use the pilot's already-generated report for its separate database. Real reviewer metrics remain `NOT MEASURED` until actual nonsimulated reviewer submissions exist. The HTTP integration test needs loopback bind permission; it does not call external services.

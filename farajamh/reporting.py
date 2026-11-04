@@ -9,7 +9,7 @@ from .common import RESOURCES, write_json
 PILOT_FIELDS = ["utterance_id", "language", "case_status", "state", "comparison_state", "priority_queue",
     "usable_readings", "failed_models", "model_seconds", "total_model_seconds", "dictionary_state", "dictionary_entries",
     "lookup_seconds", "lookup_states", "zero_hit_terms", "capped_terms", "decisions", "chosen_candidates",
-    "literal_ratings", "contextual_ratings"]
+    "literal_ratings", "contextual_ratings", "routing"]
 
 
 def pilot_row(d: dict) -> dict:
@@ -50,7 +50,8 @@ def pilot_row(d: dict) -> dict:
         "decisions": join(f"{m['decision']['resource']}={m['decision']['action']}" for m in current),
         "chosen_candidates": join(f"{m['decision']['resource']}={m['decision']['candidate_id']}@rank {rank_of(m)}" for m in current if m["decision"].get("candidate_id")),
         "literal_ratings": join(f"{k}={v['literal']}" for k, v in sorted(ratings.items())),
-        "contextual_ratings": join(f"{k}={v['contextual']}" for k, v in sorted(ratings.items()))}
+        "contextual_ratings": join(f"{k}={v['contextual']}" for k, v in sorted(ratings.items())),
+        "routing": join((d.get("routing") or {}).get("reasons", []))}
 
 
 def rating_summary(dossiers: list[dict]) -> dict:
@@ -65,6 +66,72 @@ def rating_summary(dossiers: list[dict]) -> dict:
             row["contextual"][scores["contextual"]] += 1
     return {m: {"rated_cases": v["rated_cases"], "literal": dict(v["literal"]), "contextual": dict(v["contextual"]),
         "scope": "Reviewer-rated, synthetic test pack only"} for m, v in summary.items()}
+
+
+RATINGS = ("correct", "partly_correct", "wrong", "cannot_assess")
+SCORECARD_FIELDS = ["model_set", "model", "approved_cases", "usable_readings", "failed", "in_majority", "in_minority_or_competing",
+    "reading_used", "reading_used_unchanged", "minority_reading_used", "rated_cases",
+    *[f"interpretation_{r}" for r in RATINGS], *[f"translation_{r}" for r in RATINGS],
+    "confidence_reported", "mean_confidence_when_correct", "mean_confidence_when_wrong", "mean_seconds"]
+
+
+def model_set(d: dict, profiles: dict | None = None) -> str:
+    """The model set a case was read by; older cases are matched to a configured set by their exact model list."""
+    if d.get("model_set"):
+        return d["model_set"]["name"]
+    ids = [r["configuration_id"] for r in d["models"]]
+    return next((name for name, p in (profiles or {}).items() if [m["id"] for m in p["models"]] == ids), "not recorded")
+
+
+def scorecard(dossiers: list[dict], profiles: dict | None = None) -> dict:
+    """Each model against the reviewer's approved meanings, per model set. Synthetic cases only; not accuracy or calibration."""
+    approved = [d for d in dossiers if d["state"] == "ADJUDICATED" and not (d.get("case_flag") or {}).get("status") in ("test", "withdrawn")]
+    rows = {}
+    for d in approved:
+        guided = d["adjudication"].get("guided_review") or {}
+        ratings, origins = guided.get("model_ratings", {}), guided.get("meaning_origins", {})
+        approved_text = {h["id"]: h["meaning"] for h in d["adjudication"]["decision"]["meanings"]}
+        standing = {m: g["standing"] for g in d["comparison"]["groups"] for m in g["models"]}
+        group = model_set(d, profiles)
+        for run in d["models"]:
+            model = run["configuration_id"]
+            row = rows.setdefault((group, model), {"model_set": group, "model": model, "approved_cases": 0, "usable_readings": 0, "failed": 0, "in_majority": 0,
+                "in_minority_or_competing": 0, "reading_used": 0, "reading_used_unchanged": 0, "minority_reading_used": 0, "rated_cases": 0,
+                "interpretation": Counter(), "translation": Counter(), "confidence": {r: [] for r in RATINGS}, "confidence_reported": 0, "seconds": []})
+            row["approved_cases"] += 1
+            row["seconds"].append(run.get("runtime_seconds") or 0)
+            row["failed"] += run["status"] == "FAILED"
+            output = run.get("output")
+            if not output:
+                continue
+            row["usable_readings"] += 1
+            row["in_majority"] += standing.get(model) == "majority"
+            row["in_minority_or_competing"] += standing.get(model) in ("minority", "competing")
+            used = [mid for mid, o in origins.items() if o["model"] == model]
+            if used:
+                readings = {h["id"]: h["meaning"] for h in output["hypotheses"]}
+                row["reading_used"] += 1
+                row["reading_used_unchanged"] += any(readings.get(origins[mid]["hypothesis_id"]) == approved_text.get(mid) for mid in used)
+                # The minority report kept for review turned out to be the reading the reviewer worked from.
+                row["minority_reading_used"] += standing.get(model) in ("minority", "competing")
+            confidence = output.get("confidence_uncalibrated")
+            row["confidence_reported"] += isinstance(confidence, (int, float))
+            if model in ratings:
+                row["rated_cases"] += 1
+                row["interpretation"][ratings[model]["contextual"]] += 1
+                row["translation"][ratings[model]["literal"]] += 1
+                if isinstance(confidence, (int, float)):
+                    row["confidence"][ratings[model]["contextual"]].append(confidence)
+    mean = lambda values: round(sum(values) / len(values), 3) if values else None
+    models = []
+    for row in rows.values():
+        models.append({**{k: row[k] for k in SCORECARD_FIELDS[:11]},
+            **{f"interpretation_{r}": row["interpretation"][r] for r in RATINGS}, **{f"translation_{r}": row["translation"][r] for r in RATINGS},
+            "confidence_reported": row["confidence_reported"], "mean_confidence_when_correct": mean(row["confidence"]["correct"]),
+            "mean_confidence_when_wrong": mean(row["confidence"]["wrong"]), "mean_seconds": mean(row["seconds"])})
+    return {"approved_cases": len(approved), "rated_cases": sum(bool((d["adjudication"].get("guided_review") or {}).get("model_ratings")) for d in approved),
+        "models": sorted(models, key=lambda m: (m["model_set"], m["model"])),
+        "scope": "Reviewer-approved synthetic cases only. Counts, not accuracy; confidence is self-reported and uncalibrated."}
 
 
 def report(app, directory: Path, include_flagged: bool = False) -> dict:
@@ -112,6 +179,8 @@ def report(app, directory: Path, include_flagged: bool = False) -> dict:
         "runtime_per_model_utterance": [{"utterance_id": d["source"]["utterance_id"], "model": r["configuration_id"], "seconds": r["runtime_seconds"]} for d in dossiers for r in d["models"]],
         "runtime_per_utterance": {d["source"]["utterance_id"]: sum(r["runtime_seconds"] for r in d["models"]) for d in dossiers},
         "reviewer_ratings": rating_summary(dossiers),
+        "model_scorecard": scorecard(dossiers, app.cfg["model_profiles"]),
+        "routing": dict(Counter(reason for d in dossiers for reason in (d.get("routing") or {"reasons": ["not_recorded"]})["reasons"])),
         "excluded_cases": [] if include_flagged else [{"utterance_id": d["source"]["utterance_id"], "status": d["case_flag"]["status"]} for d in flagged]}
     directory.mkdir(parents=True, exist_ok=True)
     write_json(directory / "metrics.json", result)
@@ -119,6 +188,10 @@ def report(app, directory: Path, include_flagged: bool = False) -> dict:
         writer = csv.DictWriter(stream, fieldnames=PILOT_FIELDS)
         writer.writeheader()
         writer.writerows(pilot_row(d) for d in dossiers)
+    with (directory / "model-scorecard.csv").open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.DictWriter(stream, fieldnames=SCORECARD_FIELDS)
+        writer.writeheader()
+        writer.writerows(result["model_scorecard"]["models"])
     write_json(directory / "audit.json", app.store.audit())
     for d in dossiers:
         write_json(directory / "dossiers" / (d["source"]["utterance_id"] + ".json"), d)

@@ -55,7 +55,7 @@ def test_repeats_and_gates():
 
 def test_background_reserved_and_own_connection(cfg,monkeypatch):
     cfg['mode']='connected';started=threading.Event();finish=threading.Event();calls=[]
-    def run(self,source,progress,actor):
+    def run(self,source,progress,actor,profile=None):
         calls.append(threading.get_ident());started.set();finish.wait(5)
         progress({'stage':'record_saved','version':1})
     monkeypatch.setattr(App,'run',run)
@@ -87,7 +87,7 @@ def test_structured_format(cfg,sources,monkeypatch):
     monkeypatch.setattr(models.network,'request',request)
     models.call(cfg,model,[],sources[0],0)
     assert requests[-1][1]['format']['required']
-    cfg['models']=[model];cfg['retrieval']={'ranking':{'model':'embed:1','endpoint':model['endpoint']}}
+    cfg['model_profiles']={'default':{'label':'Test','hosted':False,'models':[model]}};cfg['retrieval']={'ranking':{'model':'embed:1','endpoint':model['endpoint']}}
     rows=model_availability(cfg)
     assert [x['state'] for x in rows]==['installed','missing']
     assert rows[1]['command']=='ollama pull embed:1'
@@ -132,7 +132,7 @@ def test_http_intake_does_not_block_queue(cfg,monkeypatch):
     cfg['mode']='connected';cfg['identities']={'test':dict(roles=['reviewer'],token_env='TEMP_PILOT_AUTH',simulated=False)}
     monkeypatch.setenv('TEMP_PILOT_AUTH','temporary-test-token')
     started=threading.Event();finish=threading.Event()
-    def run(self,source,progress,actor):
+    def run(self,source,progress,actor,profile=None):
         started.set();finish.wait(5);progress({'stage':'record_saved','version':1})
     monkeypatch.setattr(App,'run',run)
     http=server(cfg,0);thread=threading.Thread(target=http.serve_forever,daemon=True);thread.start()

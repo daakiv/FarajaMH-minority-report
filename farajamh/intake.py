@@ -86,7 +86,7 @@ def read_rows(path):
     return cleaned
 
 
-def run_file(app, path, token):
+def run_file(app, path, token, profile=None):
     """Check every row with the same rules as the review screen; run none unless all pass."""
     person = app.identity(token, 'reviewer')
     app.check_mode()
@@ -105,11 +105,13 @@ def run_file(app, path, token):
             sources.append(source)
         except IntakeError as exc:
             refused.append(f'case {number} ({row.get("utterance_id", "no ID")}) {exc.field}: {exc}')
+    if profile is not None and profile not in app.cfg['model_profiles']:
+        refused.append('model set ' + profile + ' is not configured')
     if refused:
         raise IntakeError('file', 'No cases were run. Fix these and try again: ' + ' | '.join(refused))
     results = []
     for source in sources:
-        d = app.run(source, actor=person['id'])
+        d = app.run(source, actor=person['id'], profile=profile)
         results.append({'utterance_id': source['utterance_id'], 'version': d['version'], 'state': d['state'],
             'comparison': d['comparison']['state'], 'usable_readings': d['comparison']['counts']['voting']})
     return {'count': len(results), 'results': results}

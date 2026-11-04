@@ -10,6 +10,7 @@ from .workflow import progress
 from .jobs import Runs, ReviewJobs, model_availability
 from .intake import IntakeError
 from .exports import export_readiness
+from .reporting import scorecard
 
 
 def server(cfg: dict, port: int = 8765):
@@ -43,9 +44,13 @@ def server(cfg: dict, port: int = 8765):
                 app = App(cfg)
                 person = app.identity(token)
                 if not mutate and path == "/api/queue":
-                    result = {"identity": person, "mode": cfg["mode"], "suggested_id": runs.next_id(app), "categories": CATEGORY_FAMILIES, "workflow": cfg["review"].get("workflow", "legacy"), "items": [{"id": d["source"]["utterance_id"], "state": d["state"],
+                    result = {"identity": person, "mode": cfg["mode"], "suggested_id": runs.next_id(app), "categories": CATEGORY_FAMILIES, "workflow": cfg["review"].get("workflow", "legacy"),
+                        "model_sets": [{"name": n, "label": p["label"], "hosted": p["hosted"], "models": [m["id"] for m in p["models"]]} for n, p in cfg["model_profiles"].items()],
+                        "model_set_default": cfg["model_profile"], "items": [{"id": d["source"]["utterance_id"], "state": d["state"],
                         "priority": d["priority"]["queue"], "version": d["version"],
-                        "flag": (d.get("case_flag") or {}).get("status", "active"), "next_task": progress(d)["next_task"]} for d in app.store.all()]}
+                        "flag": (d.get("case_flag") or {}).get("status", "active"), "next_task": progress(d)["next_task"], "model_set": (d.get("model_set") or {}).get("name")} for d in app.store.all()]}
+                elif not mutate and path == "/api/scorecard":
+                    result = scorecard(app.store.all(), cfg["model_profiles"])
                 elif not mutate and path == "/api/models":
                     result = model_availability(cfg)
                 elif not mutate and path.startswith("/api/review-job/"):
