@@ -122,4 +122,6 @@ A hosted set sends the utterance to an external service, so it is for synthetic 
 
 ## Licence
 
-TBD
+- Code: not yet chosen. Please ask before reusing this work.
+
+- Exported mapping data (SSSOM and Croissant packages): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
