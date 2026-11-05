@@ -8,6 +8,11 @@ from .intake import prepare_case, IntakeError
 from .pipeline import App
 
 
+def export_root(cfg):
+    from pathlib import Path
+    return Path(cfg['storage']).parent / 'exports'
+
+
 def model_availability(cfg):
     rows, endpoints = [], {}
     models = [dict(m, profile=name) for name, p in cfg['model_profiles'].items() for m in p['models']]
@@ -108,10 +113,28 @@ class ReviewJobs:
             require(not any(j['utterance_id'] == body['utterance_id'] and j['state'] in ('QUEUED','RUNNING') for j in self.jobs.values()), 'An operation is already running for this case')
             jid = str(uuid4())
             self.jobs[jid] = dict(id=jid, utterance_id=body['utterance_id'], state='QUEUED', events=[], owner=person['id'])
-            self.pool.submit(self.work, jid, operation, deepcopy(body), token)
+            body = deepcopy(body)
+            self.pool.submit(self.work, jid, lambda app: dict(version=getattr(app, operation)(body['utterance_id'], body['decision'], token, body['version'])['version']))
             return deepcopy(self.jobs[jid])
 
-    def work(self, jid, operation, body, token):
+    def start_export(self, app, token):
+        """One combined SSSOM + Croissant package per run, in a new dated folder; earlier packages are never overwritten."""
+        from datetime import datetime, timezone
+        from pathlib import Path
+        from uuid import uuid4
+        from .common import require
+        from .exports import export_sssom
+        person = app.identity(token, 'terminology')
+        demonstration = self.cfg['mode'] == 'fixture'
+        with self.lock:
+            require(not any(j['utterance_id'] is None and j['state'] in ('QUEUED','RUNNING') for j in self.jobs.values()), 'An export is already running')
+            jid = str(uuid4())
+            directory = export_root(self.cfg) / datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+            self.jobs[jid] = dict(id=jid, utterance_id=None, state='QUEUED', events=[], owner=person['id'])
+            self.pool.submit(self.work, jid, lambda app: dict(export={**export_sssom(app, directory, token, demonstration), 'package': directory.name}))
+            return deepcopy(self.jobs[jid])
+
+    def work(self, jid, run):
         from jsonschema import ValidationError
         app = None
         def emit(event):
@@ -121,9 +144,9 @@ class ReviewJobs:
             with self.lock: self.jobs[jid]['state'] = 'RUNNING'
             app = App(self.cfg)
             app.resolver.progress = emit
-            result = getattr(app, operation)(body['utterance_id'], body['decision'], token, body['version'])
+            update = run(app)
             with self.lock:
-                self.jobs[jid].update(state='COMPLETED', version=result['version'])
+                self.jobs[jid].update(state='COMPLETED', **update)
         except Exception as exc:
             field = getattr(exc, 'field', None)
             if isinstance(exc, ValidationError):

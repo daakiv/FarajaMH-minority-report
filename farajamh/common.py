@@ -14,6 +14,17 @@ import yaml
 ROOT = Path(__file__).parent
 CATEGORY_FAMILIES = json.loads((ROOT / "resources/categories.json").read_text())
 RESOURCES = ("MFOEM", "MFOMD", "SNOMED_CT")
+SPELLING_HINTS = {h["written"].casefold(): h for h in json.loads((ROOT / "resources/spelling_hints.json").read_text())}
+
+
+def spelling_hints(text: str) -> list[dict]:
+    """Display-only hints for listed spelling variants. The original text is never changed."""
+    found = {}
+    for match in re.finditer(r"\w+", text):
+        hint = SPELLING_HINTS.get(match.group().casefold())
+        if hint and match.group().casefold() not in found:
+            found[match.group().casefold()] = {**hint, "written": match.group(), "start": match.start(), "end": match.end()}
+    return list(found.values())
 
 
 def now() -> str:

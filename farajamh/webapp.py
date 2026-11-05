@@ -1,15 +1,18 @@
 """Loopback-only persistent review UI. Authenticated mutations call the same backend as the CLI."""
+import io
 import json
+import re
+import zipfile
 from jsonschema import ValidationError
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse
 
-from .common import CATEGORY_FAMILIES, ROOT, canonical, require
+from .common import CATEGORY_FAMILIES, ROOT, canonical, require, spelling_hints
 from .pipeline import App
 from .workflow import progress
-from .jobs import Runs, ReviewJobs, model_availability
+from .jobs import Runs, ReviewJobs, export_root, model_availability
 from .intake import IntakeError
-from .exports import export_readiness
+from .exports import export_overview, export_readiness
 from .reporting import scorecard
 
 
@@ -20,10 +23,12 @@ def server(cfg: dict, port: int = 8765):
         def log_message(self, *args):
             pass  # No credentials, source text, URLs or submitted evidence in access logs.
 
-        def send(self, code, body, content_type="application/json"):
-            encoded = body.encode()
+        def send(self, code, body, content_type="application/json", filename=None):
+            encoded = body if isinstance(body, bytes) else body.encode()
             self.send_response(code)
-            self.send_header("Content-Type", content_type + "; charset=utf-8")
+            self.send_header("Content-Type", content_type if filename else content_type + "; charset=utf-8")
+            if filename:
+                self.send_header("Content-Disposition", f'attachment; filename="{filename}"')
             self.send_header("Content-Length", str(len(encoded)))
             self.send_header("Cache-Control", "no-store")
             self.send_header("X-Content-Type-Options", "nosniff")
@@ -53,6 +58,19 @@ def server(cfg: dict, port: int = 8765):
                     result = scorecard(app.store.all(), cfg["model_profiles"])
                 elif not mutate and path == "/api/models":
                     result = model_availability(cfg)
+                elif not mutate and path == "/api/exports":
+                    result = export_overview(app, person, demonstration=cfg["mode"] == "fixture")
+                elif not mutate and path.startswith("/api/export-package/"):
+                    app.identity(token, "terminology")
+                    name = path.rsplit("/", 1)[1].removesuffix(".zip")
+                    # Only dated package folders written by the export job can be downloaded.
+                    folder = export_root(cfg) / name
+                    require(re.fullmatch(r"\d{8}T\d{6}Z", name) and folder.is_dir(), "Unknown export package")
+                    buffer = io.BytesIO()
+                    with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as archive:
+                        for file in sorted(folder.iterdir()):
+                            archive.write(file, f"farajamh-export-{name}/{file.name}")
+                    return self.send(200, buffer.getvalue(), "application/zip", f"farajamh-export-{name}.zip")
                 elif not mutate and path.startswith("/api/review-job/"):
                     result = review_jobs.get(path.rsplit("/", 1)[1], person)
                 elif not mutate and path.startswith("/api/run/"):
@@ -60,6 +78,7 @@ def server(cfg: dict, port: int = 8765):
                 elif not mutate and path.startswith("/api/dossier/"):
                     result = app.view(path.rsplit("/", 1)[1], token)
                     result["export_readiness"] = export_readiness(app, result, person, demonstration=cfg["mode"] == "fixture")
+                    result["spelling_hints"] = spelling_hints(result["source"]["original_text"])
                 elif mutate and path.startswith("/api/"):
                     require(self.headers.get("Content-Type") == "application/json", "JSON content type required")
                     size = int(self.headers.get("Content-Length", "0"))
@@ -69,6 +88,8 @@ def server(cfg: dict, port: int = 8765):
                     if operation == "intake":
                         result = runs.start(app, body, app.identity(token, "reviewer"))
                         return self.send(202, canonical(result))
+                    if operation == "background/export":
+                        return self.send(202, canonical(review_jobs.start_export(app, token)))
                     if operation.startswith("background/"):
                         result = review_jobs.start(app, operation.split("/",1)[1], body, token)
                         return self.send(202, canonical(result))

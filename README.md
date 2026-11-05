@@ -75,4 +75,6 @@ Data is stored in `work/` (SQLite database and exports), which is not committed.
 
 ## Licence
 
-Not yet chosen. Please ask before reusing this work.
+Code: not yet chosen. Please ask before reusing this work.
+
+Exported mapping data (SSSOM and Croissant packages): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

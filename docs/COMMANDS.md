@@ -97,6 +97,8 @@ The first review remains `AWAITING_REVIEW`; quorum moves it to `AWAITING_ARBITRA
 
 `curate` requires an adjudicated meaning ID and records a stable local sense; it never auto-adds every utterance to CKB. Updating an existing sense creates a version and marks dependent records stale. `reuse_approved` is explicit, and applicability stores no person ID or utterance timestamp. Mapping decisions require `resource`, `sense_id`, retrieved candidate ID, directed predicate, evidence and rationale. Valid actions are `approve`, `reject`, `gap`, `unresolved`, `contest`, `challenge_meaning`. Gaps have null candidate/predicate and require a successful scoped search. Contest/challenge reopens adjudication; adjudicate again before new mapping approval. `add-evidence` preserves an external citation/text separately and also reopens meaning. No external URL is automatically fetched from evidence.
 
+The review screen's Record step runs the same export: **Create export package** (terminology role) writes one combined package for all approved cases to a new dated folder under `work/exports/`, and **Download last package** returns it as a .zip. The package holds the SSSOM mapping file (`.sssom.tsv`), the Croissant description (`catalog.jsonld`), CSVs, provenance and the exclusion report. Every approved case must be ready; blocked cases are listed by ID before exporting.
+
 The sample new-evidence command marks the earlier demonstration export stale in the application audit. Old snapshots are retained; they must not be presented as current decisions. Review corrections likewise append versions rather than editing earlier submissions.
 
 ## Terminology import and real-resource execution

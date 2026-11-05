@@ -171,6 +171,12 @@ def test_experimental_candidate_is_excluded_and_reported(app, sources, tmp_path,
     excluded = json.loads((tmp_path/'excluded-export'/'excluded-mappings.json').read_text())
     assert excluded[0]['candidate_id'] == 'FIXTURE:MFOEM-emotional-pain'
     assert 'experimental' in excluded[0]['reason'].lower()
+    # The decision is kept in a separate restricted file, never in the CC BY set or the Croissant catalog.
+    assert result['lookup_only_rows'] == 1
+    lookup = (tmp_path/'excluded-export'/'lookup-only.sssom.tsv').read_text()
+    assert 'NOT FOR REDISTRIBUTION' in lookup and 'FIXTURE:MFOEM-emotional-pain' in lookup and 'license: https://www.snomed.org/get-snomed' in lookup
+    assert 'lookup-only' not in (tmp_path/'excluded-export'/'catalog.jsonld').read_text()
+    assert 'FIXTURE:MFOEM-emotional-pain' not in (tmp_path/'excluded-export'/'approved-mappings.csv').read_text()
 
 
 def test_stored_credential_hashed(app, monkeypatch):
@@ -183,3 +189,24 @@ def test_stored_credential_hashed(app, monkeypatch):
     assert b"stored-token-for-ke-1234" not in salt + digest
     assert "stored-token" not in json.dumps(app.store.audit())
     with pytest.raises(ValueError, match="16"): app.store.set_credential("demo_ke", "short")
+
+
+def test_lookup_only_rows_in_main_file_when_test_setting_on(app, sources, tmp_path, monkeypatch):
+    from conftest import approved_mapping
+    from farajamh.exports import export_sssom
+    approved_mapping(app, sources[0])
+    verify = app.resolver.verify
+    monkeypatch.setattr(app.resolver, 'verify', lambda *a, **k: {**verify(*a, **k), 'experimental_lookup_only': True})
+    app.cfg['exports']['include_lookup_only'] = True
+    result = export_sssom(app, tmp_path/'test-export', 'token-demo_curator', demonstration=True)
+    assert result['rows'] == 1 and result['lookup_only_included']
+    main = (tmp_path/'test-export'/'SIMULATED.mappings.sssom.tsv').read_text()
+    assert 'FIXTURE:MFOEM-emotional-pain' in main and '[Lookup-only FIXTURE:MFOEM, test use only]' in main and 'not for redistribution' in main
+    assert 'FIXTURE:MFOEM-emotional-pain' in (tmp_path/'test-export'/'approved-mappings.csv').read_text()
+    assert not (tmp_path/'test-export'/'lookup-only.sssom.tsv').exists()
+    assert 'lookup-only SNOMED CT' in (tmp_path/'test-export'/'catalog.jsonld').read_text()
+    # The Record step preview matches the file: the row is listed, labelled, and not reported as excluded.
+    from farajamh.exports import export_readiness
+    app.cfg['terminology']['MFOEM']['experimental_lookup_only'] = True
+    readiness = export_readiness(app, app.store.get('SYN01'), app.identity('token-demo_curator'), demonstration=True)
+    assert readiness['excluded_mappings'] == [] and [r['lookup_only'] for r in readiness['mapping_rows']] == [True]

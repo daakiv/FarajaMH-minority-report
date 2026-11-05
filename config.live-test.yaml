@@ -123,6 +123,9 @@ identities:
 exports:
   mapping_set_id: https://example.org/farajamh/research/mappings
   license: https://creativecommons.org/licenses/by/4.0/
+  # Test only: put lookup-only SNOMED CT rows (public OLS lookup, not a licensed release) in the main mapping file, each labelled.
+  # Set to false before any release; they then go to a separate lookup-only.sssom.tsv instead.
+  include_lookup_only: true
   sssom_schema_version: '1.0'
   curie_map:
     FARAJA: https://example.org/farajamh/sense/
