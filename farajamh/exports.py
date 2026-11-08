@@ -11,18 +11,24 @@ from openpyxl import Workbook
 from rdflib import Graph
 
 from . import __version__
-from .common import ROOT, RESOURCES, canonical, digest, file_hash, now, require, write_json
+from .common import CATEGORY_FAMILIES, ROOT, RESOURCES, canonical, digest, file_hash, now, require, write_json
 
 SEARCH_PROBLEM = {"SEARCH_FAILED": "the search failed; rerun it", "UNAVAILABLE": "the source was unavailable; rerun the search"}
 # Single-reviewer workflow: the approving person is the author; reviewer_id is reserved for a separate check and is omitted.
-FIELDS = ["subject_id", "object_id", "predicate_id", "mapping_justification", "subject_label", "object_label",
+FIELDS = ["subject_id", "object_id", "predicate_id", "mapping_justification", "subject_label", "subject_category", "object_label",
     "author_id", "mapping_date", "subject_source_version", "object_source", "object_source_version", "mapping_tool", "mapping_tool_version", "comment"]
+# Packages exported before subject_category was added still validate.
+EARLIER_FIELDS = [f for f in FIELDS if f != "subject_category"]
+# One row per exported local concept; joins to the mapping file on subject_id. DAP has no SSSOM slot, so it lives here.
+CONCEPT_FIELDS = ["subject_id", "utterance_id", "expression", "language", "family_code", "idiom_family", "dap_categories", "subject_label"]
 OBJECT_SOURCES = {"MFOEM": "obo:mfoem.owl", "MFOMD": "obo:mfomd.owl", "SNOMED_CT": "SNOMEDCT:900000000000207008"}
 FIELD_DESCRIPTIONS = {
     "utterance_id": "Synthetic case identifier", "original_text": "Original utterance wording, unchanged", "synthetic": "Always true: constructed test data, not patient data",
     "subject_id": "Local FarajaMH concept (curated meaning) being mapped", "object_id": "External terminology concept identifier",
     "predicate_id": "SKOS relationship from the local concept to the external concept", "mapping_justification": "How the mapping was made (SEMAPV term)",
-    "subject_label": "English gloss of the local concept", "object_label": "Label of the external concept", "author_id": "Trained reviewer who approved the mapping",
+    "subject_label": "English gloss of the local concept", "subject_category": "Idiom family of the local concept, from the workshop coding",
+    "expression": "Expression reviewed in the utterance", "language": "Language of the utterance", "family_code": "Workshop idiom family code",
+    "idiom_family": "Idiom family name", "dap_categories": "DAP categories chosen by the reviewer, separated by '; '", "object_label": "Label of the external concept", "author_id": "Trained reviewer who approved the mapping",
     "mapping_date": "Date the mapping was approved", "subject_source_version": "Version of the local concept", "object_source": "Terminology the external concept comes from",
     "object_source_version": "Release of that terminology", "mapping_tool": "Software that recorded the mapping", "mapping_tool_version": "Software version",
     "comment": "Reviewer's reason for the relationship"}
@@ -79,7 +85,7 @@ def validate_sssom(path: Path) -> dict:
     for key in ("mapping_set_id", "license"):
         require(urlparse(meta[key]).scheme in ("http", "https"), "Mapping-set identifiers must be absolute URIs")
     reader = csv.DictReader(io.StringIO("\n".join(line for line in lines if not line.startswith("#"))), delimiter="\t")
-    require(reader.fieldnames == FIELDS, "Unexpected SSSOM profile slots")
+    require(reader.fieldnames in (FIELDS, EARLIER_FIELDS), "Unexpected SSSOM profile slots")
     rows = list(reader)
     for row in rows:
         require(all(row.get(k) for k in FIELDS[:4]), "Required SSSOM fields absent")
@@ -182,6 +188,23 @@ def export_overview(app, person, demonstration=False):
     return {"cases": cases, "last_export": history[0] if history else None, "history": history}
 
 
+def idiom_family(sense) -> tuple[str, str]:
+    """Workshop family code and name recorded with the meaning decision; older concepts fall back to the meaning category."""
+    code = (sense.get("review_annotations") or {}).get("family_code")
+    if code not in CATEGORY_FAMILIES:
+        category = (sense.get("meaning") or {}).get("category")
+        code = next((k for k, v in CATEGORY_FAMILIES.items() if v[1] == category), None)
+    return (code, CATEGORY_FAMILIES[code][0]) if code else ("", "")
+
+
+def concept_row(sense, source) -> dict:
+    code, name = idiom_family(sense)
+    span = source.get("expression_span") or {}
+    return {"subject_id": sense["id"], "utterance_id": source["utterance_id"], "expression": span.get("text", ""), "language": source.get("language", ""),
+        "family_code": code, "idiom_family": name, "dap_categories": "; ".join((sense.get("review_annotations") or {}).get("dap_categories") or []),
+        "subject_label": sense["english_gloss"]}
+
+
 def export_sssom(app, directory: Path, token: str, demonstration: bool = False) -> dict:
     person = app.identity(token, "terminology")
     app.check_mode()
@@ -189,7 +212,7 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
     require(not demonstration or app.cfg["mode"] == "fixture", "Demonstration export only in fixture mode")
     if not demonstration:
         require(app.cfg["mode"] != "fixture" and not person["simulated"], "Fixture/simulated approvals cannot produce a research release")
-    rows, sidecar, assertions, approved_sources, excluded = [], [], [], [], []
+    rows, sidecar, assertions, approved_sources, excluded, concepts = [], [], [], [], [], {}
     senses = {s["id"]: s for s in app.store.senses()}
     curies = dict(app.cfg["exports"]["curie_map"])
     curies.setdefault("obo", "http://purl.obolibrary.org/obo/")
@@ -202,7 +225,7 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
         decision = mapping["decision"]
         return {"subject_id": sense["id"], "object_id": candidate["id"], "predicate_id": decision["predicate"],
             "mapping_justification": "semapv:UnspecifiedMatching" if demonstration else "semapv:ManualMappingCuration", "subject_label": sense["english_gloss"],
-            "object_label": candidate["label"], "author_id": "reviewer:" + mapping["identity"]["id"],
+            "subject_category": idiom_family(sense)[1], "object_label": candidate["label"], "author_id": "reviewer:" + mapping["identity"]["id"],
             "mapping_date": mapping["timestamp"][:10], "subject_source_version": str(sense["version"]),
             "object_source": "FIXTURE:" + decision["resource"] if candidate.get("fixture") else OBJECT_SOURCES[decision["resource"]],
             "object_source_version": candidate["release"], "mapping_tool": "farajamh", "mapping_tool_version": __version__, "comment": decision["rationale"]}
@@ -271,6 +294,9 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
                 if not link.get("stale") and link["id"] in senses and senses[link["id"]]["version"] == link["version"] and app.sense_current(senses[link["id"]])],
             "qualifiers": source["qualifiers"], "adjudicated_meanings": d["adjudication"]["decision"]["meanings"],
             "risk_review_queue": d["priority"]["queue"], "omop_concept_id": None})
+        for link in assertions[-1]["sense_links"]:
+            if demonstration or not senses[link["id"]]["simulated"]:
+                concepts.setdefault(link["id"], concept_row(senses[link["id"]], source))
         approved_sources.append({"utterance_id": source["utterance_id"], "original_text": source["original_text"], "synthetic": "true"})
     require(assertions, "No adjudicated eligible records to export")
     directory.mkdir(parents=True)
@@ -310,7 +336,8 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
         "mapping_reviews": [m for m in d["mapping_reviews"] if m["decision"]["action"] != "approve"]} for d in dossiers])
     write_csv(directory / "approved-synthetic.csv", approved_sources, ["utterance_id", "original_text", "synthetic"])
     write_csv(directory / "approved-mappings.csv", rows, FIELDS)
-    catalog(directory, ["approved-synthetic.csv", "approved-mappings.csv", path.name], demonstration, app.cfg, version)
+    write_csv(directory / "local-concepts.csv", list(concepts.values()), CONCEPT_FIELDS)
+    catalog(directory, ["approved-synthetic.csv", "approved-mappings.csv", "local-concepts.csv", path.name], demonstration, app.cfg, version)
     with app.store.transaction():
         app.store.event(person["id"], "DEMONSTRATION_EXPORT" if demonstration else "RELEASE_EXPORT", str(directory),
             {"mapping_rows": len(rows), "mapping_set_version": version, "content_digest": digest([sidecar, excluded]), "excluded_mappings": excluded, "lookup_only_rows": len(lookup_rows), "excluded_cases": excluded_cases, "versions": {d["source"]["utterance_id"]: d["version"] for d in dossiers}, "validation": validation})

@@ -125,12 +125,12 @@ def test_ols_domain_failure_keeps_candidate(cfg, monkeypatch):
     iri = "http://purl.obolibrary.org/obo/MFOEM_TEST"
     def fake(cfg, url):
         if "/search?" in url: return {"response": {"docs": [{"iri": iri}]}}
-        if "hierarchicalAncestors" in url: raise TimeoutError("down")
+        if "hierarchicalAncestors" in url or "/parents?" in url: raise TimeoutError("down")
         if "/terms/" in url: return {"iri": iri, "label": "Test", "is_obsolete": False}
         return {"config": {"version": "test"}}
     monkeypatch.setattr("farajamh.terminology.network.request", fake)
     result = Resolver(cfg).search("MFOEM", ["domain-failure"])
-    assert result["state"] == "HITS" and result["candidates"][0]["domain"] is None
+    assert result["state"] == "HITS" and result["candidates"][0]["domain"] is None and result["candidates"][0]["parents"] == []
 
 
 def test_search_failure_distinct_from_no_results(cfg, monkeypatch):

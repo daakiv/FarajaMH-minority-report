@@ -35,6 +35,9 @@ def fake_ols(calls):
         if "/search?" in url:
             calls.append("search")
             return {"response": {"docs": [{"iri": IRI}], "numFound": 1}}
+        if "/parents?" in url:
+            calls.append("parents")
+            return {"_embedded": {"terms": [{"label": "negative emotion process"}]}}
         if "/hierarchicalAncestors" in url:
             calls.append("ancestors")
             return {"_embedded": {"terms": [{"label": "emotion process"}]}}
@@ -51,14 +54,15 @@ def test_ols_search_is_cached_but_verification_before_approval_is_live(live, mon
     terminology.clear_cache()
     first = terminology.Resolver(live).search("MFOEM", ["anxiety"])
     second = terminology.Resolver(live).search("MFOEM", ["anxiety"])  # a new request, as a new screen action would make
-    assert calls == ["search", "term", "ancestors"]
+    assert calls == ["search", "term", "ancestors", "parents"]
+    assert first["candidates"][0]["parents"] == ["negative emotion process"]
     assert first["candidates"][0]["domain"] == "emotion"
     assert first["search_coverage"][0]["cache_used"] is False and second["search_coverage"][0]["cache_used"] is True
     assert second["candidates"][0]["id"] == "MFOEM:000028"
     second["candidates"][0]["label"] = "changed by caller"
     assert terminology.Resolver(live).search("MFOEM", ["anxiety"])["candidates"][0]["label"] == "anxiety"
     terminology.Resolver(live).verify("MFOEM", "MFOEM:000028", IRI)
-    assert calls == ["search", "term", "ancestors", "term"]
+    assert calls == ["search", "term", "ancestors", "parents", "term"]
     terminology.clear_cache()
 
 

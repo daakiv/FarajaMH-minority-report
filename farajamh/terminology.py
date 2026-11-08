@@ -276,6 +276,20 @@ class Resolver:
         labels = {t.get("label") for t in ancestors.get("_embedded", {}).get("terms", [])}
         return next((name for label, name in DOMAINS.get(resource, []) if label in labels), None)
 
+    def parents(self, resource: str, iri: str) -> list[str]:
+        """Direct is-a parents, so a reviewer can judge broader/narrower without leaving the screen."""
+        settings = self.cfg["terminology"][resource]
+        url = settings["endpoint"] + "/ontologies/" + settings["ontology"] + "/terms/" + quote(quote(iri, safe=""), safe="")
+        try:
+            reply = network.request(self.cfg, url + "/parents?size=20")
+        except Exception:
+            return []  # Display aid only, like the domain.
+        return sorted({t["label"] for t in reply.get("_embedded", {}).get("terms", []) if t.get("label")})
+
+    def browse_url(self, resource: str, iri: str) -> str:
+        settings = self.cfg["terminology"][resource]
+        return settings["endpoint"].removesuffix("/api") + "/ontologies/" + settings["ontology"] + "/classes/" + quote(quote(iri, safe=""), safe="")
+
     def identifier(self, resource, iri):
         if resource == "SNOMED_CT":
             match = re.fullmatch(r"http://snomed.info/id/(\d+)", iri)
@@ -328,8 +342,9 @@ class Resolver:
                             pending.append((identifier, hit["iri"]))
                         else:
                             reused.append(dict(candidates[identifier]))
-                    # Domain is looked up with search results only; pre-approval verification stays a single live call.
-                    details = lambda pair: cached(("term", resource, release, pair[0]), lambda: {**self.verify(resource, *pair), "domain": self.domain(resource, pair[1])})[0]
+                    # Domain and parents are looked up with search results only; pre-approval verification stays a single live call.
+                    details = lambda pair: cached(("term", resource, release, pair[0]), lambda: {**self.verify(resource, *pair), "domain": self.domain(resource, pair[1]),
+                        "parents": self.parents(resource, pair[1]), "browse_url": self.browse_url(resource, pair[1])})[0]
                     if self._verify_pool is not None:
                         entries = list(self._verify_pool.map(details, pending)) + reused
                     else:

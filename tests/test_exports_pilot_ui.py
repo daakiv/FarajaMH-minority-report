@@ -1,3 +1,5 @@
+import csv
+import io
 import json
 import threading
 import urllib.error
@@ -17,7 +19,12 @@ def test_sssom_catalog_and_assertion_separation(app, sources, tmp_path):
     exported = export_sssom(app, out, "token-demo_curator", True)
     assert exported["rows"] == 1
     assert validate_sssom(out / "SIMULATED.mappings.sssom.tsv")["rows"] == 1
-    assert validate_catalog(out / "catalog.jsonld")["files"] == 3
+    assert validate_catalog(out / "catalog.jsonld")["files"] == 4
+    # Idiom family travels in the standard subject_category slot; DAP only in the joinable concept table.
+    row = next(csv.DictReader(io.StringIO("\n".join(l for l in (out / "SIMULATED.mappings.sssom.tsv").read_text().splitlines() if not l.startswith("#"))), delimiter="\t"))
+    concept = next(csv.DictReader((out / "local-concepts.csv").open()))
+    assert row["subject_category"] and concept["subject_id"] == row["subject_id"] and concept["idiom_family"] == row["subject_category"]
+    assert concept["utterance_id"] == "SYN01" and "dap_categories" in concept and "dap_categories" not in row
     assertion = json.loads((out / "contextual-assertions.json").read_text())[0]
     assert assertion["utterance_id"] == "SYN01" and assertion["omop_concept_id"] is None
     text = (out / "SIMULATED.mappings.sssom.tsv").read_text()
@@ -61,6 +68,7 @@ def test_official_validators_when_installed(app, sources, tmp_path):
     result = validate(directory)
     assert result["official_mapping_model_rows"] == 1
     assert result["recordset_counts"]["records/approved-synthetic.csv"] == 1
+    assert result["recordset_counts"]["records/local-concepts.csv"] == 1
 
 
 def test_end_to_end_offline(cfg, tmp_path):
