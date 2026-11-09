@@ -48,6 +48,24 @@ def write_csv(path: Path, rows: list[dict], fields: list[str]):
         writer.writerows({k: safe_cell(row.get(k, "")) for k in fields} for row in rows)
 
 
+def write_spreadsheet(path: Path, sheets: dict):
+    """Reading copy for Excel. Every cell is text, so release dates such as 2025-07-31 are not turned into dates.
+    Not listed in the Croissant catalog: the SSSOM and CSV files remain the canonical data."""
+    workbook = Workbook()
+    workbook.remove(workbook.active)
+    for title, (rows, fields) in sheets.items():
+        sheet = workbook.create_sheet(title)
+        sheet.append(fields)
+        for row in rows:
+            sheet.append([safe_cell(row.get(k, "")) for k in fields])
+        for cells in sheet.iter_rows():
+            for cell in cells:
+                cell.number_format = "@"
+        sheet.freeze_panes = "A2"
+        sheet.auto_filter.ref = sheet.dimensions
+    workbook.save(path)
+
+
 def review_package(app, uid: str, directory: Path, token: str):
     d = app.view(uid, token)
     directory.mkdir(parents=True, exist_ok=True)
@@ -119,7 +137,7 @@ def export_readiness(app, dossier, person, demonstration=False):
     flag = (dossier.get("case_flag") or {}).get("status")
     if flag in ("test", "withdrawn"):
         return {"status": "EXCLUDED", "blockers": [], "excluded_mappings": [], "mapping_rows": [],
-            "notice": "Marked as " + flag + " case: left out of exports and pilot counts. Its record and decisions are kept."}
+            "concepts": [], "notice": "Marked as " + flag + " case: left out of exports and pilot counts. Its record and decisions are kept."}
     if dossier.get("mode") != app.cfg["mode"]:
         blockers.append("Case mode differs from running configuration")
     if "terminology" not in person.get("roles", []):
@@ -157,7 +175,10 @@ def export_readiness(app, dossier, person, demonstration=False):
         if not demonstration and (mapping["identity"].get("simulated") or (sense or {}).get("simulated") or mapping.get("candidate", {}).get("fixture")):
             blockers.append("Simulated curation or fictional candidates cannot be released")
         preview.append(preview_row(mapping, False))
-    return {"status": "BLOCKED" if blockers else "READY_FOR_FINAL_CHECK", "blockers": list(dict.fromkeys(blockers)), "excluded_mappings": excluded, "mapping_rows": preview,
+    # The local-concepts.csv rows this case adds, so family, DAP and language can be checked before exporting.
+    concepts = [concept_row(senses[link["id"]], dossier["source"]) for link in dossier.get("sense_links", [])
+        if not link.get("stale") and link["id"] in senses and senses[link["id"]]["version"] == link["version"] and app.sense_current(senses[link["id"]])]
+    return {"status": "BLOCKED" if blockers else "READY_FOR_FINAL_CHECK", "blockers": list(dict.fromkeys(blockers)), "excluded_mappings": excluded, "mapping_rows": preview, "concepts": concepts,
         "notice": "Recorded-state check only. Final export checks every eligible case, current resource releases and active targets. No mapping is required to retain an approved local meaning."}
 
 
@@ -337,6 +358,7 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
     write_csv(directory / "approved-synthetic.csv", approved_sources, ["utterance_id", "original_text", "synthetic"])
     write_csv(directory / "approved-mappings.csv", rows, FIELDS)
     write_csv(directory / "local-concepts.csv", list(concepts.values()), CONCEPT_FIELDS)
+    write_spreadsheet(directory / "mappings.xlsx", {"Mappings": (rows, FIELDS), "Local concepts": (list(concepts.values()), CONCEPT_FIELDS)})
     catalog(directory, ["approved-synthetic.csv", "approved-mappings.csv", "local-concepts.csv", path.name], demonstration, app.cfg, version)
     with app.store.transaction():
         app.store.event(person["id"], "DEMONSTRATION_EXPORT" if demonstration else "RELEASE_EXPORT", str(directory),
