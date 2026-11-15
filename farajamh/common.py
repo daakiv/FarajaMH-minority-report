@@ -5,6 +5,7 @@ import json
 import os
 import re
 from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
@@ -25,6 +26,28 @@ def spelling_hints(text: str) -> list[dict]:
         if hint and match.group().casefold() not in found:
             found[match.group().casefold()] = {**hint, "written": match.group(), "start": match.start(), "end": match.end()}
     return list(found.values())
+
+
+def risk_terms_found(text: str, terms: list[str]) -> list[str]:
+    """Risk terms in the text, exact or misspelled. This sets review priority, never a safety decision.
+
+    A misspelling counts word by word: words under 5 letters must be exact and one-word terms under 7 letters
+    are matched only exactly, so common words stay apart (kujua "to know" from kujiua, nataka kujua from nataka kufa)."""
+    def close(written, term_word):
+        return written == term_word or (min(len(written), len(term_word)) >= 5 and abs(len(written) - len(term_word)) <= 2
+            and SequenceMatcher(None, written, term_word).ratio() >= 0.8)
+    folded = text.casefold()
+    words = re.findall(r"\w+", folded)
+    found = []
+    for term in terms:
+        term = term.casefold()
+        parts = term.split()
+        if term in folded:
+            found.append(term)
+        elif len(parts) > 1 or len(term) >= 7:
+            if any(all(close(w, p) for w, p in zip(words[i:i + len(parts)], parts)) for i in range(len(words) - len(parts) + 1)):
+                found.append(term)
+    return found
 
 
 def now() -> str:
@@ -93,7 +116,7 @@ def config(path: str | Path) -> dict:
     require(rate is None or isinstance(cfg["review"].get("agreed_sample_seed"), str) and cfg["review"]["agreed_sample_seed"].strip(),
         "Set agreed_sample_seed so the review sample can be reproduced")
     require({"flagged", "uncertain"} <= set(cfg["risk"]["priority_signals"]), "Flagged and uncertain risk must enter PRIORITY")
-    require(cfg["voting"]["grouping_version"] == "semantic-frame-conservative-v1", "Unsupported grouping procedure version")
+    require(cfg["voting"]["grouping_version"] in ("semantic-frame-conservative-v1", "category-applicability-v2"), "Unsupported grouping procedure version")
     for identity, person in cfg["identities"].items():
         require(re.fullmatch(r"[A-Za-z0-9_-]+", identity), "Invalid identity")
         require(not ({"reviewer", "arbitrator"} <= set(person["roles"])), "Reviewer and arbitrator identities must be distinct")

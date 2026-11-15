@@ -12,6 +12,7 @@ from rdflib import Graph
 
 from . import __version__
 from .common import CATEGORY_FAMILIES, ROOT, RESOURCES, canonical, digest, file_hash, now, require, write_json
+from .workflow import progress
 
 SEARCH_PROBLEM = {"SEARCH_FAILED": "the search failed; rerun it", "UNAVAILABLE": "the source was unavailable; rerun the search"}
 # Single-reviewer workflow: the approving person is the author; reviewer_id is reserved for a separate check and is omitted.
@@ -155,6 +156,11 @@ def export_readiness(app, dossier, person, demonstration=False):
         lookup = dossier.get("terminology", {}).get(resource, {})
         if lookup.get("state") not in ("HITS", "NO_RESULTS"):
             blockers.append(resource + ": required terminology review incomplete — " + SEARCH_PROBLEM.get(lookup.get("state"), "not searched yet"))
+    done = progress(dossier)
+    if dossier["state"] == "ADJUDICATED" and done["next_task"] == "terminology":
+        # Same rule as the queue's "Needs terminology review": every meaning needs a local concept and a decision per source.
+        blockers.append(f"Terminology sign-off incomplete: {done['sources_reviewed']} of {done['sources_total']} source decisions recorded"
+            + ("" if all(m["local_concept"] for m in done["meanings"]) else "; a meaning has no local concept"))
     senses = {s["id"]: s for s in app.store.senses()}
     for mapping in dossier.get("mapping_reviews", []):
         if mapping.get("stale") or mapping["decision"]["action"] != "approve":
@@ -271,44 +277,53 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
         if not demonstration and (d["mode"] == "fixture" or any(p["simulated"] for p in identities)):
             continue
         uid = d["source"]["utterance_id"]
-        readiness = export_readiness(app, d, person, demonstration)
-        require(not readiness["blockers"], uid + ": " + "; ".join(readiness["blockers"]))
-        # Every required resource must have been successfully searched; no forced mapping required.
-        for resource in RESOURCES:
-            lookup = d["terminology"].get(resource, {})
-            require(lookup.get("state") in ("HITS", "NO_RESULTS"), f"{uid} · {resource}: required terminology review incomplete — " + SEARCH_PROBLEM.get(lookup.get("state"), "not searched yet"))
-            current = app.resolver.metadata(resource)
-            require(digest(current) == digest(lookup["metadata"]), f"{uid} · {resource}: resource version changed; mappings stale")
-        for mapping in d["mapping_reviews"]:
-            if mapping["stale"] or mapping["decision"]["action"] != "approve":
-                continue
-            decision = mapping["decision"]
-            exclusion = mapping_exclusion(app, mapping)
-            if exclusion:
-                excluded.append({**exclusion, "utterance_id": d["source"]["utterance_id"], "dossier_version": d["version"]})
-                lookup_only(d, mapping, mapping["candidate"])
-                continue
-            sense = senses[decision["sense_id"]]
-            require(app.sense_current(sense) and sense["version"] == mapping["sense_version"], "Curated sense changed: mapping stale")
-            require(mapping["meaning_decision_hash"] == d["adjudication"]["decision_hash"], "Meaning changed: mapping stale")
-            if not demonstration:
-                require(not sense["simulated"] and not mapping["identity"]["simulated"], "Simulated curation cannot be released")
-            candidate = app.resolver.verify(decision["resource"], decision["candidate_id"], mapping["candidate"]["iri"])
-            if candidate.get("experimental_lookup_only"):
-                excluded.append({"utterance_id": d["source"]["utterance_id"], "dossier_version": d["version"],
-                    "resource": decision["resource"], "candidate_id": decision["candidate_id"], "sense_id": sense["id"],
-                    "reason": "Target verified as experimental lookup-only; excluded from SSSOM mappings"})
-                lookup_only(d, mapping, candidate)
-                continue
-            require(candidate["active"] and candidate["release"] == mapping["candidate"]["release"], f"{uid} · {candidate['id']}: target inactive or release changed")
-            require(demonstration or not candidate["fixture"], "Fictional candidate cannot be released")
-            prefix, local = candidate["id"].split(":", 1)
-            if prefix not in curies:
-                require(candidate["iri"].endswith(local), "Cannot declare CURIE from verified IRI")
-                curies[prefix] = candidate["iri"][:-len(local)]
-            rows.append(sssom_row(sense, mapping, candidate))
-            sidecar.append({"row": len(rows), "utterance_id": d["source"]["utterance_id"], "dossier_version": d["version"],
-                "decision": mapping, "demonstration": demonstration, "curation_notice": "SIMULATED manual-curation workflow, not human-reviewed" if demonstration else "Actual human curation"})
+        buffers = (rows, sidecar, excluded, lookup_rows, lookup_sidecar)
+        marks = [len(b) for b in buffers]
+        try:
+            readiness = export_readiness(app, d, person, demonstration)
+            require(not readiness["blockers"], uid + ": " + "; ".join(readiness["blockers"]))
+            # Every required resource must have been successfully searched; no forced mapping required.
+            for resource in RESOURCES:
+                lookup = d["terminology"].get(resource, {})
+                require(lookup.get("state") in ("HITS", "NO_RESULTS"), f"{uid} · {resource}: required terminology review incomplete — " + SEARCH_PROBLEM.get(lookup.get("state"), "not searched yet"))
+                current = app.resolver.metadata(resource)
+                require(digest(current) == digest(lookup["metadata"]), f"{uid} · {resource}: resource version changed; mappings stale")
+            for mapping in d["mapping_reviews"]:
+                if mapping["stale"] or mapping["decision"]["action"] != "approve":
+                    continue
+                decision = mapping["decision"]
+                exclusion = mapping_exclusion(app, mapping)
+                if exclusion:
+                    excluded.append({**exclusion, "utterance_id": d["source"]["utterance_id"], "dossier_version": d["version"]})
+                    lookup_only(d, mapping, mapping["candidate"])
+                    continue
+                sense = senses[decision["sense_id"]]
+                require(app.sense_current(sense) and sense["version"] == mapping["sense_version"], "Curated sense changed: mapping stale")
+                require(mapping["meaning_decision_hash"] == d["adjudication"]["decision_hash"], "Meaning changed: mapping stale")
+                if not demonstration:
+                    require(not sense["simulated"] and not mapping["identity"]["simulated"], "Simulated curation cannot be released")
+                candidate = app.resolver.verify(decision["resource"], decision["candidate_id"], mapping["candidate"]["iri"])
+                if candidate.get("experimental_lookup_only"):
+                    excluded.append({"utterance_id": d["source"]["utterance_id"], "dossier_version": d["version"],
+                        "resource": decision["resource"], "candidate_id": decision["candidate_id"], "sense_id": sense["id"],
+                        "reason": "Target verified as experimental lookup-only; excluded from SSSOM mappings"})
+                    lookup_only(d, mapping, candidate)
+                    continue
+                require(candidate["active"] and candidate["release"] == mapping["candidate"]["release"], f"{uid} · {candidate['id']}: target inactive or release changed")
+                require(demonstration or not candidate["fixture"], "Fictional candidate cannot be released")
+                prefix, local = candidate["id"].split(":", 1)
+                if prefix not in curies:
+                    require(candidate["iri"].endswith(local), "Cannot declare CURIE from verified IRI")
+                    curies[prefix] = candidate["iri"][:-len(local)]
+                rows.append(sssom_row(sense, mapping, candidate))
+                sidecar.append({"row": len(rows), "utterance_id": d["source"]["utterance_id"], "dossier_version": d["version"],
+                    "decision": mapping, "demonstration": demonstration, "curation_notice": "SIMULATED manual-curation workflow, not human-reviewed" if demonstration else "Actual human curation"})
+        except ValueError as exc:
+            # An unfinished or stale case is left out with its reason; the other cases still export.
+            for buffer, mark in zip(buffers, marks):
+                del buffer[mark:]
+            excluded_cases.append({"utterance_id": uid, "dossier_version": d["version"], "status": "not_ready", "reason": str(exc)})
+            continue
         source = d["source"]
         assertions.append({"utterance_id": source["utterance_id"], "source_version": d["version"],
             "synthetic": True, "simulated_review": demonstration, "sense_links": [link for link in d["sense_links"]
@@ -319,7 +334,8 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
             if demonstration or not senses[link["id"]]["simulated"]:
                 concepts.setdefault(link["id"], concept_row(senses[link["id"]], source))
         approved_sources.append({"utterance_id": source["utterance_id"], "original_text": source["original_text"], "synthetic": "true"})
-    require(assertions, "No adjudicated eligible records to export")
+    not_ready = [c["reason"] for c in excluded_cases if c["status"] == "not_ready"]
+    require(assertions, "No adjudicated eligible records to export" + ("; left out: " + " | ".join(not_ready) if not_ready else ""))
     directory.mkdir(parents=True)
     lookup_validation = None
     if include_lookup:
@@ -363,7 +379,7 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
     with app.store.transaction():
         app.store.event(person["id"], "DEMONSTRATION_EXPORT" if demonstration else "RELEASE_EXPORT", str(directory),
             {"mapping_rows": len(rows), "mapping_set_version": version, "content_digest": digest([sidecar, excluded]), "excluded_mappings": excluded, "lookup_only_rows": len(lookup_rows), "excluded_cases": excluded_cases, "versions": {d["source"]["utterance_id"]: d["version"] for d in dossiers}, "validation": validation})
-    return {"path": str(path), "rows": len(rows), "excluded_mappings": len(excluded), "lookup_only_rows": len(lookup_rows), "lookup_only_included": include_lookup, "lookup_only_validation": lookup_validation and "SSSOM 1.0 profile passed", "excluded_cases": len(excluded_cases), "exclusion_report": str(directory / "excluded-mappings.json"), "demonstration": demonstration, "validation": "SSSOM 1.0 profile and local Croissant profile passed"}
+    return {"path": str(path), "rows": len(rows), "excluded_mappings": len(excluded), "lookup_only_rows": len(lookup_rows), "lookup_only_included": include_lookup, "lookup_only_validation": lookup_validation and "SSSOM 1.0 profile passed", "excluded_cases": len(excluded_cases), "not_ready_cases": len(not_ready), "exclusion_report": str(directory / "excluded-mappings.json"), "demonstration": demonstration, "validation": "SSSOM 1.0 profile and local Croissant profile passed"}
 
 
 LOOKUP_ONLY_LICENSE = "https://www.snomed.org/get-snomed"

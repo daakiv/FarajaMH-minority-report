@@ -7,7 +7,7 @@ from jsonschema import ValidationError
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse
 
-from .common import CATEGORY_FAMILIES, ROOT, canonical, require, spelling_hints
+from .common import CATEGORY_FAMILIES, ROOT, canonical, require, risk_terms_found, spelling_hints
 from .pipeline import App
 from .workflow import progress
 from .jobs import Runs, ReviewJobs, export_root, model_availability
@@ -49,10 +49,14 @@ def server(cfg: dict, port: int = 8765):
                 app = App(cfg)
                 person = app.identity(token)
                 if not mutate and path == "/api/queue":
-                    result = {"identity": person, "mode": cfg["mode"], "suggested_id": runs.next_id(app), "categories": CATEGORY_FAMILIES, "workflow": cfg["review"].get("workflow", "legacy"),
+                    result = {"identity": person, "mode": cfg["mode"], "suggested_id": runs.next_id(app), "categories": CATEGORY_FAMILIES, "workflow": cfg["review"].get("workflow", "legacy"), "include_lookup_only": bool(cfg["exports"].get("include_lookup_only")),
+                        "search_limits": {r: s.get("limit", 10) for r, s in cfg["terminology"].items()},
                         "model_sets": [{"name": n, "label": p["label"], "hosted": p["hosted"], "models": [m["id"] for m in p["models"]]} for n, p in cfg["model_profiles"].items()],
                         "model_set_default": cfg["model_profile"], "items": [{"id": d["source"]["utterance_id"], "state": d["state"],
-                        "priority": d["priority"]["queue"], "version": d["version"],
+                        "text": ((d["source"].get("expression_span") or {}).get("text") or d["source"]["original_text"])[:70],
+                        # Cases run before a risk term was added still surface; the stored record is not changed.
+                        "priority": "PRIORITY" if d["priority"]["queue"] == "PRIORITY" or risk_terms_found(canonical(d["source"]), cfg["risk"]["terms"]) else "STANDARD",
+                        "version": d["version"],
                         "flag": (d.get("case_flag") or {}).get("status", "active"), "next_task": progress(d)["next_task"], "model_set": (d.get("model_set") or {}).get("name")} for d in app.store.all()]}
                 elif not mutate and path == "/api/scorecard":
                     result = scorecard(app.store.all(), cfg["model_profiles"])

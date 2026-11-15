@@ -133,7 +133,7 @@ def test_export_preview_rows_and_blocker_names_case(app,sources,tmp_path):
     assert readiness['mapping_rows']==[dict(subject_id='FARAJA:test',object_id=payload['candidate_id'],object_label=readiness['mapping_rows'][0]['object_label'],predicate_id='skos:relatedMatch',resource='MFOEM',lookup_only=False)]
     with app.store.transaction():
         d['terminology']['SNOMED_CT']['state']='UNAVAILABLE';app.store.save(d,d['version'])
-    with pytest.raises(ValueError,match='^SYN01: '):export_sssom(app,tmp_path/'blocked','token-demo_curator',True)
+    with pytest.raises(ValueError,match='left out: SYN01: '):export_sssom(app,tmp_path/'blocked','token-demo_curator',True)
 
 
 def test_export_package_from_review_screen(app,cfg,sources):

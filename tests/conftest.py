@@ -62,4 +62,9 @@ def approved_mapping(app, source):
     d, h = curated(app, source)
     payload = {"resource": "MFOEM", "action": "approve", "sense_id": "FARAJA:test", "candidate_id": "FIXTURE:MFOEM-emotional-pain",
         "predicate": "skos:relatedMatch", "rationale": "SIMULATED fit evidence", "evidence_refs": ["E1"]}
-    return app.mapping(source["utterance_id"], payload, "token-demo_curator", d["version"]), h, payload
+    d = app.mapping(source["utterance_id"], payload, "token-demo_curator", d["version"])
+    # The other two sources are deferred, so sign-off is complete and the case is ready to export.
+    for resource in ("MFOMD", "SNOMED_CT"):
+        d = app.mapping(source["utterance_id"], {**payload, "resource": resource, "action": "unresolved", "candidate_id": None, "predicate": None,
+            "rationale": "SIMULATED deferral"}, "token-demo_curator", d["version"])
+    return d, h, payload

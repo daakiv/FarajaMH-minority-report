@@ -8,7 +8,7 @@ from time import monotonic
 
 from .dictionary import evidence as dictionary_evidence
 from .agreement import compare
-from .common import CATEGORY_FAMILIES, RESOURCES, canonical, code_hash, digest, evidence_check, now, require, resolve, scan_identifiers, validate
+from .common import CATEGORY_FAMILIES, RESOURCES, canonical, code_hash, digest, evidence_check, now, require, resolve, risk_terms_found, scan_identifiers, validate
 from .models import interpret
 from .workflow import progress as case_progress, steps as workflow_steps
 from .storage import Store
@@ -67,17 +67,15 @@ class App:
 
     def priority(self, source: dict, runs: list[dict]) -> dict:
         evidence = []
-        for term in self.cfg["risk"]["terms"]:
-            if term.casefold() in canonical(source).casefold():
-                evidence.append({"origin": "source_lexicon", "term": term, "reviewable": True})
+        for term in risk_terms_found(canonical(source), self.cfg["risk"]["terms"]):
+            evidence.append({"origin": "source_lexicon", "term": term, "reviewable": True})
         for run in runs:
             if run["output"] and run["output"]["risk"]["signal"] in self.cfg["risk"]["priority_signals"]:
                 evidence.append({"origin": run["configuration_id"], "risk": run["output"]["risk"]})
             # Even invalid outputs remain risk-screened, but are never votes.
             for attempt in run["attempts"]:
-                for term in self.cfg["risk"]["terms"]:
-                    if term.casefold() in attempt.get("raw", "").casefold():
-                        evidence.append({"origin": run["configuration_id"], "term": term, "reviewable": True})
+                for term in risk_terms_found(attempt.get("raw", ""), self.cfg["risk"]["terms"]):
+                    evidence.append({"origin": run["configuration_id"], "term": term, "reviewable": True})
         return {"queue": "PRIORITY" if evidence else "STANDARD", "evidence": evidence,
                 "notice": "Research review priority only; no patient contact, diagnosis or treatment"}
 
@@ -525,6 +523,10 @@ class App:
         d = self.store.get(uid)
         # Reading a case must not invent a new dictionary run for historical records.
         d.setdefault("dictionary_evidence", None)
+        # Saved text of each linked local concept, so the concept form shows what was recorded, not a fresh draft.
+        linked = {link["id"]: link["version"] for link in d.get("sense_links", []) if not link.get("stale")}
+        d["linked_senses"] = {s["id"]: {k: s.get(k) for k in ("english_gloss", "definition", "cultural_applicability", "reuse_approved")}
+            for s in self.store.senses() if linked.get(s["id"]) == s["version"]}
         d["workflow_steps"] = workflow_steps(d)
         d["progress"] = case_progress(d)
         if self.cfg["review"].get("workflow") != "single_reviewer" and "reviewer" in person["roles"] and not any(r["identity"]["id"] == person["id"] for r in d["reviews"]):

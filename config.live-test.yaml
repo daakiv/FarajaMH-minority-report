@@ -6,7 +6,8 @@ fixtures: pilot/model_responses.json
 prompt: farajamh/prompts/interpret-v2.md  # v2 asks for numeric confidence; config.yaml fixtures stay on v1
 voting:
   minimum_primary_votes: 3
-  grouping_version: semantic-frame-conservative-v1
+  # v2 groups readings with the same category and who/negation/time; v1 (config.yaml) needs identical free-text frames.
+  grouping_version: category-applicability-v2
   aliases: {}
 review:
   workflow: single_reviewer
@@ -20,12 +21,29 @@ risk:
   priority_signals:
   - flagged
   - uncertain
+  # Sets review priority only. Terms of 7+ letters or several words also match close misspellings.
+  # Kiswahili and Sheng wording to be checked by the FarajaMH team.
   terms:
   - suicide
   - self-harm
   - kill myself
+  - end my life
+  - want to die
+  - hang myself
+  - better off dead
   - kujidhuru
   - kujiua
+  - nijiue
+  - kujinyonga
+  - kujitia kitanzi
+  - kitanzi
+  - kunywa sumu
+  - kujitoa uhai
+  - kumaliza maisha
+  - sitaki kuishi
+  - nataka kufa
+  - bora nife
+  - hii dunia tena
 network:
   allowed_origins:
   - http://127.0.0.1:11434

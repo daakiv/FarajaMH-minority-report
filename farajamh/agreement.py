@@ -1,4 +1,8 @@
-"""Conservative semantic-frame grouping v1; model frame equality is a proposal for review."""
+"""Model grouping is a proposal for review, never approval.
+
+semantic-frame-conservative-v1 groups only identical full frames, so free-text cause and cultural notes keep
+near-identical readings apart. category-applicability-v2 groups readings that share the workshop category and
+the applicability qualifiers (who, negation, time); wording differences stay visible within the group."""
 from __future__ import annotations
 
 import re
@@ -19,20 +23,29 @@ def normalize(value: str) -> str:
     return re.sub(r"\s+", " ", value.strip().casefold())
 
 
+APPLICABILITY = ("experiencer", "assertion", "event_time")
+
+
 def compare(runs: list[dict], voting: dict) -> dict:
     require(len({r["configuration_id"] for r in runs}) == len(runs), "One vote per distinct configuration")
     groups = {}
     assignments = []
     aliases = voting.get("aliases", {})
+    by_category = voting["grouping_version"].startswith("category-applicability")
     for run in runs:
         h = primary(run)
         if h is None:
             continue
         frame = {k: aliases.get(normalize(v), normalize(v)) for k, v in h["semantic_frame"].items()}
-        # Equality of full contextual semantic frame; translations, broad categories or codes alone never group.
         negation_markers = sorted(set(re.findall(r"\b(?:no|not|without|denies|denied|never)\b", h["meaning"].casefold())))
-        signature = {"frame": frame, "qualifiers": h["qualifiers"], "category": h["category"],
-                     "meaning_negation_markers": negation_markers}
+        if by_category:
+            # Same category, same who/negation/time and same negation wording; the readings' text is not compared.
+            signature = {"category": h["category"], "applicability": {k: h["qualifiers"].get(k) for k in APPLICABILITY},
+                         "meaning_negation_markers": negation_markers}
+        else:
+            # Equality of full contextual semantic frame; translations, broad categories or codes alone never group.
+            signature = {"frame": frame, "qualifiers": h["qualifiers"], "category": h["category"],
+                         "meaning_negation_markers": negation_markers}
         # Unknown meaning frames are deliberately not treated as established equivalence.
         if frame["experience"] in ("unknown", "uncertain", "other"):
             signature["unresolved_model"] = run["configuration_id"]
