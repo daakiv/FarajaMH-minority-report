@@ -86,7 +86,7 @@ def test_unsigned_case_is_not_ready_and_left_out(app, sources, tmp_path):
     assert any(b.startswith("Terminology sign-off incomplete: 0 of 3") for b in blockers)
     # The ready case still exports; the unfinished one is listed with its reason instead of stopping the package.
     result = export_sssom(app, tmp_path / "export", "token-demo_curator", True)
-    assert result["rows"] == 1 and result["not_ready_cases"] == 1
+    assert result["rows"] == 1 and result["not_ready_cases"] == 1 and result["mappings_left_out"] == 0
     left_out = json.loads((tmp_path / "export/excluded-cases.json").read_text())
     assert [(c["utterance_id"], c["status"]) for c in left_out] == [(uid, "not_ready")]
     assert "Terminology sign-off incomplete" in left_out[0]["reason"]

@@ -105,7 +105,7 @@ def test_export_keeps_eligible_mapping_and_reports_experimental(app,sources,tmp_
     readiness=export_readiness(app,d,app.identity('token-demo_curator'),True)
     assert not readiness['blockers'] and len(readiness['excluded_mappings'])==1
     result=export_sssom(app,tmp_path/'mixed','token-demo_curator',True)
-    assert result['rows']==1 and result['excluded_mappings']==1
+    assert result['rows']==1 and result['excluded_mappings']==1 and result['mappings_left_out']==1
     assert 'FIXTURE:experimental-test' not in (tmp_path/'mixed'/'SIMULATED.mappings.sssom.tsv').read_text()
     assert json.loads((tmp_path/'mixed'/'excluded-mappings.json').read_text())[0]['resource']=='SNOMED_CT'
     d['terminology']['SNOMED_CT']['state']='UNAVAILABLE'

@@ -310,8 +310,11 @@ class App:
             self.check_mode(d)
             require(d["version"] == expected, "Stale version: refresh the dossier")
             d["dictionary_evidence"] = d.get("dictionary_evidence") or dictionary_evidence(self.cfg, d["source"])
-            if d.get("second_opinion_request"):
-                require(d["second_opinion_request"]["requested_by"] != person["id"], "A second opinion must come from another reviewer")
+            request = d.get("second_opinion_request")
+            if request:
+                # One-expert setups (review.second_opinion_same_reviewer) may answer their own request; the record says so.
+                same = request["requested_by"] == person["id"]
+                require(not same or self.cfg["review"].get("second_opinion_same_reviewer"), "A second opinion must come from another reviewer")
             self.check_refs(d, decision_payload["evidence_refs"])
             for h in meanings:
                 self.check_refs(d, h["evidence_refs"])
@@ -319,6 +322,8 @@ class App:
             decision = {"identity": person, "decision": decision_payload, "guided_review": {k: v for k, v in payload.items() if k != "decision"},
                 "workflow": "single_reviewer", "timestamp": now(), "reviewed_version": expected,
                 "reviews_hash": digest(d["reviews"]), "models_hash": digest(d["models"]), "comparison_hash": digest(d["comparison"])}
+            if request:
+                decision["second_opinion"] = {**request, "answered_by": person["id"], "same_reviewer": same}
             decision["decision_hash"] = digest(decision)
             d["adjudication"] = decision
             d["second_opinion_request"] = {"requested_by": person["id"], "timestamp": now()} if payload["second_opinion_requested"] else None

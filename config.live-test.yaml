@@ -12,6 +12,8 @@ voting:
 review:
   workflow: single_reviewer
   minimum_reviewers: 2
+  # One expert for now: a requested second opinion may be completed by the same reviewer; the record notes it.
+  second_opinion_same_reviewer: true
   ckb_requires_arbitration: true
   # Step 5: disagreements, safety signals and unrecorded who/negation/time are always reviewed;
   # agreed cases are drawn reproducibly at this rate. Remove both lines to review every case.

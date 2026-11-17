@@ -379,7 +379,7 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
     with app.store.transaction():
         app.store.event(person["id"], "DEMONSTRATION_EXPORT" if demonstration else "RELEASE_EXPORT", str(directory),
             {"mapping_rows": len(rows), "mapping_set_version": version, "content_digest": digest([sidecar, excluded]), "excluded_mappings": excluded, "lookup_only_rows": len(lookup_rows), "excluded_cases": excluded_cases, "versions": {d["source"]["utterance_id"]: d["version"] for d in dossiers}, "validation": validation})
-    return {"path": str(path), "rows": len(rows), "excluded_mappings": len(excluded), "lookup_only_rows": len(lookup_rows), "lookup_only_included": include_lookup, "lookup_only_validation": lookup_validation and "SSSOM 1.0 profile passed", "excluded_cases": len(excluded_cases), "not_ready_cases": len(not_ready), "exclusion_report": str(directory / "excluded-mappings.json"), "demonstration": demonstration, "validation": "SSSOM 1.0 profile and local Croissant profile passed"}
+    return {"path": str(path), "rows": len(rows), "excluded_mappings": len(excluded), "mappings_left_out": sum(not e.get("included_for_testing") for e in excluded), "lookup_only_rows": len(lookup_rows), "lookup_only_included": include_lookup, "lookup_only_validation": lookup_validation and "SSSOM 1.0 profile passed", "excluded_cases": len(excluded_cases), "not_ready_cases": len(not_ready), "exclusion_report": str(directory / "excluded-mappings.json"), "demonstration": demonstration, "validation": "SSSOM 1.0 profile and local Croissant profile passed"}
 
 
 LOOKUP_ONLY_LICENSE = "https://www.snomed.org/get-snomed"

@@ -70,6 +70,19 @@ def test_second_opinion_requires_another_reviewer_even_after_new_evidence(app, s
         app.complete_review("SYN01", decision(d), "token-demo_ke", d["version"])
     result = app.complete_review("SYN01", decision(d), "token-demo_tz", d["version"])
     assert result["state"] == "ADJUDICATED" and result["second_opinion_request"] is None
+    assert result["adjudication"]["second_opinion"]["same_reviewer"] is False
+
+
+def test_one_expert_setting_lets_requester_answer_and_records_it(app, sources):
+    app.cfg["review"]["second_opinion_same_reviewer"] = True
+    d = app.run(sources[0])
+    p = decision(d, "unresolved")
+    p["second_opinion_requested"] = True
+    d = app.complete_review("SYN01", p, "token-demo_ke", d["version"])
+    result = app.complete_review("SYN01", decision(d), "token-demo_ke", d["version"])
+    answer = result["adjudication"]["second_opinion"]
+    assert result["state"] == "ADJUDICATED" and result["second_opinion_request"] is None
+    assert answer["requested_by"] == answer["answered_by"] == "demo_ke" and answer["same_reviewer"] is True
 
 
 @pytest.mark.parametrize("change,error", [
