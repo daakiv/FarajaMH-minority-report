@@ -7,9 +7,12 @@ expression the app:
 
 A local concept becomes a proposal only when it is the latest version, approved for reuse, still matches its
 meaning decision, is not simulated, its case is not flagged test/withdrawn, and its expression is not already
-in the workbook. The app only ever adds rows; it never changes Status, meaning or From case typed by the team.
-Every write is preceded by a dated backup and skipped while Excel has the workbook open. A row the team
-deletes is added again on the next sync, so reject a row (Status: Rejected) rather than deleting it.
+in the workbook. The sync also runs in the background right after a local concept is saved or a case is
+flagged. When a concept stops qualifying (reuse unticked, case flagged, meaning reopened) its row is
+removed, but only while its Status is still Proposed; a row the team has marked Validated or Rejected stays.
+The app never edits Status, meaning or From case typed by the team. Every write is preceded by a dated
+backup and skipped while Excel has the workbook open. A row the team deletes is added again on the next
+sync, so reject a row (Status: Rejected) rather than deleting it.
 """
 import fcntl
 import hashlib
@@ -97,25 +100,36 @@ def read_workbook(path):
     return entries
 
 
-def proposals(app):
-    """Reviewed local concepts that qualify as System proposal rows (whether or not already in the workbook)."""
+def review_rows(app):
+    """Return (rows for concepts that qualify, {entry ID: reason} for this database's concepts that no longer do).
+
+    A concept qualifies when it is the latest version, approved for reuse, still matches its meaning decision,
+    and its case is not flagged test/withdrawn. Simulated and fixture-mode concepts are never considered.
+    """
     from .pipeline import excluded_case
     latest = {}
     for sense in app.store.senses():
         if sense["id"] not in latest or sense["version"] > latest[sense["id"]]["version"]:
             latest[sense["id"]] = sense
-    rows = []
+    rows, withdrawn = [], {}
     for sense in sorted(latest.values(), key=lambda s: (s["origin_utterance"], s["id"])):
-        if not sense.get("reuse_approved") or sense.get("simulated") or not app.sense_current(sense):
+        if sense.get("simulated"):
             continue
         case = app.store.get(sense["origin_utterance"])
-        if excluded_case(case) or case.get("mode") == "fixture":
+        if case.get("mode") == "fixture":
+            continue
+        uid, n = sense["origin_utterance"], (re.search(r"-(\d+)$", sense["id"]) or [None, "1"])[1]  # meaning number in the concept ID
+        entry_id = f"SYSTEM_{uid}" + ("" if n == "1" else f"_{n}")
+        reason = ("no longer approved for reuse" if not sense.get("reuse_approved")
+                  else f"case flagged {case['case_flag']['status']}" if excluded_case(case)
+                  else "meaning changed since the concept was saved" if not app.sense_current(sense) else None)
+        if reason:
+            withdrawn[entry_id] = reason
             continue
         notes = sense.get("review_annotations") or {}
         code = notes.get("family_code") or "undetermined"
         family = CATEGORY_FAMILIES.get(code, [code.replace("_", " ")])[0]
-        uid, n = sense["origin_utterance"], (re.search(r"-(\d+)$", sense["id"]) or [None, "1"])[1]  # meaning number in the concept ID
-        rows.append({"Entry ID": f"SYSTEM_{uid}" + ("" if n == "1" else f"_{n}"),
+        rows.append({"Entry ID": entry_id,
                      "Expression": sense["source_label"].strip(),
                      "Invented meaning": (sense.get("meaning") or {}).get("meaning") or sense.get("english_gloss"),
                      "Family": family, "Workbook code": code,
@@ -124,14 +138,21 @@ def proposals(app):
                      "Approval status": "SIMULATED_NOT_APPROVED",
                      "Workshop DAP category": ", ".join(notes.get("dap_categories") or []) or "Not recorded",
                      "Origin": "System proposal", "Status": "Proposed", "From case": uid})
-    return rows
+    for row in rows:
+        withdrawn.pop(row["Entry ID"], None)  # another current concept still backs this entry
+    return rows, withdrawn
 
 
-def missing_proposals(app, entries):
+def proposals(app):
+    """Reviewed local concepts that qualify as System proposal rows (whether or not already in the workbook)."""
+    return review_rows(app)[0]
+
+
+def missing_proposals(app, entries, rows=None):
     known_ids = {e["id"] for e in entries}
     known_expressions = {normal(e["expression"]) for e in entries}
     out, seen = [], set()
-    for row in proposals(app):
+    for row in proposals(app) if rows is None else rows:
         key = normal(row["Expression"])
         if row["Entry ID"] in known_ids or key in known_expressions or key in seen:
             continue
@@ -145,8 +166,8 @@ def excel_open(path):
     return (path.parent / ("~$" + path.name)).exists()
 
 
-def append_rows(path, rows, backup_dir):
-    """Backup, then append rows to the sheet with the last data row's styling; atomic replace."""
+def edit_rows(path, rows, remove_ids, backup_dir):
+    """Backup, remove the listed Entry IDs, append rows with the last data row's styling; atomic replace."""
     path = Path(path)
     backup_dir.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
@@ -157,6 +178,8 @@ def append_rows(path, rows, backup_dir):
     sheet = book[SHEET]
     header = next(r for r in range(1, sheet.max_row + 1) if sheet.cell(r, 1).value == "Entry ID")
     columns = {sheet.cell(header, c).value: c for c in range(1, sheet.max_column + 1) if sheet.cell(header, c).value}
+    for r in sorted((r for r in range(header + 1, sheet.max_row + 1) if sheet.cell(r, 1).value in set(remove_ids)), reverse=True):
+        sheet.delete_rows(r)
     last = max(r for r in range(header, sheet.max_row + 1) if sheet.cell(r, 1).value)
     for offset, row in enumerate(rows, start=1):
         for title, value in row.items():
@@ -216,14 +239,23 @@ def sync(cfg, app=None, write=True):
         except SyncError as exc:
             report.update(state="WARNING", warnings=[str(exc) + "; using the last dictionary"])
             return report
-        new = missing_proposals(app, entries) if app else []
+        rows, withdrawn = review_rows(app) if app else ([], {})
+        new = missing_proposals(app, entries, rows) if app else []
+        # A proposal whose concept stopped qualifying is removed while still Proposed; once the team has set
+        # Validated or Rejected the row is theirs and stays.
+        system = [e for e in entries if e["origin"] == "System proposal" and e["id"] in withdrawn]
+        remove = [e for e in system if e["status"] == "Proposed"]
+        report["left_in_place"] = [f"{e['id']} ({withdrawn[e['id']]}, but Status is {e['status']}, so the team's row stays)" for e in system if e["status"] != "Proposed"]
         report["proposals_pending"] = [r["Entry ID"] for r in new]
-        if new and write:
+        report["removals_pending"] = [e["id"] for e in remove]
+        report["proposals_removed"] = []
+        if (new or remove) and write:
             if excel_open(workbook):
-                report["warnings"].append(f"{len(new)} system proposal(s) not written: the workbook is open in Excel. They will be added at the next sync.")
+                report["warnings"].append(f"{len(new)} proposal(s) to add and {len(remove)} to remove not written: the workbook is open in Excel. They will be applied at the next sync.")
             else:
-                append_rows(workbook, new, backup_dir)
+                edit_rows(workbook, new, [e["id"] for e in remove], backup_dir)
                 report["proposals_added"] = [f"{r['Entry ID']} ({r['Expression']})" for r in new]
+                report["proposals_removed"] = [f"{e['id']} ({e['expression']}: {withdrawn[e['id']]})" for e in remove]
                 entries = read_workbook(workbook)
         workbook_sha = sha256(workbook)
         current = json.loads(target.read_text()) if target.exists() else {}
@@ -241,6 +273,25 @@ def sync(cfg, app=None, write=True):
     return report
 
 
+def sync_in_background(cfg):
+    """Sync on its own connection after a concept or case flag is saved; the save itself never waits or fails."""
+    settings = cfg.get("dictionary") or {}
+    if not settings.get("workbook") or not settings.get("path"):
+        return None
+    def work():
+        from .pipeline import App
+        app = App(cfg)
+        try:
+            sync(cfg, app)
+        except Exception:
+            pass  # the next run's sync tries again
+        finally:
+            app.store.db.close()
+    thread = threading.Thread(target=work, name="workbook-sync", daemon=True)
+    thread.start()
+    return thread
+
+
 def summary(report):
     """One line for the run log."""
     parts = []
@@ -248,6 +299,10 @@ def summary(report):
         parts.append(f"{len(report['entries_added'])} new workbook entries")
     if report["proposals_added"]:
         parts.append("system proposals added: " + ", ".join(report["proposals_added"]))
+    if report.get("proposals_removed"):
+        parts.append("system proposals removed: " + ", ".join(report["proposals_removed"]))
+    if report.get("left_in_place"):
+        parts.append("kept: " + ", ".join(report["left_in_place"]))
     if report["state"] == "UPDATED" and not parts:
         parts.append("workbook edits picked up")
     parts += report["warnings"]

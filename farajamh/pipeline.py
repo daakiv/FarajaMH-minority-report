@@ -423,6 +423,8 @@ class App:
                 if mapping["decision"]["sense_id"] == sense["id"]:
                     mapping["stale"] = True
             self.save_action(d, person, "LOCAL_CONCEPT_CURATION", sense, expected)
+        # Master workbook: add, or remove while still Proposed, this case's System proposal row.
+        self.last_workbook_sync = workshop_dictionary.sync_in_background(self.cfg)
         return d
 
     def mapping(self, uid: str, payload: dict, token: str, expected: int) -> dict:
@@ -516,6 +518,8 @@ class App:
             d["case_flag"] = {"status": payload["status"], "reason": payload["reason"].strip(), "previous": previous,
                 "identity": person["id"], "timestamp": now()}
             self.save_action(d, person, "CASE_STATUS_CHANGED", d["case_flag"], expected)
+        # Master workbook: add, or remove while still Proposed, this case's System proposal row.
+        self.last_workbook_sync = workshop_dictionary.sync_in_background(self.cfg)
         return d
 
     def add_evidence(self, uid: str, payload: dict, token: str, expected: int):
