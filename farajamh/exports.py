@@ -232,6 +232,15 @@ def concept_row(sense, source) -> dict:
         "subject_label": sense["english_gloss"]}
 
 
+SOURCE_ORDER = {"MFOEM": 0, "MFOMD": 1, "SNOMEDCT": 2}
+
+
+def grouped_by_concept(rows: list[dict], sidecar: list[dict]) -> tuple[list[dict], list[dict]]:
+    """One local concept's mappings sit together (MFOEM, MFOMD, SNOMED CT); provenance row numbers follow."""
+    pairs = sorted(zip(rows, sidecar), key=lambda p: (p[0]["subject_id"], SOURCE_ORDER.get(p[0]["object_id"].split(":")[0], 9), p[0]["object_id"]))
+    return [r for r, _ in pairs], [{**note, "row": i} for i, (_, note) in enumerate(pairs, start=1)]
+
+
 def export_sssom(app, directory: Path, token: str, demonstration: bool = False) -> dict:
     person = app.identity(token, "terminology")
     app.check_mode()
@@ -354,6 +363,7 @@ def export_sssom(app, directory: Path, token: str, demonstration: bool = False) 
             "not a licensed release, and are not covered by the CC BY licence of the main mapping set.",
             "license": LOOKUP_ONLY_LICENSE, "curie_map": curies, "mapping_tool": "farajamh", "mapping_tool_version": __version__}, lookup_rows)
         lookup_validation = validate_sssom(lookup_path)
+    rows, sidecar = grouped_by_concept(rows, sidecar)
     title = "SIMULATED — NOT FOR RELEASE" if demonstration else "Human-reviewed synthetic research mappings"
     if include_lookup and lookup_rows:
         title += " — TEST: includes lookup-only SNOMED CT rows, not for redistribution"

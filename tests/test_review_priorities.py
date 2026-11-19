@@ -9,7 +9,7 @@ import yaml
 from conftest import ROOT, adjudicated, approved_mapping
 from farajamh.agreement import compare
 from farajamh.common import config, risk_terms_found
-from farajamh.exports import export_readiness, export_sssom
+from farajamh.exports import export_readiness, export_sssom, grouped_by_concept
 from farajamh.webapp import server
 
 LIVE_TERMS = yaml.safe_load((ROOT / "config.live-test.yaml").read_text())["risk"]["terms"]
@@ -122,3 +122,14 @@ def test_queue_and_view_carry_what_the_screen_shows(app, cfg, sources):
     # The concept form is filled from the saved concept, not from the meaning text.
     assert view["linked_senses"]["FARAJA:test"]["definition"] == "A reviewed synthetic sense"
     assert view["linked_senses"]["FARAJA:test"]["cultural_applicability"] == "Synthetic context only"
+
+
+def test_each_concepts_mappings_sit_together_in_source_order():
+    # Lookup-only SNOMED CT rows are collected last; the export regroups them with their concept.
+    rows = [{"subject_id": s, "object_id": o} for s, o in [("FARAJA:b", "MFOEM:1"), ("FARAJA:a", "MFOMD:2"), ("FARAJA:a", "MFOEM:3"),
+            ("FARAJA:b", "SNOMEDCT:4"), ("FARAJA:a", "SNOMEDCT:5")]]
+    sidecar = [{"row": i, "id": r["object_id"]} for i, r in enumerate(rows, start=1)]
+    out, notes = grouped_by_concept(rows, sidecar)
+    assert [(r["subject_id"], r["object_id"]) for r in out] == [("FARAJA:a", "MFOEM:3"), ("FARAJA:a", "MFOMD:2"), ("FARAJA:a", "SNOMEDCT:5"),
+                                                               ("FARAJA:b", "MFOEM:1"), ("FARAJA:b", "SNOMEDCT:4")]
+    assert [n["row"] for n in notes] == [1, 2, 3, 4, 5] and [n["id"] for n in notes] == [r["object_id"] for r in out]
