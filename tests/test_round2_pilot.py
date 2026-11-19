@@ -26,6 +26,7 @@ IRI = "http://purl.obolibrary.org/obo/MFOEM_000028"
 def live(tmp_path, monkeypatch):
     cfg = config(ROOT / "config.live-test.yaml")
     cfg["storage"] = str(tmp_path / "live.sqlite")
+    cfg["dictionary"].pop("workbook")  # never sync the real master workbook from a test
     monkeypatch.setenv("FARAJA_DAVID_TOKEN", "token-david")
     return cfg
 

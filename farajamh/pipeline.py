@@ -7,6 +7,7 @@ from difflib import SequenceMatcher
 from time import monotonic
 
 from .dictionary import evidence as dictionary_evidence
+from . import workshop_dictionary
 from .agreement import compare
 from .common import CATEGORY_FAMILIES, RESOURCES, canonical, code_hash, digest, evidence_check, now, require, resolve, risk_terms_found, scan_identifiers, validate
 from .models import interpret
@@ -139,6 +140,13 @@ class App:
         emit({"stage": "input_checked", "models": len(run_cfg["models"]), "model_set": profile})
         runs = interpret(run_cfg, source, progress) if progress else interpret(run_cfg, source)
         triage = self.triage(source)
+        # Master workbook first: pick up the team's edits and add reviewed new expressions as proposals.
+        try:
+            synced = workshop_dictionary.sync(self.cfg, self)
+        except Exception as exc:  # never fail a run over the workbook; the last dictionary stays in use
+            synced = {"state": "WARNING", "workbook": "master workbook", "proposals_added": [], "warnings": [f"sync failed ({type(exc).__name__}); using the last dictionary"]}
+        if synced:
+            emit({"stage": "dictionary_sync", "outcome": synced["state"], "reason": workshop_dictionary.summary(synced)})
         dictionary = dictionary_evidence(self.cfg, source)
         emit({"stage": "dictionary", "state": dictionary.get("state", "CHECKED"), "count": len(dictionary.get("entries", []))})
         pre_risk = self.priority(source, [])

@@ -20,6 +20,8 @@ def evidence(cfg, source):
     tokens = features(expression)
     matches = []
     for entry in library['entries']:
+        if entry.get('status') == 'Rejected':
+            continue  # rejected by the team in the master workbook
         words = features(entry['expression'])
         shared = sorted(tokens & words)
         exact = expression.strip().casefold() == entry['expression'].strip().casefold()

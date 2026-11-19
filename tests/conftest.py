@@ -10,6 +10,15 @@ from farajamh.pipeline import App, applicability
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@pytest.fixture(autouse=True, scope="session")
+def master_files_untouched():
+    """Tests must never write the master workbook or the repository dictionary."""
+    files = [ROOT / "outputs/workshop-dummy/FarajaMH_Workshop_master_Pack.xlsx", ROOT / "pilot/workshop-dummy/dictionary.json"]
+    before = [f.read_bytes() for f in files]
+    yield
+    assert [f.read_bytes() for f in files] == before, "A test changed the master workbook or pilot/workshop-dummy/dictionary.json"
+
+
 @pytest.fixture
 def cfg(tmp_path, monkeypatch):
     c = config(ROOT / "config.yaml")

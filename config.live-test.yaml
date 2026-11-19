@@ -158,6 +158,9 @@ exports:
     semapv: https://w3id.org/semapv/vocab/
 dictionary:
   path: pilot/workshop-dummy/dictionary.json
+  # Master workbook: synced at the start of every new expression (edits read in, reviewed new expressions
+  # written back as "System proposal" rows). Backups go to work/workbook-backups before each write.
+  workbook: outputs/workshop-dummy/FarajaMH_Workshop_master_Pack.xlsx
 
 retrieval:
   ranking:
