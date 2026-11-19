@@ -3,7 +3,7 @@ mode: connected
 storage: work/live.sqlite  # connected-mode cases only; earlier fixture/local cases stay in work/research.sqlite
 output: work/outputs
 fixtures: pilot/model_responses.json
-prompt: farajamh/prompts/interpret-v2.md  # v2 asks for numeric confidence; config.yaml fixtures stay on v1
+prompt: farajamh/prompts/interpret-v3.md  # v3 = v2 + search-term rules; v2 asks for numeric confidence; config.yaml fixtures stay on v1
 voting:
   minimum_primary_votes: 3
   # v2 groups readings with the same category and who/negation/time; v1 (config.yaml) needs identical free-text frames.

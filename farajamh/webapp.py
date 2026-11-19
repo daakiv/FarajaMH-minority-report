@@ -94,6 +94,12 @@ def server(cfg: dict, port: int = 8765):
                         return self.send(202, canonical(result))
                     if operation == "background/export":
                         return self.send(202, canonical(review_jobs.start_export(app, token)))
+                    if operation == "term_check":
+                        # Read-only: hit counts per source for search terms being edited, before any lookup is saved.
+                        app.identity(token, "reviewer")
+                        terms = [str(x).strip() for x in body.get("terms", []) if str(x).strip()]
+                        require(terms and len(terms) <= 10 and all(len(x) <= 80 for x in terms), "Check 1 to 10 search terms of up to 80 characters")
+                        return self.send(200, canonical({"terms": app.resolver.check_terms(list(dict.fromkeys(terms)))}))
                     if operation.startswith("background/"):
                         result = review_jobs.start(app, operation.split("/",1)[1], body, token)
                         return self.send(202, canonical(result))

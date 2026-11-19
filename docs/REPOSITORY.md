@@ -91,7 +91,8 @@ validation-requirements.lock
 | `farajamh/pilot.py` | Explicit simulated decisions and network-blocked full pilot |
 | `farajamh/pipeline.py` | Authenticated review, arbitration, curation, mapping, CKB and stale-state transitions |
 | `farajamh/prompts/interpret-v1.md` | Versioned Kiswahili-aware independent interpretation prompt |
-| `farajamh/prompts/interpret-v2.md` | v1 plus a request for numeric uncalibrated confidence; used by `config.live-test.yaml` |
+| `farajamh/prompts/interpret-v2.md` | v1 plus a request for numeric uncalibrated confidence |
+| `farajamh/prompts/interpret-v3.md` | v2 plus rules for search terms (short experience names, variants, no describing words); used by `config.live-test.yaml` |
 | `farajamh/reporting.py` | Metrics, denominators and report artifacts |
 | `farajamh/schemas/adjudication.json` | Version 1 JSON Schema for adjudication |
 | `farajamh/schemas/croissant-context-1.0.json` | Pinned Croissant 1.0 inline context from mlcroissant 1.0.22 |

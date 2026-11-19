@@ -51,6 +51,36 @@ DOMAINS = {
 }
 
 
+# Words that describe the expression rather than name an experience; ontologies do not list them.
+DESCRIBING_WORDS = re.compile(r"\b(idioms?|idiomatic|cultural|culture|expressions?|metaphors?|metaphorical|figurative|saying|phrase|slang|proverb)\b", re.I)
+NAMES = {"MFOEM": "MFOEM", "MFOMD": "MFOMD", "SNOMED_CT": "SNOMED CT"}
+
+
+def term_advice(term: str, sources: dict) -> dict:
+    """Plain verdict for one search term from its per-source hit counts."""
+    for result in sources.values():
+        if "count" in result:
+            result["status"] = "none" if result["count"] == 0 else "too_broad" if result["count"] > result["limit"] else "ok"
+    counted = {r: s for r, s in sources.items() if "count" in s}
+    broad = [f"{NAMES[r]} ({s['count']} hits; only the first {s['limit']} are checked)" for r, s in counted.items() if s["status"] == "too_broad"]
+    useful = [NAMES[r] for r, s in counted.items() if s["status"] == "ok"]
+    if DESCRIBING_WORDS.search(term):
+        level, advice = "remove", "Describes the expression, not the experience; ontologies do not list it. Name the feeling or symptom instead."
+    elif counted and not any(s["count"] for s in counted.values()):
+        level, advice = "remove", "No hits in any source. Rephrase (another word or spelling) or remove."
+    elif broad and not useful:
+        level, advice = "narrow", "Too broad in " + "; ".join(broad) + ". Make it more specific, or no gap can be recorded."
+    elif broad:
+        level, advice = "narrow", "Finds concepts in " + ", ".join(useful) + ", but too broad in " + "; ".join(broad) + "."
+    elif useful:
+        level, advice = "ok", "Finds concepts in " + ", ".join(useful) + "."
+    else:
+        level, advice = "unknown", "Could not be checked right now; the lookup will still search it."
+    if len(counted) < len(sources) and level != "unknown":
+        advice += " (Some sources could not be checked.)"
+    return {"term": term, "level": level, "advice": advice, "sources": sources}
+
+
 def cached(key, produce):
     """Return (value, cache_used). Values are copied so callers cannot alter the cache."""
     started = monotonic()
@@ -380,6 +410,37 @@ class Resolver:
             result["state"] = "SEARCH_FAILED"
             result["error"] = type(exc).__name__
         return result
+
+    def term_count(self, resource: str, term: str) -> dict:
+        """Hit count and a few example labels for one term, for checking search terms before a lookup."""
+        settings = self.cfg["terminology"][resource]
+        limit = settings.get("limit", 10)
+        if self.cfg["mode"] == "fixture" or settings["adapter"] != "ols":
+            with sqlite3.connect(":memory:") if self.cfg["mode"] == "fixture" else sqlite3.connect(f"file:{resolve(self.cfg, settings['index'])}?mode=ro", uri=True) as db:
+                if self.cfg["mode"] == "fixture":
+                    initialize_index(db)
+                    for entry in self.fixture_catalogue["resources"][resource]:
+                        put(db, entry)
+                tokens = re.findall(r"\w+", term)
+                match = " OR ".join('"' + t + '"' for t in tokens)
+                count = db.execute("SELECT COUNT(*) FROM search WHERE search MATCH ?", (match,)).fetchone()[0] if tokens else 0
+                labels = [json.loads(db.execute("SELECT body FROM terms WHERE id=?", (i,)).fetchone()[0])["label"] for i in search_ids(db, term)[:3]] if tokens else []
+            return {"count": count, "limit": 10, "examples": labels}
+        url = settings["endpoint"] + "/search?" + urlencode({"q": term, "ontology": settings["ontology"], "rows": 3, "type": "class", "fieldList": "label"})
+        response, _ = cached(("term_count", resource, term), lambda: network.request(self.cfg, url)["response"])
+        return {"count": response.get("numFound", 0), "limit": limit, "examples": [d.get("label", "") for d in response.get("docs", [])[:3]]}
+
+    def check_terms(self, terms: list[str]) -> list[dict]:
+        """Per term: hits in each source and plain advice, so weak terms are seen before the lookup runs."""
+        pairs = [(term, resource) for term in terms for resource in RESOURCES if self.cfg["terminology"].get(resource, {}).get("enabled")]
+        def one(pair):
+            try:
+                return pair, self.term_count(pair[1], pair[0])
+            except Exception as exc:
+                return pair, {"error": type(exc).__name__}
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            found = dict(pool.map(one, pairs))
+        return [term_advice(term, {r: found[(term, r)] for (t, r) in pairs if t == term}) for term in terms]
 
     def all(self, queries: list[str]) -> dict:
         with ThreadPoolExecutor(max_workers=3) as pool:
